@@ -1,0 +1,51 @@
+{
+  "gerreros": [
+    {
+      "id": "5",
+      "nombre": "Napa",
+      "raza": "sayayin"
+    },
+    {
+      "id": "6",
+      "nombre": "Frezzer",
+      "raza": "Estraterreste"
+    },
+    {
+      "id": "7",
+      "nombre": "Cell",
+      "raza": "Random"
+    },
+    {
+      "nombre": "Naydelin",
+      "raza": "Espinoza",
+      "id": "c537"
+    },
+    {
+      "id": "bcf2",
+      "nombre": "ivana",
+      "raza": "Elif"
+    }
+  ],
+  "Villanos": [
+    {
+      "id": "1",
+      "nombre": "Napa",
+      "raza": "sayayin"
+    },
+    {
+      "id": "2",
+      "nombre": "Frezzer",
+      "raza": "Estraterreste"
+    },
+    {
+      "id": "3",
+      "nombre": "Cell",
+      "raza": "Random"
+    },
+    {
+      "id": "4",
+      "nombre": "Majin Buu",
+      "raza": "Desconocida"
+    }
+  ]
+}

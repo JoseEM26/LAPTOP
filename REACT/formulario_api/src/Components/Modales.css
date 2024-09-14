@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.seccion{
+    position: sticky;
+    z-index: 999;
+    width: 100%;
+    min-height: 100vh;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.816);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+
+}
+.seccion.is-open{
+    display: flex;
+
+}
+.boton{
+    position: absolute;
+    top: 1rem;    
+    right: 1rem;
+    padding: 10px;
+    border-radius: 9px;
+}

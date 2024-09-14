@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercisios</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <h1>Semaforo Colores:</h1><br>
+    <p>
+        <select name="" id="listaColores" onchange="cambiarColor()">
+            <option value="Avanzar ">Verde</option>
+            <option value="Pararse">Rojo</option>
+            <option value="Atencion">Amarillo</option>
+        </select>
+    </p>
+    <br>
+    <h1>Informacion segun aopcion>></h1>
+    <br>
+    
+    <h2>Indice Seleccionado: <input type="text" id="Index" ></h2>
+    <h2>Color Seleccionado: <input type="text" id="color" ></h2>
+    <h2>Indicacion Seleccionado: <input type="text" id="indicacion"></h2>
+
+    <input type="button" value="Saludo" onclick="Saludar()">
+<br>
+<br>
+<br>
+    <form action="">
+        <input type="checkbox" id="check1">java
+        <input type="checkbox" id="check2">C#
+        <input type="checkbox" id="check3">Python
+        <input type="checkbox" id="check4">React
+<br>
+        <input type="button" id="boton" value="Confirmar" onclick="Selecionados()" >
+
+    </form>
+
+    <!--"ONFOCUS" Cuando utilizas onFocus eso te permite que el formulario
+      al momneto de cambiar de texto puedas 
+     insertar una funcion para como por ejemplo limpiar -->
+     <!-- "ONBLUR"  ESTO PUEDE TENER UNA FUNCION AUTOMATICA QUE NOS PERMITE EJECUTAR COMO POR EJEMPLO
+      SI UNA PERSONA NO INGRESA UN DATO VALIDO O SI MANDA VACIO MANDA UNA ALERTA -->
+     <input 
+       type="text"
+       id="textito"
+       onfocus="Vaciar(this)" 
+       onblur="espacio()"
+       value="escribe tu nombre">
+
+
+    
+</body>
+<script src="JavaScript.js"></script>
+</html>
