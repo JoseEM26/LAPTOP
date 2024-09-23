@@ -1,0 +1,7 @@
+D:\POO\POO1_Semana01\Ejercisio_05\bin\Debug\Ejercisio_05.exe.config
+D:\POO\POO1_Semana01\Ejercisio_05\bin\Debug\Ejercisio_05.exe
+D:\POO\POO1_Semana01\Ejercisio_05\bin\Debug\Ejercisio_05.pdb
+D:\POO\POO1_Semana01\Ejercisio_05\obj\Debug\Ejercisio_05.csproj.AssemblyReference.cache
+D:\POO\POO1_Semana01\Ejercisio_05\obj\Debug\Ejercisio_05.csproj.CoreCompileInputs.cache
+D:\POO\POO1_Semana01\Ejercisio_05\obj\Debug\Ejercisio_05.exe
+D:\POO\POO1_Semana01\Ejercisio_05\obj\Debug\Ejercisio_05.pdb

@@ -1,0 +1,5 @@
+2,Terapia física,dd,2,Activo,Mon Sep 23 01:13:20 PET 2024,Wed Sep 23 01:13:20 PET 2026
+2,Terapia física,dd,2,Activo,Mon Sep 23 01:13:39 PET 2024,Wed Sep 23 01:13:39 PET 2026
+2,Terapia física,dd,2,Activo,Mon Sep 23 01:13:41 PET 2024,Wed Sep 23 01:13:41 PET 2026
+2,Terapia física,dd,2,Activo,Mon Sep 23 01:13:43 PET 2024,Wed Sep 23 01:13:43 PET 2026
+2,Terapia física,d,2,Activo,23/09/2024,23/09/2026

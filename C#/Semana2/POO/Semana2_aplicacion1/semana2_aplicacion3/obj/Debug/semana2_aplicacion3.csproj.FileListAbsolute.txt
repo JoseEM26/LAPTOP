@@ -1,0 +1,22 @@
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\semana2_aplicacion3.exe.config
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\semana2_aplicacion3.exe
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\semana2_aplicacion3.pdb
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\log4net.dll
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\log4net.pdb
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\log4net.xml
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion3\obj\Debug\semana2_aplicacion3.csproj.AssemblyReference.cache
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion3\obj\Debug\semana2_aplicacion3.csproj.CoreCompileInputs.cache
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion3\obj\Debug\semana2_.ACCDE186.Up2Date
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion3\obj\Debug\semana2_aplicacion3.exe
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion3\obj\Debug\semana2_aplicacion3.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\semana2_aplicacion3.exe.config
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\semana2_aplicacion3.exe
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\semana2_aplicacion3.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\log4net.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\log4net.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion3\bin\Debug\log4net.xml
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion3\obj\Debug\semana2_aplicacion3.csproj.AssemblyReference.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion3\obj\Debug\semana2_aplicacion3.csproj.CoreCompileInputs.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion3\obj\Debug\semana2_.ACCDE186.Up2Date
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion3\obj\Debug\semana2_aplicacion3.exe
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion3\obj\Debug\semana2_aplicacion3.pdb
