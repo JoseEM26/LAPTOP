@@ -20,7 +20,7 @@ namespace semana2_aplicacion5
 
 
             Console.WriteLine("-----------------------------------------------");
-             
+
             docente x = JsonConvert.DeserializeObject<docente>(cadenaJson);
             Console.WriteLine(x.nombre);
             Console.WriteLine(x.apellido);

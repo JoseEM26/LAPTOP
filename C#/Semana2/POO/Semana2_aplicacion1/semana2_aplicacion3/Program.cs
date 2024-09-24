@@ -17,11 +17,12 @@ namespace semana2_aplicacion3
             //string ruta = @"D:\Imágenes\POO\archivo.txt";
             string correo = ConfigurationManager.AppSettings["correo"].ToString();
             string password = ConfigurationManager.AppSettings["password"].ToString();
-            StreamWriter s = null;
+            //StreamWriter s = null;
+            StreamWriter s = new StreamWriter(ruta, true);
+
 
             try
             {
-                s = new StreamWriter(ruta, true);
                 s.WriteLine("esto es un mensaje nuevitossssssssssssssss");
                 s.WriteLine(correo);
                 s.WriteLine(password);

@@ -1,7 +1,1 @@
 
-Jose Angel
-Espinoza
-Intento de dividir por cero.
-Void Main(System.String[])
-Intento de dividir por cero.
-Void Main(System.String[])
