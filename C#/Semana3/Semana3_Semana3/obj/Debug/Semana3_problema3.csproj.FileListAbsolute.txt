@@ -1,0 +1,7 @@
+D:\POO\ConsoleApp1\Semana3_Semana3\bin\Debug\Semana3_Semana3.exe.config
+D:\POO\ConsoleApp1\Semana3_Semana3\bin\Debug\Semana3_Semana3.exe
+D:\POO\ConsoleApp1\Semana3_Semana3\bin\Debug\Semana3_Semana3.pdb
+D:\POO\ConsoleApp1\Semana3_Semana3\obj\Debug\Semana3_problema3.csproj.AssemblyReference.cache
+D:\POO\ConsoleApp1\Semana3_Semana3\obj\Debug\Semana3_problema3.csproj.CoreCompileInputs.cache
+D:\POO\ConsoleApp1\Semana3_Semana3\obj\Debug\Semana3_Semana3.exe
+D:\POO\ConsoleApp1\Semana3_Semana3\obj\Debug\Semana3_Semana3.pdb
