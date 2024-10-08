@@ -29,17 +29,45 @@ namespace Semana4_practice1.Controllers
             List<Pais> listaPais = p.consultarTodo();
             return View(listaPais);
         }
-
-        public ActionResult Actualizar()
-        {
-            return View();
-        }
-        [HttpPost]
+        /// //////////////////////////////////////////
+        [HttpGet]
         public ActionResult Actualizar(string id)
         {
-            
+            Pais objPais = p.ObtenerPais(id);
+
+            return View(objPais);
+        }
+        [HttpPost]
+        public ActionResult Actualizar(Pais obj)
+        {
+            int procesar = p.Actualizar(obj);
             return RedirectToAction("MostrarTodo");
 
+        }
+
+        [HttpGet]
+        public ActionResult Eliminar(string id)
+        {
+            Pais objPais = p.ObtenerPais(id);
+            return View(objPais);
+        }
+        [HttpPost, ActionName("Eliminar")]
+        public ActionResult Eliminar_Post(string id)
+        {
+            int objPais = p.Eliminar(id);
+
+            return RedirectToAction("MostrarTodo");
+        }
+
+        public ActionResult Create()
+        {
+            return View(new Pais());
+        }
+        [HttpPost]
+        public ActionResult Create(Pais obj)
+        {
+            int indicado = p.registrar(obj);
+            return RedirectToAction("MostrarTodo");
         }
     }
 }

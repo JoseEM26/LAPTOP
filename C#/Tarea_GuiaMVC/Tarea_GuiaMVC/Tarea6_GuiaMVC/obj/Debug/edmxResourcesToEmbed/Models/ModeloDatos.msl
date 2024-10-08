@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NegociosModelStoreContainer" CdmEntityContainer="NegociosEntities1">
+    <EntitySetMapping Name="Cargos">
+      <EntityTypeMapping TypeName="NegociosModel.Cargos">
+        <MappingFragment StoreEntitySet="Cargos">
+          <ScalarProperty Name="idcargo" ColumnName="idcargo" />
+          <ScalarProperty Name="desCargo" ColumnName="desCargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categorias">
+      <EntityTypeMapping TypeName="NegociosModel.Categorias">
+        <MappingFragment StoreEntitySet="Categorias">
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="NegociosModel.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="NomCliente" ColumnName="NomCliente" />
+          <ScalarProperty Name="DirCliente" ColumnName="DirCliente" />
+          <ScalarProperty Name="idpais" ColumnName="idpais" />
+          <ScalarProperty Name="fonoCliente" ColumnName="fonoCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Distritos">
+      <EntityTypeMapping TypeName="NegociosModel.Distritos">
+        <MappingFragment StoreEntitySet="Distritos">
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="nomDistrito" ColumnName="nomDistrito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleados">
+      <EntityTypeMapping TypeName="NegociosModel.Empleados">
+        <MappingFragment StoreEntitySet="Empleados">
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="ApeEmpleado" ColumnName="ApeEmpleado" />
+          <ScalarProperty Name="NomEmpleado" ColumnName="NomEmpleado" />
+          <ScalarProperty Name="FecNac" ColumnName="FecNac" />
+          <ScalarProperty Name="DirEmpleado" ColumnName="DirEmpleado" />
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="fonoEmpleado" ColumnName="fonoEmpleado" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="FecContrata" ColumnName="FecContrata" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="paises">
+      <EntityTypeMapping TypeName="NegociosModel.paises">
+        <MappingFragment StoreEntitySet="paises">
+          <ScalarProperty Name="Idpais" ColumnName="Idpais" />
+          <ScalarProperty Name="NombrePais" ColumnName="NombrePais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pedidoscabe">
+      <EntityTypeMapping TypeName="NegociosModel.pedidoscabe">
+        <MappingFragment StoreEntitySet="pedidoscabe">
+          <ScalarProperty Name="IdPedido" ColumnName="IdPedido" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="FechaPedido" ColumnName="FechaPedido" />
+          <ScalarProperty Name="FechaEntrega" ColumnName="FechaEntrega" />
+          <ScalarProperty Name="FechaEnvio" ColumnName="FechaEnvio" />
+          <ScalarProperty Name="EnvioPedido" ColumnName="EnvioPedido" />
+          <ScalarProperty Name="CantidaPedido" ColumnName="CantidaPedido" />
+          <ScalarProperty Name="Destinatario" ColumnName="Destinatario" />
+          <ScalarProperty Name="DirDestinatario" ColumnName="DirDestinatario" />
+          <ScalarProperty Name="CiuDestinatario" ColumnName="CiuDestinatario" />
+          <ScalarProperty Name="RefDestnatario" ColumnName="RefDestnatario" />
+          <ScalarProperty Name="DepDestinatario" ColumnName="DepDestinatario" />
+          <ScalarProperty Name="PaiDestinatario" ColumnName="PaiDestinatario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Productos">
+      <EntityTypeMapping TypeName="NegociosModel.Productos">
+        <MappingFragment StoreEntitySet="Productos">
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="NomProducto" ColumnName="NomProducto" />
+          <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="CantxUnidad" ColumnName="CantxUnidad" />
+          <ScalarProperty Name="PrecioUnidad" ColumnName="PrecioUnidad" />
+          <ScalarProperty Name="UnidadesEnExistencia" ColumnName="UnidadesEnExistencia" />
+          <ScalarProperty Name="UnidadesEnPedido" ColumnName="UnidadesEnPedido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedores">
+      <EntityTypeMapping TypeName="NegociosModel.Proveedores">
+        <MappingFragment StoreEntitySet="Proveedores">
+          <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+          <ScalarProperty Name="NomProveedor" ColumnName="NomProveedor" />
+          <ScalarProperty Name="DirProveedor" ColumnName="DirProveedor" />
+          <ScalarProperty Name="NomContacto" ColumnName="NomContacto" />
+          <ScalarProperty Name="CargoContacto" ColumnName="CargoContacto" />
+          <ScalarProperty Name="idpais" ColumnName="idpais" />
+          <ScalarProperty Name="fonoProveedor" ColumnName="fonoProveedor" />
+          <ScalarProperty Name="FaxProveedor" ColumnName="FaxProveedor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pedidosdeta">
+      <EntityTypeMapping TypeName="NegociosModel.pedidosdeta">
+        <MappingFragment StoreEntitySet="pedidosdeta">
+          <ScalarProperty Name="IdPedido" ColumnName="IdPedido" />
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="PrecioUnidad" ColumnName="PrecioUnidad" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="USP_PRODUCTOlISTAR" FunctionName="NegociosModel.Store.USP_PRODUCTOlISTAR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NegociosModel.USP_PRODUCTOlISTAR_Result">
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="NomProducto" ColumnName="NomProducto" />
+          <ScalarProperty Name="PrecioUnidad" ColumnName="PrecioUnidad" />
+          <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
+          <ScalarProperty Name="NomProveedor" ColumnName="NomProveedor" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

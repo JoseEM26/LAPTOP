@@ -183,6 +183,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Pais\MostrarTodo.cshtml" />
     <Content Include="Views\Pais\MostrarPais.cshtml" />
+    <Content Include="Views\Pais\Actualizar.cshtml" />
+    <Content Include="Views\Pais\Eliminar.cshtml" />
+    <Content Include="Views\Pais\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

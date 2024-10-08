@@ -22,7 +22,7 @@ namespace Semana4_practice1.Dao.DaoImpl
                 con = new SqlConnection(ConfigurationManager.ConnectionStrings["bd"].ConnectionString);
                 con.Open();
 
-                cmd = new SqlCommand("",con);
+                cmd = new SqlCommand("usp_paises_crud", con);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@indicador", "Actualizar");
                 cmd.Parameters.AddWithValue("@country_id", p.country_id);
@@ -100,7 +100,36 @@ namespace Semana4_practice1.Dao.DaoImpl
 
         public int Eliminar(string id)
         {
-            throw new NotImplementedException();
+            SqlConnection con = null;
+            SqlCommand cmd = null;
+            int Result = -1;
+
+            try
+            {
+                con = new SqlConnection(ConfigurationManager.ConnectionStrings["bd"].ConnectionString);
+                con.Open();
+
+                cmd = new SqlCommand("usp_paises_crud", con);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@indicador", "Eliminar");
+                cmd.Parameters.AddWithValue("@country_id", id);
+                cmd.Parameters.AddWithValue("@country_name", "");
+                cmd.Parameters.AddWithValue("@region_id",0);
+
+                Result = cmd.ExecuteNonQuery();
+
+
+
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return Result;
         }
 
         public Pais ObtenerPais(string id)
@@ -150,8 +179,37 @@ namespace Semana4_practice1.Dao.DaoImpl
 
         public int registrar(Pais p)
         {
-            throw new NotImplementedException();
 
+            SqlConnection con = null;
+            SqlCommand cmd = null;
+            int Result = -1;
+
+            try
+            {
+                con = new SqlConnection(ConfigurationManager.ConnectionStrings["bd"].ConnectionString);
+                con.Open();
+
+                cmd = new SqlCommand("usp_paises_crud", con);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@indicador", "Insertar");
+                cmd.Parameters.AddWithValue("@country_id", p.country_id);
+                cmd.Parameters.AddWithValue("@country_name", p.country_name);
+                cmd.Parameters.AddWithValue("@region_id", p.region_id);
+
+                Result = cmd.ExecuteNonQuery();
+
+
+
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return Result;
 
         }
     }
