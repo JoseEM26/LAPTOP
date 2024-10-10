@@ -1,6 +1,8 @@
 package clases;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -8,6 +10,8 @@ import java.util.Date;
 
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
 public class Tratamientos {
       private int idTramamiento;
@@ -122,7 +126,42 @@ public class Tratamientos {
 			}
 		} catch (Exception e) {
 			System.out.println("Ocurrio un erro");
+			
+		
 		}
+	}
+	
+	public void MostrarRegistroTabla(JTable tabla) {
+		DefaultTableModel model=new DefaultTableModel();
+		
+		model.addColumn("ID Tratamiento");
+		model.addColumn("Tipo Tratamiento");
+		model.addColumn("Paciente nombre");
+		model.addColumn("DNI");
+		model.addColumn("Medico nombre");
+        tabla.setModel(model);
+        
+        String nombreruta="Tratamiento.txt";
+        File ruta=new File(nombreruta);
+        
+        try {
+            BufferedReader br=new BufferedReader(new FileReader(ruta)); 	
+//            String firstLine= br.readLine().trim();
+            
+            Object[] tableLines= br.lines().toArray();
+            
+            for(int i=0; i<tableLines.length ;i++) {
+            	String line =tableLines[i].toString().trim();
+            	String[] datarow=line.split(",");
+            	model.addRow(datarow);
+            	
+            }
+
+		} catch (Exception e) {
+			JOptionPane.showConfirmDialog(null,e.getMessage());
+		}        
+        
+		
 	}
 	
 	

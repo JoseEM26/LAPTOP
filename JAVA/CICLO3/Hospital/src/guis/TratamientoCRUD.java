@@ -14,6 +14,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 import java.awt.Font;
 import javax.swing.JTextField;
@@ -38,6 +39,8 @@ public class TratamientoCRUD extends JDialog {
 	private JButton btnCrearCita;
 	private JButton btnActualizarTabla;
 	private JButton btnCrearFile;
+	DefaultTableModel model= new DefaultTableModel();
+	Tratamientos tratamiento= new Tratamientos();
 
 	/**
 	 * Launch the application.
@@ -56,15 +59,18 @@ public class TratamientoCRUD extends JDialog {
 	 * Create the dialog.
 	 */
 	public TratamientoCRUD() {
-		setBounds(100, 100, 695, 396);
+		setBounds(100, 100, 967, 396);
 		getContentPane().setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(296, 10, 375, 339);
+		scrollPane.setBounds(296, 10, 647, 339);
 		getContentPane().add(scrollPane);
 		
 		table = new JTable();
 		scrollPane.setViewportView(table);
+		///////////
+		
+		///////////
 		
 		JLabel lblNewLabel = new JLabel("TRATAMIENTOS");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 19));
@@ -136,6 +142,11 @@ public class TratamientoCRUD extends JDialog {
 		getContentPane().add(btnELiminarCita);
 		
 		btnActualizarTabla = new JButton("Actualizar Tabla");
+		btnActualizarTabla.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				actionPerformedBtnActualizarTablaJButton(e);
+			}
+		});
 		btnActualizarTabla.setBounds(153, 328, 133, 21);
 		getContentPane().add(btnActualizarTabla);
 		
@@ -147,6 +158,7 @@ public class TratamientoCRUD extends JDialog {
 		});
 		btnCrearFile.setBounds(10, 328, 133, 21);
 		getContentPane().add(btnCrearFile);
+		tratamiento.MostrarRegistroTabla(table);
 	}
 	protected void actionPerformedBtnCrearCitaJButton(ActionEvent e) {
 		Tratamientos tratamiento=new Tratamientos(LeerIDTratamiento(),LeerNombrePaciente(),LeerDNIPaciente(),LeerNombreDoctor(),leerTipoTratamiento(),2);
@@ -162,6 +174,9 @@ public class TratamientoCRUD extends JDialog {
 	     Tratamientos t=new Tratamientos();
 	     t.CreateArchivoTXT();
 	     
+	}
+	protected void actionPerformedBtnActualizarTablaJButton(ActionEvent e) {
+	    tratamiento.MostrarRegistroTabla(table);
 	}
 	/////////////////////////////////////////////////////////////////////
 	/////////////////////////////////////////////////////////////////////
@@ -228,6 +243,7 @@ public class TratamientoCRUD extends JDialog {
 	    SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy"); // Define el formato
 	    return formato.format(calendario.getTime()); // Devuelve la fecha formateada como String
 	}
+	
 }
 
 	
