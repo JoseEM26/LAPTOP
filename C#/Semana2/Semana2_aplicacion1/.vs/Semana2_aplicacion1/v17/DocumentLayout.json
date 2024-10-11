@@ -1,50 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\",
+  "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Semana2\\Semana2_aplicacion1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F7FB22C-19D7-42DD-BD65-F3F08828A7D8}|semana2_aplicacion4\\semana2_aplicacion4.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F7FB22C-19D7-42DD-BD65-F3F08828A7D8}|semana2_aplicacion4\\semana2_aplicacion4.csproj|solutionrelative:semana2_aplicacion4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCC4F08F-E1FD-46D4-BEE3-C53568AEC7F6}|semana2_aplicacion3\\semana2_aplicacion3.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\poo\\semana2_aplicacion1\\semana2_aplicacion3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCC4F08F-E1FD-46D4-BEE3-C53568AEC7F6}|semana2_aplicacion3\\semana2_aplicacion3.csproj|solutionrelative:semana2_aplicacion3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{629EFB80-15FC-4D3C-ACD8-D5E5A4B4F780}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\poo\\semana2_aplicacion1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{629EFB80-15FC-4D3C-ACD8-D5E5A4B4F780}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{629EFB80-15FC-4D3C-ACD8-D5E5A4B4F780}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\poo\\semana2_aplicacion1\\consoleapp1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{629EFB80-15FC-4D3C-ACD8-D5E5A4B4F780}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C78DA85D-EA33-4BE4-BEB6-6AD380FD25FE}|semana2_aplicacion5\\semana2_aplicacion5.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C78DA85D-EA33-4BE4-BEB6-6AD380FD25FE}|semana2_aplicacion5\\semana2_aplicacion5.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Semana2\\Semana2_aplicacion1\\semana2_aplicacion5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C78DA85D-EA33-4BE4-BEB6-6AD380FD25FE}|semana2_aplicacion5\\semana2_aplicacion5.csproj|solutionrelative:semana2_aplicacion5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C78DA85D-EA33-4BE4-BEB6-6AD380FD25FE}|semana2_aplicacion5\\semana2_aplicacion5.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion5\\docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C78DA85D-EA33-4BE4-BEB6-6AD380FD25FE}|semana2_aplicacion5\\semana2_aplicacion5.csproj|solutionrelative:semana2_aplicacion5\\docente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F7FB22C-19D7-42DD-BD65-F3F08828A7D8}|semana2_aplicacion4\\semana2_aplicacion4.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\semana2\\semana2_aplicacion1\\semana2_aplicacion4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F7FB22C-19D7-42DD-BD65-F3F08828A7D8}|semana2_aplicacion4\\semana2_aplicacion4.csproj|solutionrelative:semana2_aplicacion4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCC4F08F-E1FD-46D4-BEE3-C53568AEC7F6}|semana2_aplicacion3\\semana2_aplicacion3.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion3\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{BCC4F08F-E1FD-46D4-BEE3-C53568AEC7F6}|semana2_aplicacion3\\semana2_aplicacion3.csproj|solutionrelative:semana2_aplicacion3\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8038678A-D807-4905-BB3E-B169CF4C04B0}|SEMANA2_APLICACION2\\SEMANA2_APLICACION2.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8038678A-D807-4905-BB3E-B169CF4C04B0}|SEMANA2_APLICACION2\\SEMANA2_APLICACION2.csproj|solutionrelative:semana2_aplicacion2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8038678A-D807-4905-BB3E-B169CF4C04B0}|SEMANA2_APLICACION2\\SEMANA2_APLICACION2.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion2\\trabajador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8038678A-D807-4905-BB3E-B169CF4C04B0}|SEMANA2_APLICACION2\\SEMANA2_APLICACION2.csproj|solutionrelative:semana2_aplicacion2\\trabajador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8038678A-D807-4905-BB3E-B169CF4C04B0}|SEMANA2_APLICACION2\\SEMANA2_APLICACION2.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion2\\controladorbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8038678A-D807-4905-BB3E-B169CF4C04B0}|SEMANA2_APLICACION2\\SEMANA2_APLICACION2.csproj|solutionrelative:semana2_aplicacion2\\controladorbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8038678A-D807-4905-BB3E-B169CF4C04B0}|SEMANA2_APLICACION2\\SEMANA2_APLICACION2.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion2\\inter_trabajador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8038678A-D807-4905-BB3E-B169CF4C04B0}|SEMANA2_APLICACION2\\SEMANA2_APLICACION2.csproj|solutionrelative:semana2_aplicacion2\\inter_trabajador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCC4F08F-E1FD-46D4-BEE3-C53568AEC7F6}|semana2_aplicacion3\\semana2_aplicacion3.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\semana2\\semana2_aplicacion1\\semana2_aplicacion3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCC4F08F-E1FD-46D4-BEE3-C53568AEC7F6}|semana2_aplicacion3\\semana2_aplicacion3.csproj|solutionrelative:semana2_aplicacion3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,143 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 71,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\ConsoleApp1\\App.config",
-              "RelativeDocumentMoniker": "ConsoleApp1\\App.config",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\ConsoleApp1\\App.config",
-              "RelativeToolTip": "ConsoleApp1\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-09-29T05:40:15.317Z",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Semana2\\Semana2_aplicacion1\\semana2_aplicacion5\\Program.cs",
+              "RelativeDocumentMoniker": "semana2_aplicacion5\\Program.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Semana2\\Semana2_aplicacion1\\semana2_aplicacion5\\Program.cs",
+              "RelativeToolTip": "semana2_aplicacion5\\Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T05:23:29.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Semana2\\Semana2_aplicacion1\\semana2_aplicacion4\\Program.cs",
+              "RelativeDocumentMoniker": "semana2_aplicacion4\\Program.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Semana2\\Semana2_aplicacion1\\semana2_aplicacion4\\Program.cs",
+              "RelativeToolTip": "semana2_aplicacion4\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T03:59:17.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\ConsoleApp1\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\ConsoleApp1\\Program.cs",
-              "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T05:40:05.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion5\\Program.cs",
-              "RelativeDocumentMoniker": "semana2_aplicacion5\\Program.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion5\\Program.cs",
-              "RelativeToolTip": "semana2_aplicacion5\\Program.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwC4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T05:23:29.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "docente.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion5\\docente.cs",
-              "RelativeDocumentMoniker": "semana2_aplicacion5\\docente.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion5\\docente.cs",
-              "RelativeToolTip": "semana2_aplicacion5\\docente.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T17:39:28.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion4\\Program.cs",
-              "RelativeDocumentMoniker": "semana2_aplicacion4\\Program.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion4\\Program.cs",
-              "RelativeToolTip": "semana2_aplicacion4\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T05:22:59.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion3\\App.config",
-              "RelativeDocumentMoniker": "semana2_aplicacion3\\App.config",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion3\\App.config",
-              "RelativeToolTip": "semana2_aplicacion3\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-09-24T05:12:52.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion3\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Semana2\\Semana2_aplicacion1\\semana2_aplicacion3\\Program.cs",
               "RelativeDocumentMoniker": "semana2_aplicacion3\\Program.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\semana2_aplicacion3\\Program.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Semana2\\Semana2_aplicacion1\\semana2_aplicacion3\\Program.cs",
               "RelativeToolTip": "semana2_aplicacion3\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAApAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T05:12:42.284Z",
+              "WhenOpened": "2024-10-11T03:58:20.765Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "trabajador.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\SEMANA2_APLICACION2\\trabajador.cs",
-              "RelativeDocumentMoniker": "SEMANA2_APLICACION2\\trabajador.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\SEMANA2_APLICACION2\\trabajador.cs",
-              "RelativeToolTip": "SEMANA2_APLICACION2\\trabajador.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T05:12:24.019Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "controladorBD.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\SEMANA2_APLICACION2\\controladorBD.cs",
-              "RelativeDocumentMoniker": "SEMANA2_APLICACION2\\controladorBD.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\SEMANA2_APLICACION2\\controladorBD.cs",
-              "RelativeToolTip": "SEMANA2_APLICACION2\\controladorBD.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T05:12:12.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\SEMANA2_APLICACION2\\Program.cs",
-              "RelativeDocumentMoniker": "SEMANA2_APLICACION2\\Program.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\SEMANA2_APLICACION2\\Program.cs",
-              "RelativeToolTip": "SEMANA2_APLICACION2\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T05:11:59.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Inter_trabajador.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\SEMANA2_APLICACION2\\Inter_trabajador.cs",
-              "RelativeDocumentMoniker": "SEMANA2_APLICACION2\\Inter_trabajador.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POO\\Semana2_aplicacion1\\SEMANA2_APLICACION2\\Inter_trabajador.cs",
-              "RelativeToolTip": "SEMANA2_APLICACION2\\Inter_trabajador.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T05:11:54.281Z"
             }
           ]
         }
