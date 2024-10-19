@@ -1,16 +1,20 @@
 package clases;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.StringJoiner;
 
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTable;
+import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 public class Tratamientos {
@@ -165,9 +169,108 @@ public class Tratamientos {
 	}
 	
 	
+	
+	
+	public void EliminarRegistrotabla(JTable tabla,JTextField Codigo) {
+		
+		DefaultTableModel model=(DefaultTableModel)tabla.getModel();		
+		
+		for(int i=0; i<model.getRowCount();i++) {
+			if(((String)model.getValueAt(i, 0)).equals(Codigo.getText())) {
+				model.removeRow(i);
+				break;
+			}
+		}
+		
+		try {
+			PrintWriter write = new PrintWriter("Tratamiento.txt");
+			write.print("");
+			write.close();
+		} catch (Exception e) {
+            JOptionPane.showMessageDialog(null,"Ocurrio un error");
+		}
+	
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(new File("Tratamiento.txt")))){
+			
+			for(int row=0; row<tabla.getRowCount();row++) {
+				StringJoiner  joiner= new StringJoiner(",");
+
+				 for(int i=0; i<tabla.getColumnCount();i++) {
+					 Object obj = tabla.getValueAt(row, i);
+					 String values= obj==null? "null":obj.toString();
+					 joiner.add(values);
+				 }
+				 System.out.println(joiner.toString());
+				 bw.write(joiner.toString());
+				 bw.newLine();
+			}
+		} catch (Exception e) {
+            JOptionPane.showMessageDialog(null,"Ocurrio un error");
+		}
+	}
+
+	
+	public void SeleccionarMedicamento(JTable tabla) {
+		try {
+			int fila= tabla.getSelectedRow();
+			
+			if(fila>=0) {
+				setIdTramamiento(Integer.parseInt(tabla.getValueAt(fila, 0).toString()));
+				setTipoTratamiento(tabla.getValueAt(fila, 1).toString());
+				setPaciente(tabla.getValueAt(fila, 2).toString());
+				setDNIpaciente(Integer.parseInt(tabla.getValueAt(fila, 3).toString()));
+                setMedico(tabla.getValueAt(fila, 4).toString());
+				
+			}
+		} catch (Exception e) {
+            JOptionPane.showMessageDialog(null,"Ocurrio un error");
+		}
+	}
+	
+	public void EditarCita(JTable tabla) {
+
+		try {
+			PrintWriter write = new PrintWriter("Tratamiento.txt");
+			write.print("");
+			write.close();
+		} catch (Exception e) {
+            JOptionPane.showMessageDialog(null,"Ocurrio un error");
+		}
+	
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(new File("Tratamiento.txt")))){
+			
+			for(int row=0; row<tabla.getRowCount();row++) {
+				StringJoiner  joiner= new StringJoiner(",");
+
+				 for(int i=0; i<tabla.getColumnCount();i++) {
+					 Object obj = tabla.getValueAt(row, i);
+					 String values= obj==null? "null":obj.toString();
+					 joiner.add(values);
+				 }
+				 System.out.println(joiner.toString());
+				 bw.write(joiner.toString());
+				 bw.newLine();
+			}
+		} catch (Exception e) {
+            JOptionPane.showMessageDialog(null,"Ocurrio un error");
+		}
+	}
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
 
-
-}

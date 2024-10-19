@@ -41,6 +41,8 @@ public class TratamientoCRUD extends JDialog {
 	private JButton btnCrearFile;
 	DefaultTableModel model= new DefaultTableModel();
 	Tratamientos tratamiento= new Tratamientos();
+	private JButton btnSeleccionarMedicamen;
+	private JButton btnActualizarCita;
 
 	/**
 	 * Launch the application.
@@ -133,12 +135,13 @@ public class TratamientoCRUD extends JDialog {
 		btnCrearCita.setBounds(10, 223, 133, 21);
 		getContentPane().add(btnCrearCita);
 		
-		JButton btnActualizarCIta = new JButton("Actualizar Cita");
-		btnActualizarCIta.setBounds(153, 223, 133, 21);
-		getContentPane().add(btnActualizarCIta);
-		
 		JButton btnELiminarCita = new JButton("Eliminar Cita");
-		btnELiminarCita.setBounds(10, 248, 273, 21);
+		btnELiminarCita.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				actionPerformedBtnELiminarCitaJButton(e);
+			}
+		});
+		btnELiminarCita.setBounds(10, 248, 276, 21);
 		getContentPane().add(btnELiminarCita);
 		
 		btnActualizarTabla = new JButton("Actualizar Tabla");
@@ -159,6 +162,24 @@ public class TratamientoCRUD extends JDialog {
 		btnCrearFile.setBounds(10, 328, 133, 21);
 		getContentPane().add(btnCrearFile);
 		tratamiento.MostrarRegistroTabla(table);
+		
+		btnSeleccionarMedicamen = new JButton("Seleccionar");
+		btnSeleccionarMedicamen.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				actionPerformedBtnSeleccionarMedicamenJButton(e);
+			}
+		});
+		btnSeleccionarMedicamen.setBounds(10, 279, 276, 21);
+		getContentPane().add(btnSeleccionarMedicamen);
+		
+		btnActualizarCita = new JButton("Actualizar Cita");
+		btnActualizarCita.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				actionPerformedBtnActualizarCitaJButton(e);
+			}
+		});
+		btnActualizarCita.setBounds(153, 223, 133, 21);
+		getContentPane().add(btnActualizarCita);
 	}
 	protected void actionPerformedBtnCrearCitaJButton(ActionEvent e) {
 		Tratamientos tratamiento=new Tratamientos(LeerIDTratamiento(),LeerNombrePaciente(),LeerDNIPaciente(),LeerNombreDoctor(),leerTipoTratamiento(),2);
@@ -166,17 +187,44 @@ public class TratamientoCRUD extends JDialog {
 	    		tratamiento.getIdTramamiento(),
 	    		tratamiento.getTipoTratamiento(),
 	    		tratamiento.getPaciente(), 
-	    		tratamiento.getDNIpaciente());
+	    		tratamiento.getDNIpaciente(),
+	            tratamiento.getMedico());
 	}
 	
 	
 	protected void actionPerformedBtnCrearFileJButton(ActionEvent e) {
 	     Tratamientos t=new Tratamientos();
 	     t.CreateArchivoTXT();
+	     txtIDTratamiento.setText("");
+			txtDniPaciente.setText("");
+			txtNombrePaciente.setText("");
 	     
 	}
 	protected void actionPerformedBtnActualizarTablaJButton(ActionEvent e) {
 	    tratamiento.MostrarRegistroTabla(table);
+	    txtIDTratamiento.setText("");
+		txtDniPaciente.setText("");
+		txtNombrePaciente.setText("");
+	}
+	protected void actionPerformedBtnELiminarCitaJButton(ActionEvent e) {
+	    tratamiento.EliminarRegistrotabla(table, txtIDTratamiento);
+	    txtIDTratamiento.setText("");
+		txtDniPaciente.setText("");
+		txtNombrePaciente.setText("");
+	}
+	protected void actionPerformedBtnSeleccionarMedicamenJButton(ActionEvent e) {
+		txtIDTratamiento.setText(String.valueOf(tratamiento.getIdTramamiento()));
+		txtNombrePaciente.setText(tratamiento.getPaciente());
+		txtDniPaciente.setText(String.valueOf(tratamiento.getDNIpaciente()));
+		cmbNombreMedico.setSelectedItem(tratamiento.getMedico());
+		cmbTipoTratamiento.setSelectedItem(tratamiento.getTipoTratamiento());
+		tratamiento.SeleccionarMedicamento(table);
+		
+		
+	}  
+	protected void actionPerformedBtnActualizarCitaJButton(ActionEvent e) {
+		
+		tratamiento.EditarCita(table);
 	}
 	/////////////////////////////////////////////////////////////////////
 	/////////////////////////////////////////////////////////////////////
@@ -200,9 +248,9 @@ public class TratamientoCRUD extends JDialog {
 	}
 	
 	
-	public void CrearRegistroTratamimento(int id, String tipoTratamiento, String nombrePaciente, int DNIPaciente) {
+	public void CrearRegistroTratamimento(int id, String tipoTratamiento, String nombrePaciente, int DNIPaciente, String doctor) {
 	    try (FileWriter f = new FileWriter("Tratamiento.txt", true)) { // true para agregar
-	        f.write(id + "," + tipoTratamiento + "," + nombrePaciente + "," + DNIPaciente + ","+ estado() + "," + fechaInicio() + "," + fechaFinDate().toString() + "\n");
+	        f.write(id + "," + tipoTratamiento + "," + nombrePaciente + "," + DNIPaciente +","+doctor+ ","+ estado() + "," + fechaInicio() + "," + fechaFinDate().toString() + "\n");
 	        System.out.println("Se registró correctamente");
 	    } catch (Exception e) {
 	        JOptionPane.showMessageDialog(null, "Ocurrió un error: " + e.getMessage());
