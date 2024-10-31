@@ -1,0 +1,106 @@
+﻿@model WebEmpleadoCrud.Models.Empleado
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Desear eliminar el registro?</h3>
+<div>
+    <h4>Empleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.employee_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.employee_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.first_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.first_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.last_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.last_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hire_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hire_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.job_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.job_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.manager_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manager_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.department_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.department_id)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="hidden" name="codigo" value="@Model.employee_id" />
+
+            <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+            @Html.ActionLink("Listado Total", "Inicio")
+        </div>
+    }
+</div>
