@@ -1,4 +1,4 @@
-package com.Trabajador.Controller;
+package com.trabajador.Controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.Trabajador.Mantenimiento.Mantenimiento;
-import com.Trabajador.model.Trabajador;
+import com.trabajador.mantenimiento.MantenimientoTrabajador;
+import com.trabajador.model.Trabajador;
 
 /**
  * Servlet implementation class TrabajadorServlt
@@ -46,7 +46,7 @@ public class TrabajadorServlt extends HttpServlet {
 
 		switch (boton) {
 		case "registrar": {
-			insertar(request, response);
+			insert(request, response);
 			break;
 		}
 		case "eliminar": {
@@ -55,15 +55,15 @@ public class TrabajadorServlt extends HttpServlet {
 			break;
 		}
 		default:
-			update(request, response);
+			actualizar(request, response);
+
 			break;
 		}
-		
 		request.getRequestDispatcher("Index.jsp").forward(request, response);
-
 	}
 
-	private void update(HttpServletRequest request, HttpServletResponse response) {
+	private void actualizar(HttpServletRequest request, HttpServletResponse response) {
+
 		try {
 			Trabajador t = new Trabajador();
 			t.setDni(Integer.parseInt(request.getParameter("dni")));
@@ -73,28 +73,31 @@ public class TrabajadorServlt extends HttpServlet {
 			t.setDireccion(request.getParameter("direccion"));
 			t.setFechaNacimiento(request.getParameter("fecha"));
 
-			int ok = new Mantenimiento().actualizar(t);
+			int ok = new MantenimientoTrabajador().actualizar(t);
 
 			if (ok != 0) {
 				request.setAttribute("mensaje",
-						"<script>Swal.fire({title: 'EXITO!!!!' ,text: 'Actualizacion Correctamente!' ,icon: 'success' })  </script>");
+						"<script>Swal.fire({title: 'EXITO!!!!' ,text: 'actualizar Correctamente!' ,icon: 'success' })  </script>");
 			} else {
 				request.setAttribute("mensaje",
-						"<script>Swal.fire({title: 'ERROR!!!!' ,text: 'Error al ejecutar Actualizacion!' ,icon: 'error' })  </script>");
+						"<script>Swal.fire({title: 'ERROR!!!!' ,text: 'Error al ejecutar actualizar!' ,icon: 'error' })  </script>");
 			}
 
 		} catch (Exception e) {
 			request.setAttribute("mensaje",
-					"<script>Swal.fire({title: 'ERROR!!!!' ,text: 'Ocurrio un error al ingresar los datos!' ,icon: 'error' })  </script>");
+					"<script>Swal.fire({title: 'ERROR!!!!' ,text: 'Ocurrio un error al ingresar los datos actualizar!' ,icon: 'error' })  </script>");
+			System.out.println("error controlador actualizar");
 		}
 
 	}
 
-	private void eliminar(HttpServletRequest request, HttpServletResponse response) {
-		try {
-			int codigo = Integer.parseInt(request.getParameter("dni"));
+	
 
-			int ok = new Mantenimiento().eliminar(codigo);
+	private void eliminar(HttpServletRequest request, HttpServletResponse response) {
+
+		try {
+			
+			int ok = new MantenimientoTrabajador().eliminar(Integer.parseInt(request.getParameter("dni")));
 
 			if (ok != 0) {
 				request.setAttribute("mensaje",
@@ -106,12 +109,17 @@ public class TrabajadorServlt extends HttpServlet {
 
 		} catch (Exception e) {
 			request.setAttribute("mensaje",
-					"<script>Swal.fire({title: 'ERROR!!!!' ,text: 'Ocurrio un error al ingresar los datos!' ,icon: 'error' })  </script>");
+					"<script>Swal.fire({title: 'ERROR!!!!' ,text: 'Ocurrio un error al ingresar los datos eliminar!' ,icon: 'error' })  </script>");
+			System.out.println("error controlador eliminar");
+
 		}
 
 	}
 
-	private void insertar(HttpServletRequest request, HttpServletResponse response) {
+	
+
+	private void insert(HttpServletRequest request, HttpServletResponse response) {
+
 		try {
 			Trabajador t = new Trabajador();
 			t.setDni(Integer.parseInt(request.getParameter("dni")));
@@ -121,7 +129,7 @@ public class TrabajadorServlt extends HttpServlet {
 			t.setDireccion(request.getParameter("direccion"));
 			t.setFechaNacimiento(request.getParameter("fecha"));
 
-			int ok = new Mantenimiento().Insertar(t);
+			int ok = new MantenimientoTrabajador().Registrar(t);
 
 			if (ok != 0) {
 				request.setAttribute("mensaje",
@@ -133,7 +141,9 @@ public class TrabajadorServlt extends HttpServlet {
 
 		} catch (Exception e) {
 			request.setAttribute("mensaje",
-					"<script>Swal.fire({title: 'ERROR!!!!' ,text: 'Ocurrio un error al ingresar los datos!' ,icon: 'error' })  </script>");
+					"<script>Swal.fire({title: 'ERROR!!!!' ,text: 'Ocurrio un error al ingresar los datos insertar!' ,icon: 'error' })  </script>");
+			System.out.println("error controlador insertar");
+
 		}
 
 	}
