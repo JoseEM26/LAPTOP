@@ -162,7 +162,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Ejercisio01" path="/Ejercisio01" reloadable="true" source="org.eclipse.jst.jee.server:Ejercisio01"/><Context docBase="Ejercisio02" path="/Ejercisio02" reloadable="true" source="org.eclipse.jst.jee.server:Ejercisio02"/><Context docBase="Ejercisio04" path="/Ejercisio04" reloadable="true" source="org.eclipse.jst.jee.server:Ejercisio04"/><Context docBase="Ejercisio05" path="/Ejercisio05" reloadable="true" source="org.eclipse.jst.jee.server:Ejercisio05"/></Host>
+      <Context docBase="Ejercisio01" path="/Ejercisio01" reloadable="true" source="org.eclipse.jst.jee.server:Ejercisio01"/><Context docBase="Ejercisio02" path="/Ejercisio02" reloadable="true" source="org.eclipse.jst.jee.server:Ejercisio02"/><Context docBase="Ejercisio04" path="/Ejercisio04" reloadable="true" source="org.eclipse.jst.jee.server:Ejercisio04"/><Context docBase="Ejercisio05" path="/Ejercisio05" reloadable="true" source="org.eclipse.jst.jee.server:Ejercisio05"/><Context docBase="Ejercisio6_tabla" path="/Ejercisio6_tabla" reloadable="true" source="org.eclipse.jst.jee.server:Ejercisio6_tabla"/><Context docBase="sesion04" path="/sesion01" reloadable="true" source="org.eclipse.jst.jee.server:sesion04"/><Context docBase="Ejercisio7s_tabla2" path="/Ejercisio7s_tabla2" reloadable="true" source="org.eclipse.jst.jee.server:Ejercisio7s_tabla2"/></Host>
     </Engine>
   </Service>
 </Server>

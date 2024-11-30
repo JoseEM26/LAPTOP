@@ -136,7 +136,7 @@ public class TrabajadorServlt extends HttpServlet {
 						"<script>Swal.fire({title: 'EXITO!!!!' ,text: 'Insertar Correctamente!' ,icon: 'success' })  </script>");
 			} else {
 				request.setAttribute("mensaje",
-						"<script>Swal.fire({title: 'ERROR!!!!' ,text: 'Error al ejecutar Insertar!' ,icon: 'error' })  </script>");
+						"<script>Swal.fire({title: 'ERROR!!!!' ,text: 'Error al ejecutar Insertars!' ,icon: 'error' })  </script>");
 			}
 
 		} catch (Exception e) {
