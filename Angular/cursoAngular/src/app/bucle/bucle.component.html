@@ -1,0 +1,14 @@
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let persona of persona">
+        <td>{{persona.nombre}}</td>
+        <td>{{persona.edad}}</td>
+      </tr>
+    </tbody>
+  </table>

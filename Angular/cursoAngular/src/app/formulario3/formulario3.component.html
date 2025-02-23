@@ -1,0 +1,43 @@
+<div class="card">
+  <div class="card-body">
+    <div class="mb-4">
+      <form [formGroup]="formUser">
+        <label class="form-label"> Nombre </label>
+        <input
+          type="text"
+          formControlName="name"
+          class="form-control"
+          placeholder="Ingrese su nombre"
+        />
+        <div
+          class="alert alert-danger mt-2"
+          [hidden]="getName.valid || getName.pristine"
+        >
+          ingrese correctamente su nombre
+        </div>
+
+        <input
+          type="text"
+          name=""
+          formControlName="email"
+          class="form-control mt-2"
+          placeholder="Ingrese su email"
+        />
+        <div
+          class="alert alert-danger"
+          [hidden]="getEmail.valid || getEmail.pristine"
+        >
+          <span *ngIf="getEmail.errors?.['required']"
+            >No puede dejar este campo vacio</span
+          >
+          <span *ngIf="getEmail.errors?.['email']"
+            >Estructura de email invalido</span
+          >
+        </div>
+
+        <button class="btn btn-success mt-2" [disabled]="formUser.invalid" (click)="procesar()">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+{{formUser.value| json}}
