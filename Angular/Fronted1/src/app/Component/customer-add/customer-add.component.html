@@ -1,0 +1,25 @@
+<div class="container">
+    <p>customer-add works!</p>
+
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-descedby="emailHelp" name="firstName" [(ngModel)]="firstName" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label" >Last Name</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" name="lastName" [(ngModel)]="lastName" required>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">EMAIL</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="email" [(ngModel)]="email" required>
+      </div>
+    
+    <button type="button" class="btn btn-primary" (click)="addCustomer()" >Submit</button>
+  </form>
+  
+</div>
+
+{{lastName}} <br>
+{{firstName}} <br>
+{{email}}

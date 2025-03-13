@@ -1,0 +1,23 @@
+[
+  {
+    "nombre": "AAAAA",
+    "email": "joseangel@gmai.com",
+    "course": "matematicas",
+    "id": 100,
+    "age": 20
+  },
+  {
+    "nombre": "EEEE",
+    "email": "Ivana@gmai.com",
+    "course": "COunidacaion",
+    "id": 200,
+    "age": 8
+  },
+  {
+    "nombre": "IIII",
+    "email": "Naydelin@gmai.com",
+    "course": "Informatica",
+    "id": 120,
+    "age": 22
+  }
+]

@@ -1,0 +1,235 @@
+/* Estilo global */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	border-radius: 15px; /* Asegúrate de redondear el contenedor */
+}
+
+/* Wrapper de los paneles (Login y Registro) */
+.panel-wrapper {
+	position: relative;
+	width: 800px;
+	height: 635px;
+	border-radius: 15px; /* Mantén este border-radius para el panel */
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	display: flex;
+	transition: transform 0.7s ease;
+}
+
+/* Panel Login */
+.login-panel, .register-panel {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	transition: transform 0.7s ease;
+}
+
+/* Login Panel está por encima inicialmente */
+.login-panel {
+	z-index: 2;
+}
+
+/* Panel de información (login y registro) */
+.login-info, .register-info {
+	background-color: #1A73E8;
+	color: white;
+	width: 650px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+	text-align: center; /* Centrar el texto */
+}
+
+.login-info p, .register-info p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 15px; /* Espacio entre los párrafos */
+}
+
+/* Formulario de login y registro */
+.login-form, .register-form {
+	background-color: white;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+	text-align: center; /* Centrar el texto */
+	margin-top: 0px; /* Reduce o elimina el espacio superior */
+	padding-top: 100px; /* Ajusta el valor según lo que necesites */
+	padding-bottom: 100px;
+}
+
+/* Botones sociales */
+.social-login {
+	margin-bottom: 15px;
+	display: flex; /* Coloca los botones uno al lado del otro */
+	gap: 10px; /* Espacio entre los botones */
+}
+
+.social-login button {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.social-login button img {
+	width: 32px;
+	height: 32px;
+}
+
+/* Inputs */
+input {
+	margin-bottom: 15px;
+	width: 80%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+/* Botones principales */
+button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-switch {
+	background-color: #fff;
+	color: #1A73E8;
+}
+
+.btn-login, .btn-register {
+	background-color: #1A73E8;
+	color: #fff;
+}
+
+.btn-login:hover, .btn-register:hover {
+	background-color: #0f5bb2; /* Efecto hover */
+}
+
+/* Panel de registro (inicialmente escondido y deslizándose desde la derecha) */
+.register-panel {
+	transform: translateX(100%);
+}
+
+.show-register .register-panel {
+	transform: translateX(0); /* Mostrar el panel de registro */
+}
+
+.show-register .login-panel {
+	transform: translateX(-100%);
+	/* Deslizar el panel de login hacia la izquierda */
+}
+
+/* Estilo del modal */
+.modal-dialog {
+	width: 800px; /* Ajusta el ancho del modal */
+	max-width: 100%;
+	/* Asegura que no se desborde en pantallas más pequeñas */
+	height: auto;
+	/* Ajusta la altura de forma automática según el contenido */
+}
+
+/* Estilo del contenido dentro del modal */
+.modal-content {
+	width: 100%;
+	height: 700px;
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 10px;
+	padding: 0px 20px 0px 20px;
+	border: none;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los formularios dentro del modal */
+.modal-body .login-form, .modal-body .register-form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 100%; /* Asegura que el formulario ocupe el ancho completo */
+}
+
+/* Estilo de los botones sociales en el modal */
+.modal-body .social-login {
+	display: flex;
+	gap: 10px;
+	height: 700px;
+	margin-bottom: 15px;
+}
+
+.modal-body .social-login button {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.modal-body .social-login button img {
+	width: 32px;
+	height: 32px;
+}
+
+/* Estilo de los inputs dentro del modal */
+.modal-body input {
+	margin-bottom: 15px;
+	width: 80%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+/* Botones dentro del modal */
+.modal-body button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.modal-body .btn-switch {
+	background-color: #fff;
+	color: #1A73E8;
+}
+
+.modal-body .btn-login, .modal-body .btn-register {
+	background-color: #1A73E8;
+	color: #fff;
+}
+
+.modal-body .btn-login:hover, .modal-body .btn-register:hover {
+	background-color: #0f5bb2;
+}

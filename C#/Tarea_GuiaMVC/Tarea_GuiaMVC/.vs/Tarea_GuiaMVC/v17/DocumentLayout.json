@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Pictures\\C#\\Tarea_GuiaMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8713C6A1-70E5-499F-BC6F-B0F6E87A4449}|Tarea8_GuiaMVC\\Tarea8_GuiaMVC.csproj|c:\\users\\admin\\pictures\\c#\\tarea_guiamvc\\tarea8_guiamvc\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8713C6A1-70E5-499F-BC6F-B0F6E87A4449}|Tarea8_GuiaMVC\\Tarea8_GuiaMVC.csproj|solutionrelative:tarea8_guiamvc\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8713C6A1-70E5-499F-BC6F-B0F6E87A4449}|Tarea8_GuiaMVC\\Tarea8_GuiaMVC.csproj|c:\\users\\admin\\pictures\\c#\\tarea_guiamvc\\tarea8_guiamvc\\models\\productodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8713C6A1-70E5-499F-BC6F-B0F6E87A4449}|Tarea8_GuiaMVC\\Tarea8_GuiaMVC.csproj|solutionrelative:tarea8_guiamvc\\models\\productodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 223,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Pictures\\C#\\Tarea_GuiaMVC\\Tarea8_GuiaMVC\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "Tarea8_GuiaMVC\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Pictures\\C#\\Tarea_GuiaMVC\\Tarea8_GuiaMVC\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "Tarea8_GuiaMVC\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowE8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T05:43:21.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductoDAO.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Pictures\\C#\\Tarea_GuiaMVC\\Tarea8_GuiaMVC\\Models\\ProductoDAO.cs",
+              "RelativeDocumentMoniker": "Tarea8_GuiaMVC\\Models\\ProductoDAO.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Pictures\\C#\\Tarea_GuiaMVC\\Tarea8_GuiaMVC\\Models\\ProductoDAO.cs",
+              "RelativeToolTip": "Tarea8_GuiaMVC\\Models\\ProductoDAO.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAI0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T05:40:06.635Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

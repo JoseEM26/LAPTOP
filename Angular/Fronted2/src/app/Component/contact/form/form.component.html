@@ -1,0 +1,36 @@
+<div class=" container  ">
+    <h2 style="text-align: center;">
+      @if (contact) {Editar}@else {Crear} Usuario
+    </h2>
+    <div class="row row-cols-3 justify-content-center" >
+        @if (form) {
+          <form [formGroup]="form" (ngSubmit)="create()">
+            <div class="mb-3 ">
+              <label for="exampleInputEmail1" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="name">
+
+              @if (form.get("name")?.hasError('required')) {
+              <p class="invalid-feedback d-block">No se puede dejar en blanco</p>
+              }
+              
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputPassword1" formControlName="email">
+              @if (form.get("email")?.hasError('required')) {
+                <p class="invalid-feedback d-block">No se puede dejar en blanco</p>
+                }
+                @if (form.get("email")?.hasError('email')) {
+                  <p class="invalid-feedback d-block">No tiene el formato email adecuado</p>
+                  }
+            </div>
+           
+            <div class="text-end">
+                <button type="button" class="btn btn-light" routerLink="/">Cancelar</button>       
+            <button  class="btn btn-primary" > @if (contact)  {Actualizar} @else {crear} </button>
+            </div>
+          </form> 
+        }
+    </div>
+</div>

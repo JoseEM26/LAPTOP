@@ -1,0 +1,13 @@
+<input class="form-control" type="text" placeholder="ingresar dia" #diaInput>
+<button (click)="dia=diaInput.value" class="btn btn-success mt-4 mb-4">mostrar dia</button>
+
+<div [ngSwitch]="dia ">
+    <span *ngSwitchCase="'1'">lunes</span>
+    <span *ngSwitchCase="'2'">martes</span>
+    <span *ngSwitchCase="'3'">miercoles</span>
+    <span *ngSwitchCase="'4'">jueves</span>
+    <span *ngSwitchCase="'5'">viernes</span>
+    <span *ngSwitchCase="'6'">sabdado</span>
+    <span *ngSwitchCase="'7'">domingo</span>
+    <span *ngSwitchDefault>No hay valor</span>
+</div>

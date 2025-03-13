@@ -1,0 +1,27 @@
+{"guerreros":[
+    {
+        "id": 1,
+        "nombre": "Seiya",
+        "raza": "Pegaso"
+    },
+    {
+        "id": 2,
+        "nombre": "Shiryu",
+        "raza": "Dragón"
+    },
+    {
+        "id": 3,
+        "nombre": "Hyoga",
+        "raza": "Cisne"
+    },
+    {
+        "id": 4,
+        "nombre": "Shun",
+        "raza": "Andrómeda"
+    },
+    {
+        "id": 5,
+        "nombre": "Ikki",
+        "raza": "Fénix"
+    }
+]}

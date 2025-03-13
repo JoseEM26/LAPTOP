@@ -1,0 +1,119 @@
+﻿@model IEnumerable<Tarea6_GuiaMVC.Models.pedidoscabe>
+
+@{
+    ViewBag.Title = "PedidoCliente";
+}
+
+<h2>PedidoCliente</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div>
+    @using (Html.BeginForm())
+            {
+                <strong>Selectionar CLIENTE:</strong>
+                @Html.DropDownList("id",(SelectList)ViewBag.Cliente)
+                <input type="submit" value="consultar"/>
+            }
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdPedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdEmpleado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaPedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaEntrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaEnvio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnvioPedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CantidaPedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Destinatario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DirDestinatario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CiuDestinatario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RefDestnatario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DepDestinatario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaiDestinatario)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdPedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdEmpleado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaPedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaEntrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaEnvio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnvioPedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CantidaPedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Destinatario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DirDestinatario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CiuDestinatario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RefDestnatario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepDestinatario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaiDestinatario)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

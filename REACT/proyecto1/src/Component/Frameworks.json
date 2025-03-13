@@ -1,0 +1,20 @@
+{
+    "Frameworks":[
+        {
+            "nombre": "react",
+            "enlace":"/"
+        },
+        {
+            "nombre": "Angular",
+            "enlace":"/"
+        },
+        {
+            "nombre": "Viu",
+            "enlace":"/"
+        },
+        {
+            "nombre": "Javascript",
+            "enlace":"/"
+        }
+    ]
+}

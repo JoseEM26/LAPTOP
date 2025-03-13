@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="text-right">
+    <button class="btn btn-primary" routerLink="/form" >Nuevo Contacto</button>
+  </div>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Email</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Metodos</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (x of contact; track x.id) {
+            <tr >
+                <th scope="row">{{x.id}}</th>
+                <td>{{x.name}}</td>
+                <td>{{x.email}}</td>
+                <td>{{x.created_at | date:"dd/MM/YYYY hh:mm:ss a"}}</td>
+                <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger" (click)="deleteContact(x.id)">delete</button>
+                    <button class="btn btn-success " [routerLink]="[x.id,'edit']">Editar</button>
+                </div>
+              </td>
+              </tr>
+          }
+        </tbody>
+      </table>
+
+</div>

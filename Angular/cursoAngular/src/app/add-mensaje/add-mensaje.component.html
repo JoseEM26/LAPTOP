@@ -1,0 +1,10 @@
+<form (ngSubmit)="enviar()">
+    <label class="form-label">Ingrese un nuevo componente</label>
+    <input type="text" class="form-control" placeholder="ingresedatos" name="mensaje" [(ngModel)]="mensaje">
+    <button class="btn btn-success mt-2" >agregar</button>
+</form>
+
+<p>add-mensaje works!</p>
+{{MensajeService.messaje }} 
+<br/>
+{{mensaje}}

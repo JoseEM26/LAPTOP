@@ -1,0 +1,30 @@
+.Contenedorlink{
+    display: flex;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 30px;
+    justify-content: space-around;
+
+}
+.navLink{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion4\bin\Debug\semana2_aplicacion4.exe.config
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion4\bin\Debug\semana2_aplicacion4.exe
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion4\bin\Debug\semana2_aplicacion4.pdb
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion4\obj\Debug\semana2_aplicacion4.csproj.AssemblyReference.cache
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion4\obj\Debug\semana2_aplicacion4.csproj.CoreCompileInputs.cache
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion4\obj\Debug\semana2_aplicacion4.exe
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion4\obj\Debug\semana2_aplicacion4.pdb

@@ -1,0 +1,30 @@
+﻿@model List<PaginaWeb.Models.Pelicula>
+
+@{
+    ViewBag.Title = "About";
+}
+
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title</h2>
+    <h3>@ViewBag.Message</h3>
+</main>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>NOMBRE</th>
+            <th>DURACION</th>
+            <th>PREMIER</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pelicula in Model)
+        {
+            <tr>
+                <td>@pelicula.nombre</td>
+                <td>@pelicula.duracion</td>
+                <td>@pelicula.fecha.ToString("dd/MM/yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>

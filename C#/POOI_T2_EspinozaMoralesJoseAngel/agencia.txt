@@ -1,0 +1,38 @@
+[
+  {
+    "AgenciaId": 2,
+    "Nombre": "Miguel",
+    "Direccion": "Candabandapio",
+    "ares": "Cordillera",
+    "distrito": "Junin",
+    "provincia": "Junin",
+    "departamento": "Junin"
+  },
+  {
+    "AgenciaId": 3,
+    "Nombre": "Jose",
+    "Direccion": "SJL",
+    "ares": "Lima",
+    "distrito": "SJL",
+    "provincia": "Lima",
+    "departamento": "Lima"
+  },
+  {
+    "AgenciaId": 4,
+    "Nombre": "Jose",
+    "Direccion": "Campoy",
+    "ares": "verde",
+    "distrito": "SJL",
+    "provincia": "LIMA",
+    "departamento": "LIMA"
+  },
+  {
+    "AgenciaId": 1,
+    "Nombre": "Jose",
+    "Direccion": "Campoy",
+    "ares": "verde",
+    "distrito": "SJL",
+    "provincia": "LIMA",
+    "departamento": "LIMA"
+  }
+]
