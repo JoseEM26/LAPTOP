@@ -1,13 +1,13 @@
-package SpringSecurity_lll.Security;
+package SpringSecurity_lll.Security_lll;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SecurityApplication {
+public class SecurityLllApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SecurityApplication.class, args);
+		SpringApplication.run(SecurityLllApplication.class, args);
 	}
 
 }
