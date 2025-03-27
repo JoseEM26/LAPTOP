@@ -25,11 +25,13 @@
 
     public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
-        private final JwtUtils jwtUtils;
-
         public JwtAuthenticationFilter(JwtUtils jwtUtils) {
             this.jwtUtils=jwtUtils;
         }
+
+        private final JwtUtils jwtUtils;
+
+
         //Recibimos lo que es la peticion con el usuario y password y lo authenticamos
         @Override
         public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
@@ -47,6 +49,7 @@
         }
 
         //Despues de validar solo enviamos una mensaje httpResponse
+        //Dspues de validar y ingresar el usuario , creamos el token
         @Override
         protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException, ServletException {
             UserDetails user = (UserDetails) authResult.getPrincipal();
