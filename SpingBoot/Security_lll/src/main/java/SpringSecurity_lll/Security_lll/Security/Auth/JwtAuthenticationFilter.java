@@ -2,8 +2,6 @@
 
     import SpringSecurity_lll.Security_lll.Model.UserEntity;
     import SpringSecurity_lll.Security_lll.Security.JWT.JwtUtils;
-    import com.fasterxml.jackson.core.exc.StreamReadException;
-    import com.fasterxml.jackson.databind.DatabindException;
     import com.fasterxml.jackson.databind.ObjectMapper;
     import jakarta.servlet.FilterChain;
     import jakarta.servlet.ServletException;
@@ -14,7 +12,6 @@
     import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
     import org.springframework.security.core.Authentication;
     import org.springframework.security.core.AuthenticationException;
-    import org.springframework.security.core.userdetails.User;
     import org.springframework.security.core.userdetails.UserDetails;
     import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
@@ -22,16 +19,17 @@
     import java.util.HashMap;
     import java.util.Map;
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////Valida si el correo o el usuario es correcto////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-    public class JwtAuthFilter  extends UsernamePasswordAuthenticationFilter {
+    public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
         private final JwtUtils jwtUtils;
 
-        public  JwtAuthFilter( JwtUtils jwtUtils) {
+        public JwtAuthenticationFilter(JwtUtils jwtUtils) {
             this.jwtUtils=jwtUtils;
         }
-
         //Recibimos lo que es la peticion con el usuario y password y lo authenticamos
         @Override
         public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
