@@ -25,11 +25,12 @@
 
     public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
+        private final JwtUtils jwtUtils;
+
         public JwtAuthenticationFilter(JwtUtils jwtUtils) {
             this.jwtUtils=jwtUtils;
         }
 
-        private final JwtUtils jwtUtils;
 
 
         //Recibimos lo que es la peticion con el usuario y password y lo authenticamos
