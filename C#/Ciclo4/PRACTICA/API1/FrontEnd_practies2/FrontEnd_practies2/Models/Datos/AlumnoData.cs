@@ -43,8 +43,12 @@ namespace FrontEnd_practies2.Models.Datos
                 {
                     string ruta =AlumnoConst.urlAPI+ AlumnoConst.constURL + AlumnoConst.methodCreate;
 
+                
+
                     // Convertimos el objeto a JSON
                     string json = JsonConvert.SerializeObject(alumno);
+                    Debug.WriteLine("JSON ENVIADO: " + json);
+
                     var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
                     // Hacemos el POST con el contenido JSON

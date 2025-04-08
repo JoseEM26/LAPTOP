@@ -15,7 +15,7 @@ namespace Aplicacion.Mappers
             return new Alumno()
             {
                 idAlumno=alumnoDao.idAlumno,
-                apellido=alumnoDao.apellido,
+                apellidos=alumnoDao.apellidos,
                 fechaNacimiento=alumnoDao.fechaNacimiento,
                 nombre=alumnoDao.nombre,
                 nroDocumento=alumnoDao.nroDocumento

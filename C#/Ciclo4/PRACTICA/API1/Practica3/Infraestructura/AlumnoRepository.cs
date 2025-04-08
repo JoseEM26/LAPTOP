@@ -39,9 +39,9 @@ namespace Infraestructura
                         using (SqlCommand cmd = new SqlCommand(USP_ALUMNO_CREATE, con,transaction))
                         {
                             cmd.CommandType = CommandType.StoredProcedure;
-                            cmd.Parameters.AddWithValue("@nombre", alumno.nombre);
-                            cmd.Parameters.AddWithValue("@apellidos", alumno.apellido);
-                            cmd.Parameters.AddWithValue("@nroDocumento", alumno.nroDocumento);
+                            cmd.Parameters.AddWithValue("@Nombre", alumno.nombre);
+                            cmd.Parameters.AddWithValue("@Apellidos", alumno.apellidos);
+                            cmd.Parameters.AddWithValue("@NroDocumento", alumno.nroDocumento);
                             cmd.Parameters.AddWithValue("@FechNacimiento", alumno.fechaNacimiento);
                             cmd.Parameters.Add("@Mensaje", SqlDbType.VarChar, 200).Direction = ParameterDirection.Output;
                             cmd.Parameters.Add("@Exito", SqlDbType.Int , 11).Direction = ParameterDirection.Output;
@@ -99,7 +99,7 @@ namespace Infraestructura
                                 fechaNacimiento = Convert.ToDateTime(reader["fechaNacimiento"].ToString()),
                                 nroDocumento = reader["nroDocumento"].ToString(),
                                 nombre = reader["nombre"].ToString(),
-                                apellido = reader["apellido"].ToString()
+                                apellidos = reader["apellido"].ToString()
 
                             };
                             lista.Add(alumno);

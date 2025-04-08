@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\FrontEnd_practies2\\FrontEnd_practies2\\FrontEnd_practies2.csproj": {}
+    "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\FrontEnd_practies2\\FrontEnd_practies2\\FrontEnd_practies2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\FrontEnd_practies2\\FrontEnd_practies2\\FrontEnd_practies2.csproj": {
+    "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\FrontEnd_practies2\\FrontEnd_practies2\\FrontEnd_practies2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\FrontEnd_practies2\\FrontEnd_practies2\\FrontEnd_practies2.csproj",
+        "projectUniqueName": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\FrontEnd_practies2\\FrontEnd_practies2\\FrontEnd_practies2.csproj",
         "projectName": "FrontEnd_practies2",
-        "projectPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\FrontEnd_practies2\\FrontEnd_practies2\\FrontEnd_practies2.csproj",
+        "projectPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\FrontEnd_practies2\\FrontEnd_practies2\\FrontEnd_practies2.csproj",
         "packagesPath": "C:\\Users\\JOSE ANGEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\FrontEnd_practies2\\FrontEnd_practies2\\obj\\",
+        "outputPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\FrontEnd_practies2\\FrontEnd_practies2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JOSE ANGEL\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -2146,11 +2146,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\Practica3\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\Practica3\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\Practica3\\API\\API.csproj",
+      "projectPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\Practica3\\API\\API.csproj",
       "packagesPath": "C:\\Users\\JOSE ANGEL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\Practica3\\API\\obj\\",
+      "outputPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\Practica3\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JOSE ANGEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2168,11 +2168,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\Practica3\\Aplicacion\\Aplicacion.csproj": {
-              "projectPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\Practica3\\Aplicacion\\Aplicacion.csproj"
+            "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\Practica3\\Aplicacion\\Aplicacion.csproj": {
+              "projectPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\Practica3\\Aplicacion\\Aplicacion.csproj"
             },
-            "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\Practica3\\Infraestructura\\Infraestructura.csproj": {
-              "projectPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\Practica3\\Infraestructura\\Infraestructura.csproj"
+            "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\Practica3\\Infraestructura\\Infraestructura.csproj": {
+              "projectPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API1\\Practica3\\Infraestructura\\Infraestructura.csproj"
             }
           }
         }

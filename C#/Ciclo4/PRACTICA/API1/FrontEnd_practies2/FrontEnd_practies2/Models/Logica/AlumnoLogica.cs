@@ -10,5 +10,10 @@ namespace FrontEnd_practies2.Models.Logica
             return new AlumnoData().listarAlumno();
 
         }
+
+        public void CreateAlumno(Alumno a)
+        {
+            new AlumnoData().CreateAlumno(a);
+        }
     }
 }
