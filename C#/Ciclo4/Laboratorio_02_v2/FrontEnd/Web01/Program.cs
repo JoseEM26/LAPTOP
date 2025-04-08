@@ -5,18 +5,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-
-
-
-
 var configuracion = builder.Configuration;
 CadenaApi.UrlApi = configuracion.GetConnectionString("UrlApi");
 
 var app = builder.Build();
-
-
-
-
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
