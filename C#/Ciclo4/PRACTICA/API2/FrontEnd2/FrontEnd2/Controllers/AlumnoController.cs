@@ -53,14 +53,22 @@ namespace FrontEnd2.Controllers
         [ActionName("GetUpdate")]
         public IActionResult Update(Alumno a)
         {
+            List<Alumno> lista = logia.listarAlumno();
+            if (!ModelState.IsValid || a.fechaNacimiento <= DateTime.MinValue)
+            {
+                TempData["errorActualizar"] = "<script>Swal.fire({title: \"Error!\", text: \"Hubo un problema al Actualizar el alumno.\", icon: \"error\"});</script>";
+                return View(logia.ListarXID(a.idAlumno));
+            }
+
             logia.Update(a);
+            TempData["notificacion"] = "<script>Swal.fire({title: \"Good job!\", text: \"Alumno Actualizado exitosamente!\", icon: \"success\"});</script>";
             return RedirectToAction("Listar");
         }
         //Delete-------------------------------------
         [HttpGet]
         public IActionResult getDelete(int id)
         {
-            Alumno alumno = logia.ListarXID(id); ;
+            Alumno alumno = logia.ListarXID(id);
             return View(alumno);
         }
         [HttpPost]
@@ -68,6 +76,7 @@ namespace FrontEnd2.Controllers
         public IActionResult Delete(int id)
         {
             logia.eliminar(id);
+            TempData["notificacion"] = "<script>Swal.fire({title: \"DELETE!\", text: \"Alumno ELiminado exitosamente!\", icon: \"success\"});</script>";
             return RedirectToAction("Listar");
         }
     }

@@ -38,8 +38,7 @@
               "RelativeToolTip": "Dominio\\Interzas\\IAlumnoRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T23:31:40.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T23:31:40.265Z"
             },
             {
               "$type": "Document",
@@ -51,8 +50,7 @@
               "RelativeToolTip": "API\\Controllers\\AlumnoController.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAAgwHgAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T21:41:57.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T21:41:57.509Z"
             },
             {
               "$type": "Document",
@@ -64,8 +62,7 @@
               "RelativeToolTip": "Aplicacion\\Services\\AlumnoServices.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T21:40:41.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T21:40:41.651Z"
             },
             {
               "$type": "Document",
@@ -75,7 +72,7 @@
               "RelativeDocumentMoniker": "Infraestructura\\AlumnoRepository.cs",
               "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\Infraestructura\\AlumnoRepository.cs",
               "RelativeToolTip": "Infraestructura\\AlumnoRepository.cs",
-              "ViewState": "AQIAAK8AAAAAAAAAAAAqwLgAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALgAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T21:38:31.144Z",
               "EditorCaption": ""

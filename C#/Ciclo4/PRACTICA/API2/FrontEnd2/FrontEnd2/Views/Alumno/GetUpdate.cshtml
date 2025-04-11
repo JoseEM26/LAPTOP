@@ -43,7 +43,10 @@
         </form>
     </div>
 </div>
-
+@if (TempData["errorActualizar"] != null)
+{
+    @Html.Raw(TempData["errorActualizar"].ToString())
+}
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
