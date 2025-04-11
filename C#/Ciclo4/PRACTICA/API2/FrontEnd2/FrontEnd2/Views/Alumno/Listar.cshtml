@@ -1,0 +1,65 @@
+﻿@model IEnumerable<FrontEnd2.Models.Entity.Alumno>
+
+@{
+    ViewData["Title"] = "Listar";
+}
+
+<h1>Listar</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idAlumno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nroDocumento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaNacimiento)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idAlumno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nroDocumento)
+            </td>
+            <td>
+                    @String.Format("{0:dd/mm/yyyy}", item.fechaNacimiento)
+
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "GetUpdate", new { id=item.idAlumno }) |
+                @Html.ActionLink("Details", "ListarXID", new {  id=item.idAlumno  }) |
+                @Html.ActionLink("Delete", "getDelete", new {  id=item.idAlumno  })
+            </td>
+        </tr>
+}
+    </tbody>
+
+</table>
+@if (TempData["notificacion"] != null)
+{
+    @Html.Raw(TempData["notificacion"].ToString())
+}

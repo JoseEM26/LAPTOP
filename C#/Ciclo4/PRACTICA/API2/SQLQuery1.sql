@@ -33,7 +33,7 @@ go
 
 create or alter proc USP_ALUMNO_LISTAR
 @idAlumno int ,
-@flgListar bit
+@flgListar int
 
 as
 begin
@@ -43,7 +43,7 @@ begin
 
    end
 
-   if @flgListar =2
+   if @flgListar = 2
    begin
       if exists(select 1 from alumno as a where a.idAlumno=@idAlumno and flgEliminado=0)
 	  begin
@@ -53,7 +53,6 @@ begin
    end
 end
 go
-
 
 
 create or alter proc USP_ALUMNO_CREATE
@@ -80,4 +79,56 @@ begin
 	     set @value=0
   end
 end
---http://localhost:5002/
+go
+
+create proc USP_ALUMNO_UPDATE
+@idALumno int,
+@nombre varchar (50),
+@apellido varchar(50),
+@nroDocumento varchar(8),
+@fechaNacimiento date,
+@mensaje varchar(200) output,
+@value int output
+AS 
+BEGIN
+  if exists (select 1 from alumno as a where flgEliminado=  0 and a.idAlumno=@idALumno)
+  begin
+     update alumno
+	    set nombre=@nombre,
+		    apellido = @apellido,
+			nroDocumento=@nroDocumento,
+			fechaNacimiento=@fechaNacimiento
+			where idAlumno=@idALumno
+
+	 set @mensaje= 'Se actualizo el Alumno'
+	set @value=1
+  end
+  else
+  begin
+    set @mensaje= 'No existe El id'
+	set @value=0
+  end
+END
+
+go
+
+create proc  USP_ALUMNO_ELIMINAR
+@idAlumno int ,
+@mensaje varchar(200) output,
+@value int output
+as 
+begin
+  if exists(select 1 from alumno where idAlumno= @idAlumno and flgEliminado=0)
+  begin
+    update alumno
+	    set flgEliminado=1
+		where idAlumno=@idAlumno
+		 set @mensaje= 'Se Elimino el Alumno'
+	     set @value=1
+  end
+  else
+  begin
+  set @mensaje= 'No existe El id'
+	set @value=0
+  end
+end

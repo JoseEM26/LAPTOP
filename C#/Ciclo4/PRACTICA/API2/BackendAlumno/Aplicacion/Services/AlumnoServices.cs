@@ -27,11 +27,32 @@ namespace Aplicacion.Services
             return resultado;
 
         }
+        public ResultadoTransaction<string> UpdateAlumno(AlumnoDAO alumnoDAO)
+        {
+            Alumno alumno = new AlumnoMapper().MapperAlumno(alumnoDAO);
 
+            ResultadoTransaction<string> resultado = _alumnoRepository.UpdateAlumno(alumno);
+            return resultado;
+
+        }
         public ResultadoTransaction<Alumno> ListarAlumno()
         {
             ResultadoTransaction<Alumno> respuesta = _alumnoRepository.ListarAlumno();
             return respuesta;
+        }
+
+        public ResultadoTransaction<string> EliminarAlumno(int id)
+        {
+            ResultadoTransaction<string> resultado = _alumnoRepository.DeleteAlumno(id);
+
+            return resultado;
+        }
+
+        public ResultadoTransaction<Alumno> ListarXID(int id)
+        {
+            var alumno = _alumnoRepository.ListarAlumnoXID(id);
+            return alumno;
+
         }
     }
 }

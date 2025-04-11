@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{480C417F-6DDB-4012-9635-9CDD74043479}|API\\API.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\backendalumno\\api\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{480C417F-6DDB-4012-9635-9CDD74043479}|API\\API.csproj|solutionrelative:api\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7229FE0F-AA09-4698-B70C-1E749C5D43A8}|Dominio\\Dominio.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\backendalumno\\dominio\\entity\\resultadotransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7229FE0F-AA09-4698-B70C-1E749C5D43A8}|Dominio\\Dominio.csproj|solutionrelative:dominio\\entity\\resultadotransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7229FE0F-AA09-4698-B70C-1E749C5D43A8}|Dominio\\Dominio.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\backendalumno\\dominio\\entity\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7229FE0F-AA09-4698-B70C-1E749C5D43A8}|Dominio\\Dominio.csproj|solutionrelative:dominio\\entity\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{030D069E-B963-4E4B-88B1-F40A2163187C}|Infraestructura\\Infraestructura.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\backendalumno\\infraestructura\\alumnorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{030D069E-B963-4E4B-88B1-F40A2163187C}|Infraestructura\\Infraestructura.csproj|solutionrelative:infraestructura\\alumnorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{480C417F-6DDB-4012-9635-9CDD74043479}|API\\API.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\backendalumno\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{480C417F-6DDB-4012-9635-9CDD74043479}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7229FE0F-AA09-4698-B70C-1E749C5D43A8}|Dominio\\Dominio.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\backendalumno\\dominio\\interzas\\ialumnorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7229FE0F-AA09-4698-B70C-1E749C5D43A8}|Dominio\\Dominio.csproj|solutionrelative:dominio\\interzas\\ialumnorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E824019D-D8B7-42AB-A887-924D6085CFA5}|Aplicacion\\Aplicacion.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\backendalumno\\aplicacion\\services\\alumnoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E824019D-D8B7-42AB-A887-924D6085CFA5}|Aplicacion\\Aplicacion.csproj|solutionrelative:aplicacion\\services\\alumnoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{480C417F-6DDB-4012-9635-9CDD74043479}|API\\API.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\backendalumno\\api\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{480C417F-6DDB-4012-9635-9CDD74043479}|API\\API.csproj|solutionrelative:api\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Alumno.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\Dominio\\Entity\\Alumno.cs",
-              "RelativeDocumentMoniker": "Dominio\\Entity\\Alumno.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\Dominio\\Entity\\Alumno.cs",
-              "RelativeToolTip": "Dominio\\Entity\\Alumno.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T01:46:09.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AlumnoController.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\API\\Controllers\\AlumnoController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\AlumnoController.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\API\\Controllers\\AlumnoController.cs",
-              "RelativeToolTip": "API\\Controllers\\AlumnoController.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAowDIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T00:00:20.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ResultadoTransaction.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\Dominio\\Entity\\ResultadoTransaction.cs",
-              "RelativeDocumentMoniker": "Dominio\\Entity\\ResultadoTransaction.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\Dominio\\Entity\\ResultadoTransaction.cs",
-              "RelativeToolTip": "Dominio\\Entity\\ResultadoTransaction.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAHAAAA",
+              "Title": "IAlumnoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\Dominio\\Interzas\\IAlumnoRepository.cs",
+              "RelativeDocumentMoniker": "Dominio\\Interzas\\IAlumnoRepository.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\Dominio\\Interzas\\IAlumnoRepository.cs",
+              "RelativeToolTip": "Dominio\\Interzas\\IAlumnoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T23:41:09.66Z",
+              "WhenOpened": "2025-04-10T23:31:40.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "AlumnoController.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\API\\Controllers\\AlumnoController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AlumnoController.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\API\\Controllers\\AlumnoController.cs",
+              "RelativeToolTip": "API\\Controllers\\AlumnoController.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAgwHgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T21:41:57.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlumnoServices.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\Aplicacion\\Services\\AlumnoServices.cs",
+              "RelativeDocumentMoniker": "Aplicacion\\Services\\AlumnoServices.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\Aplicacion\\Services\\AlumnoServices.cs",
+              "RelativeToolTip": "Aplicacion\\Services\\AlumnoServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T21:40:41.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AlumnoRepository.cs",
               "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\Infraestructura\\AlumnoRepository.cs",
               "RelativeDocumentMoniker": "Infraestructura\\AlumnoRepository.cs",
               "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\Infraestructura\\AlumnoRepository.cs",
               "RelativeToolTip": "Infraestructura\\AlumnoRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAA3AAAA",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAqwLgAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T23:37:57.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\API\\Program.cs",
-              "RelativeDocumentMoniker": "API\\Program.cs",
-              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\BackendAlumno\\API\\Program.cs",
-              "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAArwBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T23:35:07.179Z"
+              "WhenOpened": "2025-04-10T21:38:31.144Z",
+              "EditorCaption": ""
             }
           ]
         },
