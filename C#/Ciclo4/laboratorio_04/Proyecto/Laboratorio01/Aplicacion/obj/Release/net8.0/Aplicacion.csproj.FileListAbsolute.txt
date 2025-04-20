@@ -1,0 +1,15 @@
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\bin\Release\net8.0\Aplicacion.deps.json
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\bin\Release\net8.0\Aplicacion.dll
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\bin\Release\net8.0\Aplicacion.pdb
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\bin\Release\net8.0\Dominio.dll
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\bin\Release\net8.0\Dominio.pdb
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\obj\Release\net8.0\Aplicacion.csproj.AssemblyReference.cache
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\obj\Release\net8.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\obj\Release\net8.0\Aplicacion.AssemblyInfoInputs.cache
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\obj\Release\net8.0\Aplicacion.AssemblyInfo.cs
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\obj\Release\net8.0\Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\obj\Release\net8.0\Aplicacion.csproj.Up2Date
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\obj\Release\net8.0\Aplicacion.dll
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\obj\Release\net8.0\refint\Aplicacion.dll
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\obj\Release\net8.0\Aplicacion.pdb
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Aplicacion\obj\Release\net8.0\ref\Aplicacion.dll

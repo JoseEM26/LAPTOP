@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEndBlazor\\Web.Blazor\\Web.Blazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Web.Blazor.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Web.Blazor.mog93nwg4s.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEndBlazor\\Web.Blazor\\Web.Blazor\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEndBlazor\\Web.Blazor\\Web.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEndBlazor\\Web.Blazor\\Web.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEndBlazor\\Web.Blazor\\Web.Blazor\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Web.Blazor.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Web.Blazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Web.Blazor.props",
+      "PackagePath": "build\\Web.Blazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Web.Blazor.props",
+      "PackagePath": "buildMultiTargeting\\Web.Blazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Web.Blazor.props",
+      "PackagePath": "buildTransitive\\Web.Blazor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

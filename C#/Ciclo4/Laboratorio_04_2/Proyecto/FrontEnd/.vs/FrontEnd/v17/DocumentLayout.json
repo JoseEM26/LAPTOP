@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|c:\\users\\user\\documents\\cibertec\\poo ii\\proyecto\\frontend\\web01\\models\\datos\\alumnod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|solutionrelative:web01\\models\\datos\\alumnod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|c:\\users\\user\\documents\\cibertec\\poo ii\\proyecto\\frontend\\web01\\views\\alumno\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|solutionrelative:web01\\views\\alumno\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|c:\\users\\user\\documents\\cibertec\\poo ii\\proyecto\\frontend\\web01\\models\\logica\\alumnol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|solutionrelative:web01\\models\\logica\\alumnol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|c:\\users\\user\\documents\\cibertec\\poo ii\\proyecto\\frontend\\web01\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|solutionrelative:web01\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|c:\\users\\user\\documents\\cibertec\\poo ii\\proyecto\\frontend\\web01\\models\\logica\\cadenaapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|solutionrelative:web01\\models\\logica\\cadenaapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|c:\\users\\user\\documents\\cibertec\\poo ii\\proyecto\\frontend\\web01\\models\\entidad\\alumnoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E840859-0870-42BA-AB93-2A4E57CDD979}|Web01\\Web01.csproj|solutionrelative:web01\\models\\entidad\\alumnoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CadenaApi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Models\\Logica\\CadenaApi.cs",
+              "RelativeDocumentMoniker": "Web01\\Models\\Logica\\CadenaApi.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Models\\Logica\\CadenaApi.cs",
+              "RelativeToolTip": "Web01\\Models\\Logica\\CadenaApi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:41:33.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Views\\Alumno\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web01\\Views\\Alumno\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Views\\Alumno\\Index.cshtml",
+              "RelativeToolTip": "Web01\\Views\\Alumno\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T16:41:34.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlumnoController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Controllers\\AlumnoController.cs",
+              "RelativeDocumentMoniker": "Web01\\Controllers\\AlumnoController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Controllers\\AlumnoController.cs",
+              "RelativeToolTip": "Web01\\Controllers\\AlumnoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:41:34.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlumnoL.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Models\\Logica\\AlumnoL.cs",
+              "RelativeDocumentMoniker": "Web01\\Models\\Logica\\AlumnoL.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Models\\Logica\\AlumnoL.cs",
+              "RelativeToolTip": "Web01\\Models\\Logica\\AlumnoL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:41:34.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AlumnoE.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Models\\Entidad\\AlumnoE.cs",
+              "RelativeDocumentMoniker": "Web01\\Models\\Entidad\\AlumnoE.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Models\\Entidad\\AlumnoE.cs",
+              "RelativeToolTip": "Web01\\Models\\Entidad\\AlumnoE.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:41:34.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlumnoD.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Models\\Datos\\AlumnoD.cs",
+              "RelativeDocumentMoniker": "Web01\\Models\\Datos\\AlumnoD.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\CIBERTEC\\POO II\\Proyecto\\FrontEnd\\Web01\\Models\\Datos\\AlumnoD.cs",
+              "RelativeToolTip": "Web01\\Models\\Datos\\AlumnoD.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwA4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:41:34.626Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
