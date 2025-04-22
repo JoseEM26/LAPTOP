@@ -28,3 +28,6 @@ C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\FrontEndBlazor\Front
 C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\FrontEndBlazor\FrontEndBlazor\obj\Debug\net8.0\FrontEndBlazor.pdb
 C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\FrontEndBlazor\FrontEndBlazor\obj\Debug\net8.0\FrontEndBlazor.genruntimeconfig.cache
 C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\FrontEndBlazor\FrontEndBlazor\obj\Debug\net8.0\ref\FrontEndBlazor.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\FrontEndBlazor\FrontEndBlazor\obj\Debug\net8.0\FrontEndBlazor.csproj.AssemblyReference.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\FrontEndBlazor\FrontEndBlazor\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\FrontEndBlazor\FrontEndBlazor\obj\Debug\net8.0\FrontEnd.9EB74B64.Up2Date
