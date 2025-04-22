@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\frontendblazor\\frontendblazor\\model\\entity\\resultadotransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|solutionrelative:frontendblazor\\model\\entity\\resultadotransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\frontendblazor\\frontendblazor\\model\\entity\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|solutionrelative:frontendblazor\\model\\entity\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\frontendblazor\\frontendblazor\\components\\pages\\ventas\\registrarventacompra.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|solutionrelative:frontendblazor\\components\\pages\\ventas\\registrarventacompra.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\frontendblazor\\frontendblazor\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|solutionrelative:frontendblazor\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\frontendblazor\\frontendblazor\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|solutionrelative:frontendblazor\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\frontendblazor\\frontendblazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|solutionrelative:frontendblazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\frontendblazor\\frontendblazor\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52B6AC4C-0284-40DD-ABF1-BB2A5779E264}|FrontEndBlazor\\FrontEndBlazor.csproj|solutionrelative:frontendblazor\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResultadoTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Model\\Entity\\ResultadoTransaction.cs",
+              "RelativeDocumentMoniker": "FrontEndBlazor\\Model\\Entity\\ResultadoTransaction.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Model\\Entity\\ResultadoTransaction.cs",
+              "RelativeToolTip": "FrontEndBlazor\\Model\\Entity\\ResultadoTransaction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T02:14:45.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Venta.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Model\\Entity\\Venta.cs",
+              "RelativeDocumentMoniker": "FrontEndBlazor\\Model\\Entity\\Venta.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Model\\Entity\\Venta.cs",
+              "RelativeToolTip": "FrontEndBlazor\\Model\\Entity\\Venta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T02:14:34.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Error.razor",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "FrontEndBlazor\\Components\\Pages\\Error.razor",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "FrontEndBlazor\\Components\\Pages\\Error.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T02:03:31.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "FrontEndBlazor\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "FrontEndBlazor\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T02:03:29.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "FrontEndBlazor\\Components\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "FrontEndBlazor\\Components\\Pages\\Weather.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T02:03:20.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "FrontEndBlazor\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "FrontEndBlazor\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAqwBwAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T01:44:19.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistrarVentaCompra.razor",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Components\\Pages\\Ventas\\RegistrarVentaCompra.razor",
+              "RelativeDocumentMoniker": "FrontEndBlazor\\Components\\Pages\\Ventas\\RegistrarVentaCompra.razor",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor\\FrontEndBlazor\\Components\\Pages\\Ventas\\RegistrarVentaCompra.razor",
+              "RelativeToolTip": "FrontEndBlazor\\Components\\Pages\\Ventas\\RegistrarVentaCompra.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T01:44:00.671Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 123,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+﻿<h3>RegistrarVentaCompra</h3>
+@page "/RegistrarVentaCompra"
+@code {
+
+}
+
+<div class="row mt-2">
+    <div class="col-6">
+        <label for="exampleInputEmail1" class="form-label">Cliente</label>
+        <input type="text" class="form-control"  >
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Numero Documento</label>
+        <input type="text" class="form-control" >
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Fecha Venta</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Sub Total</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">IGV</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Total</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-2 mt-3">
+        <button type="submit" class="btn btn-primary w-30">Agregar</button>
+    </div>
+</div>
+
+
+
+
+<div class="row mt-2">
+    <div class="col-6">
+        <label for="exampleInputEmail1" class="form-label">Producto</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Precio</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-12 mt-2">
+        <button type="submit" class="btn btn-primary w-30">Agregar</button>
+    </div>
+
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Subtotal</th>
+            <th>IGV</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Otto</td>
+            <td>Otto</td>
+            <td>Otto</td>
+        </tr>
+    </tbody>
+</table>

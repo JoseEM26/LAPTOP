@@ -1,0 +1,16 @@
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\bin\Debug\net8.0\Aplication.deps.json
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\bin\Debug\net8.0\Aplication.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\bin\Debug\net8.0\Aplication.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\bin\Debug\net8.0\Dominio.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\bin\Debug\net8.0\Dominio.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\obj\Debug\net8.0\Aplication.csproj.AssemblyReference.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\obj\Debug\net8.0\Aplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\obj\Debug\net8.0\Aplication.AssemblyInfoInputs.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\obj\Debug\net8.0\Aplication.AssemblyInfo.cs
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\obj\Debug\net8.0\Aplication.csproj.CoreCompileInputs.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\obj\Debug\net8.0\Aplication.sourcelink.json
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\obj\Debug\net8.0\Aplication.csproj.Up2Date
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\obj\Debug\net8.0\Aplication.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\obj\Debug\net8.0\refint\Aplication.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\obj\Debug\net8.0\Aplication.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Aplication\obj\Debug\net8.0\ref\Aplication.dll
