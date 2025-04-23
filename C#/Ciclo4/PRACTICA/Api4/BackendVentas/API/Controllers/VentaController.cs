@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    [Route("/api/venta")]
+    [Route("api/venta")]
     public class VentaController : Controller
     {
         private readonly VentaServices _service;
@@ -15,7 +15,7 @@ namespace API.Controllers
             _service = service;
         }
 
-        [Route("/RegistrarVenta")]
+        [Route("RegistrarVenta")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPost]

@@ -1,0 +1,217 @@
+﻿@inject IJSRuntime JS
+<h3>RegistrarVentaCompra</h3>
+@using FrontEndBlazor2.Model.Logica
+@using FrontEndBlazor2.Model.ENtity
+@page "/Comprar"
+@rendermode InteractiveServer
+
+@code {
+    Venta venta;
+    VentaDet ventaDet;
+
+    protected override void OnInitialized()
+    {
+        venta = new Venta();
+        venta.fechaVenta = DateTime.Now;
+        venta.ListaDetalle = new List<VentaDet>();
+        ventaDet = new VentaDet();
+
+        base.OnInitialized();
+    }
+
+    async Task GuardarProducto()
+    {
+        if(ventaDet.producto==null || ventaDet.producto == "")
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "ERROR!",
+                text = "Completa el campo PRODUCTO!",
+                icon = "warning"
+            });
+        }
+        else if (ventaDet.precio == null || ventaDet.precio == 0)
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "ERROR!",
+                text = "Completa el campo PRECIO!",
+                icon = "warning"
+            });
+        }
+        else if (ventaDet.cantidad == null || ventaDet.cantidad == 0)
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "ERROR!",
+                text = "Completa el campo Cantidad!",
+                icon = "warning"
+            });
+        }
+        else
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                    title = "Good job!",
+                    text = "You clicked the button!",
+                    icon = "success"
+                });
+            ventaDet.subtotal = ventaDet.CalcularSubTotal();
+            ventaDet.igv = ventaDet.CalcularIGV();
+            ventaDet.total = ventaDet.CalcularTotal();
+
+            venta.ListaDetalle.Add(ventaDet);
+
+            venta.subTotal = venta.ListaDetalle.Sum(x => x.subtotal);
+            venta.igv = venta.ListaDetalle.Sum(x => x.igv);
+            venta.total = venta.ListaDetalle.Sum(x => x.total);
+
+            ventaDet = new VentaDet();
+
+        }
+    }
+    async Task GuardarVenta()
+    {
+        if(venta.cliente=="" || venta.cliente == null)
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "ERROR!",
+                text = "Completa el campo CLIENTE!",
+                icon = "warning"
+            });
+        }
+        else if (venta.nroDocumento == "" || venta.nroDocumento == null)
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "ERROR!",
+                text = "Completa el campo NRODOCUMENTO!",
+                icon = "warning"
+            });
+        }
+        else
+        {
+            ResultadoTransaction<string> resultado = new VentaLogica().GuardarVenta(venta);
+            if (resultado.IdRegistro == -1)
+            {
+                await JS.InvokeVoidAsync("Swal.fire", new
+                {
+                    title = "ERROR!",
+                    text = "Ocurrió un error!",
+                    icon = "error"
+                });
+            }
+            else
+                await JS.InvokeVoidAsync("Swal.fire", new
+                {
+                    title = "Good job!",
+                    text = "You clicked the button!",
+                    icon = "success"
+                }
+                    );
+            venta = new Venta
+                {
+                    fechaVenta = DateTime.Now,
+                    ListaDetalle = new List<VentaDet>()
+                };
+            ventaDet = new VentaDet();
+        }
+    }
+    }
+
+	
+ 
+
+<div class="row mt-2">
+    <div class="col-6">
+        <label for="exampleInputEmail1" class="form-label">Cliente</label>
+        <input type="text" class="form-control" @bind="venta.cliente">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Numero Documento</label>
+        <input type="text" class="form-control" @bind="venta.nroDocumento">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Fecha Venta</label>
+        <input type="datetime-local" class="form-control" @bind="venta.fechaVenta">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Sub Total</label>
+        <input type="number" class="form-control" readonly @bind="venta.subTotal">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">IGV</label>
+        <input type="number" class="form-control" readonly @bind="venta.igv">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Total</label>
+        <input type="number" class="form-control" readonly @bind="venta.total">
+    </div>
+    <div class="col-2 mt-3">
+        <button class="btn btn-primary w-30" @onclick="GuardarVenta">Agregar</button>
+    </div>
+</div>
+
+
+
+
+<div class="row mt-2">
+    <div class="col-6">
+        <label for="exampleInputEmail1" class="form-label">Producto</label>
+        <input type="text" class="form-control" @bind="ventaDet.producto">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+        <input type="number" class="form-control" @bind="ventaDet.cantidad">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Precio</label>
+        <input type="number" class="form-control" @bind="ventaDet.precio">
+    </div>
+    <div class="col-12 mt-2">
+        <button type="button" class="btn btn-primary w-30" @onclick="GuardarProducto">Agregar</button>
+    </div>
+
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Subtotal</th>
+            <th>IGV</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (venta.ListaDetalle.Count() > 0)
+        {
+            @foreach (var x in venta.ListaDetalle)
+            {
+                <tr>
+                    <td>@x.producto</td>
+                    <td>@x.cantidad</td>
+                    <td>@x.precio</td>
+                    <td>@x.subtotal</td>
+                    <td>@x.igv</td>
+                    <td>@x.total</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="7" class="text-center text-danger">No hay productos registrados</td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+
+

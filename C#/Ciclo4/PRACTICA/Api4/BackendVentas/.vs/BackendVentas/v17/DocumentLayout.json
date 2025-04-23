@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3F7BF3-2AC8-43ED-B033-5EEEBFC76C89}|API\\API.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\backendventas\\api\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3F7BF3-2AC8-43ED-B033-5EEEBFC76C89}|API\\API.csproj|solutionrelative:api\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VentaController.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\API\\Controllers\\VentaController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\VentaController.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\API\\Controllers\\VentaController.cs",
+              "RelativeToolTip": "API\\Controllers\\VentaController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAYwAcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T00:28:25.541Z",
+              "EditorCaption": ""
             }
           ]
         }
