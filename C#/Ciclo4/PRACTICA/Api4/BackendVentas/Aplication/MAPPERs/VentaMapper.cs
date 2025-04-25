@@ -35,5 +35,20 @@ namespace Aplication.MAPPERs
                 ).ToList()
             };
         }
+
+        public VentaDet MapearVentaDetalleDTO(VentaDetDTO ventaDetDTO)
+        {
+            return new VentaDet()
+            {
+                cantidad=ventaDetDTO.cantidad,
+                idVenta=ventaDetDTO.idVenta,
+                idVentaDet=ventaDetDTO.idVentaDet,
+                igv=ventaDetDTO.igv,
+                precio=ventaDetDTO.precio,
+                producto=ventaDetDTO.producto,
+                subtotal=ventaDetDTO.subtotal,
+                total=ventaDetDTO.total
+            };
+        }
     }
 }

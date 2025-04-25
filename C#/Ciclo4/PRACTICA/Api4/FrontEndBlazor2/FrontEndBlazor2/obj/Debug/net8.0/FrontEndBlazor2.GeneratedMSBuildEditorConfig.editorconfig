@@ -34,8 +34,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSE ANGEL/Pictures/LAPTOP/C\#/Ciclo4/PRACTICA/Api4/FrontEndBlazor2/FrontEndBlazor2/Components/Pages/Venta/RegistrarVentaCompra.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWZW50YVxSZWdpc3RyYXJWZW50YUNvbXByYS5yYXpvcg==
+[C:/Users/JOSE ANGEL/Pictures/LAPTOP/C\#/Ciclo4/PRACTICA/Api4/FrontEndBlazor2/FrontEndBlazor2/Components/Pages/MostrarVenta.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNb3N0cmFyVmVudGEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JOSE ANGEL/Pictures/LAPTOP/C\#/Ciclo4/PRACTICA/Api4/FrontEndBlazor2/FrontEndBlazor2/Components/Pages/VentaPags/RegistrarVentaCompra.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWZW50YVBhZ3NcUmVnaXN0cmFyVmVudGFDb21wcmEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JOSE ANGEL/Pictures/LAPTOP/C\#/Ciclo4/PRACTICA/Api4/FrontEndBlazor2/FrontEndBlazor2/Components/Pages/Weather.razor]
