@@ -211,7 +211,7 @@ begin
 
 end
 go
-
+ 
 select*from venta
 go
 select*from ventaDet

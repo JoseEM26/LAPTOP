@@ -50,8 +50,7 @@
               "RelativeToolTip": "Aplication\\Services\\VentaServices.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAACsAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T20:59:16.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T20:59:16.686Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "Dominio\\Interfaz\\IVentaRepositorio.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T20:55:09.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T20:55:09.905Z"
             },
             {
               "$type": "Document",
@@ -100,8 +98,7 @@
               "RelativeToolTip": "API\\Controllers\\VentaController.cs",
               "ViewState": "AQIAACIAAAAAAAAAAAA3wDgAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T23:54:46.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T23:54:46.02Z"
             },
             {
               "$type": "Document",
@@ -111,7 +108,7 @@
               "RelativeDocumentMoniker": "Infraestructura\\VentaRepositorio.cs",
               "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\Infraestructura\\VentaRepositorio.cs",
               "RelativeToolTip": "Infraestructura\\VentaRepositorio.cs",
-              "ViewState": "AQIAAMgAAAAAAAAAAAAAANIAAABeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANIAAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T22:56:37.451Z",
               "EditorCaption": ""

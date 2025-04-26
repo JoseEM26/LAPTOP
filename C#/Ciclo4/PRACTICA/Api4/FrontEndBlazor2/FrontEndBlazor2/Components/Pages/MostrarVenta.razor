@@ -8,10 +8,10 @@
     List<Venta> Listaventa ;
     List<VentaDet> ListaventaDet;
     VentaLogica _logica = new VentaLogica();
-    Venta ventaUpdate = new Venta()
-    {
-        ListaDetalle=null,
-    };
+    Venta ventaUpdate = null;
+    VentaDet VentaDetUpdate =null;
+
+
 
     protected override void OnInitialized()
     {
@@ -72,21 +72,21 @@
     }
     async Task ActualizarVentaDetalle()
     {
-        var resultado = _logica.ActualizarVenta(ventaUpdate);
+        var resultado = _logica.ActualizarVentaDetalle(VentaDetUpdate);
 
         if (resultado.IdRegistro == 0)
         {
             await JS.InvokeVoidAsync("Swal.fire", new
             {
                 title = "Correct!",
-                text = "Se actualizó correctamente!",
+                text = "Detalle actualizado correctamente!",
                 icon = "success"
             });
 
             await JS.InvokeVoidAsync("bootstrapModal.hide", "#staticBackdrop");
 
-            var resultadoVenta = _logica.ListarVenta();
-            Listaventa = resultadoVenta.DataList;
+            var resultadoVentaDetalle = _logica.ListarVentaDetalle();
+            ListaventaDet = resultadoVentaDetalle.DataList;
 
             StateHasChanged();
         }
@@ -95,17 +95,19 @@
             await JS.InvokeVoidAsync("Swal.fire", new
             {
                 title = "Error",
-                text = resultado.Mensaje ?? "No se pudo actualizar",
+                text = resultado.Mensaje ?? "No se pudo actualizar el detalle",
                 icon = "error"
             });
         }
     }
 
-    async Task AbrirModalActualizar(Venta ventaSeleccionada)
+    async Task AbrirModalActualizar(Venta ventaSeleccionada,VentaDet VentaDetSelecionada)
     {
         await CleanFormVenta(); // limpiar por si acaso
-        ventaUpdate = new Venta
-            {
+        if (ventaSeleccionada!=null)
+        {
+            ventaUpdate = new Venta
+                {
                     idVenta = ventaSeleccionada.idVenta,
                     cliente = ventaSeleccionada.cliente,
                     nroDocumento = ventaSeleccionada.nroDocumento,
@@ -114,7 +116,18 @@
                     igv = ventaSeleccionada.igv,
                     total = ventaSeleccionada.total
                 };
+        }
+        else
+        {
+            VentaDetUpdate = new VentaDet();
+            VentaDetUpdate = VentaDetSelecionada;
+        }
         await JS.InvokeVoidAsync("bootstrapModal.show", "#staticBackdrop");
+
+    }
+    async Task AbrirModalActualizarDetalle(VentaDet ventaSeleccionada)
+    {
+        
 
     }
 
@@ -217,7 +230,7 @@
                         <th scope="row">
                             <button class="btn btn-primary" @onclick="()=>ListarVentaDetalleXIdVenta(x.idVenta)">Producto</button>
                         <button class="btn btn-danger" @onclick="()=>EliminarVenta(x.idVenta)">Eliminar</button>
-                        <button type="button" class="btn btn-primary" @onclick="()=>AbrirModalActualizar(x)">
+                        <button type="button" class="btn btn-primary" @onclick="()=>AbrirModalActualizar(x,null)">
                                 Actualizar
                             </button>
                         </th>
@@ -236,29 +249,55 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    @if (VentaDetUpdate != null)
+                    {
+                        <p>Modo: Actualizando Producto</p>
+                    }
+                    @if (ventaUpdate != null)
+                    {
+                        <p>Modo: Actualizando Venta</p>
+                    }
+
+                </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick="CleanFormVenta"></button>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Id Venta</label>
-                            <input type="text" class="form-control" readonly id="exampleInputPassword1" @bind="ventaUpdate.idVenta">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Nombre Cliente</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" @bind="ventaUpdate.cliente">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Numero Documento</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" @bind="ventaUpdate.nroDocumento">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Fecha Venta</label>
-                            <input type="datetime" class="form-control" readonly id="exampleInputPassword1" @bind="ventaUpdate.fechaVenta">
-                        </div>
-                    </form>
-                </div>
+            @if (ventaUpdate != null)
+            {
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Id Venta</label>
+                        <input type="text" class="form-control" readonly @bind="ventaUpdate.idVenta">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre Cliente</label>
+                        <input type="text" class="form-control" @bind="ventaUpdate.cliente">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Número Documento</label>
+                        <input type="text" class="form-control" @bind="ventaUpdate.nroDocumento">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fecha Venta</label>
+                        <input type="datetime" class="form-control" readonly @bind="ventaUpdate.fechaVenta">
+                    </div>
+                </form>
+            }
+            else if (VentaDetUpdate != null)
+            {
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Producto</label>
+                        <input type="text" class="form-control" @bind="VentaDetUpdate.producto">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" @bind="VentaDetUpdate.cantidad">
+                    </div>
+                    <!-- Añade más campos de detalle si lo deseas -->
+                </form>
+            }
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="CleanFormVenta">Close</button>
                     <button type="button" class="btn btn-primary" @onclick="ActualizarVenta" >Update</button>
@@ -301,7 +340,7 @@
                         <th scope="row">@x.igv</th>
                         <th scope="row">@x.total</th>
                         <button class="btn btn-danger">Eliminar</button>
-                        <button type="button" class="btn btn-primary" >  Actualizar </button>
+                        <button type="button" class="btn btn-primary" @onclick="()=>AbrirModalActualizar(null,x)">  Actualizar </button>
                     </tr>
                 }
             </tbody>
