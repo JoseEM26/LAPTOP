@@ -1,0 +1,48 @@
+﻿<h3>ListarVenta</h3>
+@page "/listar"
+@using FrontEndVenta.Model.Data
+@using FrontEndVenta.Model.Entity
+@rendermode InteractiveServer
+
+
+@code {
+    List<Venta> listaVenta;
+
+    protected override void OnInitialized()
+    {
+        var resultadoVenta = new VentaData().ListarVenta();
+        listaVenta = resultadoVenta.listData;
+        base.OnInitialized();
+    }
+
+
+}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">IDVenta</th>
+                <th scope="col">Cliente</th>
+                <th scope="col">nroDocumento</th>
+                <th scope="col">fechaVenta</th>
+                <th scope="col">SubTotal</th>
+                <th scope="col">igv</th>
+                <th scope="col">total</th>
+            </tr>
+        </thead>
+        <tbody>
+           @foreach(var x in listaVenta )
+        {
+            <tr>
+                <td>@x.idVenta</td>
+                <td>@x.cliente</td>
+                <td>@x.nroDocumento</td>
+                <td>@x.fechaVenta</td>
+                <td>@x.subTotal</td>
+                <td>@x.igv</td>
+                <td>@x.total</td>
+            </tr>
+        }
+    </tbody>
+    </table>
+  
