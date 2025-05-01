@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--- Basic Page Needs  -->
+    <meta charset="utf-8">
+    
+        <title>Buscar nombres y apellidos por DNI - DNI Perú</title>
+    <meta content='Consultar datos con el número de DNI, datos validados por Reniec y Sunat' name="description">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Specific Meta  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://eldni.com/css/jquery-ui.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="https://eldni.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://eldni.com/2020/amp-spectre/spectre.min.css?v=13" >
+    <link rel="stylesheet" type="text/css" href="https://eldni.com/2020/css/add-css.css?v=13" >
+    <link rel="stylesheet" type="text/css" href="https://eldni.com/2020/css/adcss.css?v=13" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('form button.btn').on('click', function() {
+                $(this).text("Buscando...");
+                $(this).parent().addClass("no_click");
+                //$(this).prop('disabled', true);
+
+            });
+        });
+    </script>
+            <style>
+            .adcenter { width: 300px; height: 100px; }
+            @media(min-width: 840px) { .adcenter { width: 300px; height: 250px; } }
+        </style>
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+        <script>
+        window.googletag = window.googletag || {cmd: []};
+        googletag.cmd.push(function() {
+            googletag.defineSlot('/22247651397/cuadrado-1', [[300, 250], [320, 480], [300, 600], [336, 280]], 'div-gpt-ad-1610988368290-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+        </script>
+        <style type="text/css">
+        .no_click {
+            position: relative;
+            cursor: not-allowed;
+        }
+        .no_click::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            background:
+        }
+        .no_click .btn {
+            -webkit-filter: opacity(.7);
+            filter: opacity(.7);
+        }
+        #title-center-h2::before {
+            content: "☝️ "
+        }
+        @media(min-width: 840px) {
+            #title-center-h2::before {
+                content: "👈 "
+            }
+        }
+    </style>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+<body>
+    <header class="bg-primary">
+        <div class="navbar container">
+            <div class="navbar-section">
+                <a href="https://eldni.com" class="navbar-brand mr-2" title="Inicio de buscador">
+                    <!-- <h1><b>eldni.com</b> 🇵🇪</h1> -->
+                    <h1><img alt="Buscar DNI" src="https://eldni.com/2020/img/el-dni-logo.svg"></h1>
+                </a>
+                <!-- <a href="https://github.com/picturepan2/spectre" class="btn btn-link">Noticias</a> -->
+            </div>
+            <nav class="nav-menu col-6 col-md-12">
+                <ul class="tab tab-block ">
+                    <li  class="tab-item active" >
+                        <a href="https://eldni.com/pe/buscar-por-dni">Buscar por DNI</a>
+                    </li>
+                    <li  class="tab-item" >
+                        <a href="https://eldni.com/pe/buscar-por-nombres">Buscar DNI por Nombres</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-noticias">
+                <a href="https://eldni.com/pe/elecciones-2021" class="btn" target="_blank"><span>Elecciones 2021</span> <img alt="Eleccciones Presidenciales y del Congreso" src="https://eldni.com/2020/img/forward.svg"></a>
+            </div>
+        </div>
+    </header>
+    <aside class="ad" id="ad_1">
+        <div class="div_ad">
+            <style>
+                .adheader { width: 320px; height: 100px; margin: 5px 0 5px 0;}
+                @media(min-width: 460px) { .adheader { width: 468px; height: 60px; } }
+                @media(min-width: 720px) { .adheader { width: 728px; height: 90px; } }
+            </style>
+            <ins class="adsbygoogle adheader"
+                 style="display:inline-block"
+                 data-ad-client="ca-pub-8995586921396350"
+                 data-ad-slot="4927582454"></ins>
+             <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </aside>
+    <main class="container container-padding clearfix">
+    <div id="div-left">
+        <section class="columns" id="dni-nombres">
+            <div id="column-left" class="column column-np">
+                <div class="column column-np col-12">
+                    <div class="card text-center">
+                        <div class="card-header"><img src="https://eldni.com/2020/img/dni-to-name.svg" width="160"></div>
+                        <div class="card-body">
+                            <h3>Buscar por DNI</h3>
+                            <div class="small">
+                                <small>Escribe un número para mostrar sus nombres</small>
+                            </div>
+                        </div>
+                        <form autocomplete="on" action="https://eldni.com/pe/buscar-por-dni" id="buscar-por-dni" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="_token" value="EPmCwRD7rV30HhC4pSPX8LPkzfY9xLyq7MeQVdD7">
+                            <div class="form-group" id="input-min">
+                                <input class="form-input" type="text" name="dni" id="dni" placeholder="Número de DNI" value="12345678">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success" form="buscar-por-dni">Buscar nombres</button>
+                            </div>
+                                                    </form>
+                        <aside style="text-align:left;padding: 8px;font-size:14px">
+                            <b><mark>👨‍💼 ¿Quieres contactarnos para negocios?</mark></b><br>
+                            <span>Escríbenos a: <b>negocios<script>document.write(atob("QA=="))</script>eldni.com</b></span>
+                        </aside>
+                    </div>
+                </div>
+                <aside class="ad">
+                    <div class="div_ad">
+                        <ins class="adsbygoogle adcenter"
+                             style="display:inline-block"
+                             data-ad-client="ca-pub-8995586921396350"
+                             data-ad-slot="4927582454"></ins>
+                         <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </aside>
+            </div>
+            <div id="column-center" class="column column-np">
+                <div class="column col-md-12">
+
+                                                                                <div class="text-center">
+                                    <h3 class="text-error">❌ No se ha encontrado el DNI que buscas.</h3>
+                                </div>
+                                                        <h2 class="text-center" id="title-center-h2">Escriba el DNI en "Buscar por DNI" para ver los nombres y apellidos.</h2>
+                            <!-- eldni_buscar_por_dni -->
+                            <div style="margin:5px 0 5px 0">
+                                    <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-8995586921396350"
+                                     data-ad-slot="4927582454"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true">
+
+                                     </ins>
+                                 <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                                        </div>
+                <!-- /22247651397/cuadrado-1 -->
+                <div id='div-gpt-ad-1610988368290-0'>
+                <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1610988368290-0'); });
+                </script>
+                </div>
+                <div id="news_center">
+                    
+                    <!-- https://stackoverflow.com/questions/21753954/how-to-include-a-sub-view-in-blade-templates -->
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="div-right">
+        <div id="news_sidebar">
+            <div class="news-header">
+    <h3>🗳 Elecciones</h3> <sup class="label label-success">Nuevo</sup>
+</div>
+<div class="news-body">
+<ul>
+    <li>
+        <a href="https://eldni.com/pe/como-saber-si-soy-miembro-de-mesa-y-todo-lo-que-tienes-que-hacer-si-lo-eres">🙋‍♀️🙋‍♂️ Saber si soy miembro de mesa</a>
+    </li>
+    <li>
+        <a href="https://eldni.com/pe/donde-votar-en-las-elecciones-2021-local-o-centros-de-votacion">📍 Dónde voy a votar</a>
+    </li>
+    <li>
+        <a href="https://eldni.com/pe/horario-de-votacion-de-elecciones-peru-2021">⏰ Horario de votación</a>
+    </li>
+    <li>
+        <a href="https://eldni.com/pe/conoce-el-cronograma-de-las-elecciones-2021">📋 Cronograma de las Elecciones</a>
+    </li>
+    <li>
+        <a href="https://eldni.com/pe/que-pasa-si-no-voy-a-votar-o-no-voy-como-miembro-de-mesa">😢 ¿Qué pasa si no voto?</a>
+    </li>
+</ul>
+<div>
+<div class="news-header">
+    <h3>📑 Trámites</h3> <sup class="label label-success">Nuevo</sup>
+</div>
+<ul>
+    <li>
+        <a href="https://eldni.com/pe/pasos-para-sacar-duplicado-de-dni-por-internet-precios-y-mas">🌐 Duplicado de DNI online</a>
+    </li>
+    <li>
+        <a href="https://eldni.com/pe/paso-a-paso-de-como-renovar-el-dni-vencido-con-el-celular">📱 Renovar DNI por celular</a>
+    </li>
+    <li>
+        <a href="https://eldni.com/pe/tramita-el-acta-de-nacimiento-de-tu-bebe-desde-casa-y-por-internet">👶 Sacar acta de nacimiento</a>
+    </li>
+</ul>
+<div class="news-header">
+    <h3>🔍 Consultas</h3> <sup class="label label-success">Nuevo</sup>
+</div>
+<ul>
+    <li>
+        <a href="https://eldni.com/pe/identifica-donde-esta-el-codigo-de-ficha-de-dni-y-para-que-sirve">📇 Saber código de ficha de DNI</a>
+    </li>
+    <li>
+        <a href="https://eldni.com/pe/saber-digito-de-verificacion-del-dni-peru">🔢 Saber número de verificación de DNI</a>
+    </li>
+</ul>        </div>
+    </div>
+</main>
+    <footer class="bg-primary">
+        <div class="container">
+            <div class="columns">
+                <div class="column col-6 col-mx-auto text-center">
+                    Eldni.com © 2018-2021
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- adsenc -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        //popup
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-8995586921396350",
+            enable_page_level_ads: true
+        });
+    </script>
+    <!-- anality -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128936185-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-128936185-1');
+    </script>
+</body>
+</html>
