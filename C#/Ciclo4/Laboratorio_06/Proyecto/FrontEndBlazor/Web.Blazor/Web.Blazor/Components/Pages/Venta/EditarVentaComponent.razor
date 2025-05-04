@@ -1,0 +1,173 @@
+﻿@page "/Actualizar_Venta/{key}"
+@using Web.Blazor.Models.Entidad
+@using Web.Blazor.Models.Logica
+@rendermode InteractiveServer
+
+@code {
+	[Parameter]
+	public string key { get; set; } = "";
+
+	EVenta objVenta;
+	EventaDet objVentaDet;
+	List<EventaDet> ListaProductoEiminado = new List<EventaDet>();
+	protected override void OnInitialized()
+	{
+		objVenta = new EVenta();
+		objVenta.Listadetalle = new List<EventaDet>();
+		objVentaDet = new EventaDet();
+		ListaProductoEiminado = new List<EventaDet>();
+
+		var resultado = new VentaBus().ListadoVenta_X_ID(Convert.ToInt32(key));
+		if (resultado.IdRegistro == 0)
+		{
+			objVenta = resultado.Data;
+		}
+
+
+		base.OnInitialized();
+	}
+
+	void AgregarProducto()
+	{
+		//CALCULAMOS MONTOS
+		objVentaDet.subtotal = objVentaDet.CalcularSubtotal();
+		objVentaDet.igv = objVentaDet.CalcularIGV();
+		objVentaDet.total = objVentaDet.CalcularTotal();
+
+		//INSERTAMOS DETALLE A LA LISTA
+		if (objVentaDet.IdventaDet == 0) //registro nuevo
+		{
+			objVenta.Listadetalle.Add(objVentaDet);
+		}
+		else
+		{
+			var modifica = objVenta.Listadetalle.Where(w => w.IdventaDet == objVentaDet.IdventaDet).First();
+			modifica.precio = objVentaDet.precio;
+			modifica.cantidad = objVentaDet.cantidad;
+			modifica.subtotal = objVentaDet.subtotal;
+			modifica.igv = objVentaDet.igv;
+			modifica.total = objVentaDet.total;
+			modifica.flgActualiza = true;
+		}
+
+		//CALCULAMOS PARA LA CABECERA
+		objVenta.subtotal = Math.Round(objVenta.Listadetalle.Sum(s => s.subtotal), 2);
+		objVenta.igv = Math.Round(objVenta.Listadetalle.Sum(s => s.igv),2);
+		objVenta.total = Math.Round(objVenta.Listadetalle.Sum(s => s.total), 2);
+
+		objVentaDet = new EventaDet();
+	}
+
+	void GuardarVenta()
+	{
+		var resultado = new VentaBus().ActualizarVenta(objVenta, ListaProductoEiminado);
+	}
+
+	void EditarProducto(EventaDet item)
+	{
+		objVentaDet = item;
+	}
+
+	void EliminarProducto(EventaDet item)
+	{
+		if (item.IdventaDet > 0)
+		{
+			item.flgEliminado = true;
+			ListaProductoEiminado.Add(item);	
+		}
+		objVenta.Listadetalle.Remove(item);	
+
+		//CALCULAMOS PARA LA CABECERA
+		objVenta.subtotal = Math.Round(objVenta.Listadetalle.Sum(s => s.subtotal), 2);
+		objVenta.igv = Math.Round(objVenta.Listadetalle.Sum(s => s.igv), 2);
+		objVenta.total = Math.Round(objVenta.Listadetalle.Sum(s => s.total), 2);
+	}
+}
+<div class="row mt-3">
+	<label class="fw-bold h3 text-black">EDITAR VENTA</label>
+</div>
+
+<div class="row mt-2">
+	<div class="col-12 col-lg-3">
+		Cliente
+		<input type="text" class="form-control" @bind="@objVenta.cliente" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Nro Documento
+		<input type="text" class="form-control" @bind="@objVenta.nrodocumento" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Fecha Venta
+		<input type="date" class="form-control" readonly @bind="@objVenta.fechaventa" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Sub Total
+		<input type="text" readonly class="form-control" @bind="@objVenta.subtotal" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Igv
+		<input type="text" readonly class="form-control" @bind="@objVenta.igv" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Total
+		<input type="text" readonly class="form-control" @bind="@objVenta.total" />
+	</div>
+	<div class="col-12 col-lg-3">
+		<button class="mt-3 btn btn-lg btn-success" @onclick="GuardarVenta">Guardar</button>
+	</div>
+</div>
+
+<div class="row mt-2">
+	<div class="col-12 col-lg-3">
+		Producto
+		<input type="text" class="form-control" @bind="@objVentaDet.Producto" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Cantidad
+		<input type="text" class="form-control" @bind="@objVentaDet.cantidad" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Precio
+		<input type="text" class="form-control" @bind="@objVentaDet.precio" />
+	</div>
+	<div class="col-12 col-lg-3">
+		<button class="btn btn-lg btn-primary" @onclick="AgregarProducto">Agregar</button>
+	</div>
+
+	<div class="col-12 mt-2">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Producto</th>
+					<th>Cantidad</th>
+					<th>Precio</th>
+					<th>Subtotal</th>
+					<th>IGV</th>
+					<th>Total</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@if (objVenta.Listadetalle.Count > 0)
+				{
+					foreach (var item in objVenta.Listadetalle)
+					{
+						<tr>
+							<td>@item.Producto</td>
+							<td>@item.cantidad</td>
+							<td>@item.precio</td>
+							<td>@item.subtotal</td>
+							<td>@item.igv</td>
+							<td>@item.total</td>
+							<td>
+								<button class="btn btn-primary btn-sm" @onclick="(()=>EditarProducto(item))">Editar</button>
+								<button class="btn btn-danger btn-sm" @onclick="(()=>EliminarProducto(item))">Eliminar</button>
+							</td>
+						</tr>
+					}
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+
