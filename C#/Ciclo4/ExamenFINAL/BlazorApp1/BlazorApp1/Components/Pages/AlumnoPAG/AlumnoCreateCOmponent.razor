@@ -1,0 +1,108 @@
+﻿@page "/create"
+@using BlazorApp1.Model.Entity
+@using BlazorApp1.Model.Logica
+@rendermode InteractiveServer
+
+@code {
+    Alumno alumno;
+    CursoAlumno cursoAllumno;
+    protected override void OnInitialized()
+    {
+        alumno = new Alumno();
+        alumno.fecha = DateTime.Now;
+        alumno.listaCurso = new List<CursoAlumno>();
+        cursoAllumno = new CursoAlumno();
+        cursoAllumno.fechaRegistro = DateTime.Now;
+        base.OnInitialized();
+	}
+
+    void AgregarCurso()
+    {
+        var nuevoCurso = new CursoAlumno
+            {
+                curso = cursoAllumno.curso,
+                nota = cursoAllumno.nota,
+                fechaRegistro = DateTime.Now
+            };
+
+        alumno.listaCurso.Add(nuevoCurso);
+        alumno.promedio = alumno.CalcularPromedio();
+
+        cursoAllumno = new CursoAlumno(); // limpiar campos
+    }
+
+	void GuardarAlumno()
+	{
+		var resultado = new AlumnoLogica().GuardarAlumno(alumno);
+	}
+}
+<div class="row mt-3">
+    <label class="fw-bold h3 text-black">REGISTRAR ALUMNO</label>
+</div>
+
+<div class="row mt-2">
+    <div class="col-12 col-lg-3">
+        Nombre
+        <input type="text" class="form-control" @bind="@alumno.nombre" />
+    </div>
+    <div class="col-12 col-lg-3">
+        Nro Documento
+        <input type="text" class="form-control" @bind="@alumno.nroDocumento" />
+    </div>
+    <div class="col-12 col-lg-3">
+        Fecha
+        <input type="date" class="form-control" @bind="@alumno.fecha" />
+    </div>
+    <div class="col-12 col-lg-3">
+        Ciclo
+        <input type="text" class="form-control" @bind="@alumno.ciclo" />
+    </div>
+    <div class="col-12 col-lg-3 mt-3">
+        Promedio (auto calculado)
+        <input type="text" readonly class="form-control" value="@alumno.CalcularPromedio()" />
+    </div>
+    <div class="col-12 col-lg-3 mt-3">
+        <button class="btn btn-lg btn-success" @onclick="GuardarAlumno">Guardar</button>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <label class="fw-bold h4 text-black">AGREGAR CURSO</label>
+
+    <div class="col-12 col-lg-3">
+        Curso
+        <input type="text" class="form-control" @bind="@cursoAllumno.curso" />
+    </div>
+    <div class="col-12 col-lg-3">   
+        Nota
+        <input type="number" class="form-control" @bind="@cursoAllumno.nota" />
+    </div>
+    <div class="col-12 col-lg-3">
+        <button class="btn btn-lg btn-primary mt-4" @onclick="AgregarCurso">Agregar</button>
+    </div>
+
+    <div class="col-12 mt-4">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                    <th>Nota</th>
+                    <th>Fecha Registro</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (alumno.listaCurso != null && alumno.listaCurso.Count > 0)
+                {
+                    foreach (var item in alumno.listaCurso)
+                    {
+                        <tr>
+                            <td>@item.curso</td>
+                            <td>@item.nota</td>
+                            <td>@item.fechaRegistro.ToShortDateString()</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

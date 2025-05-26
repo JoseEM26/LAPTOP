@@ -1,0 +1,17 @@
+INDEX VERSION 1.134
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1515169907.index
+\LPI_T3CL_EF_EspinozaMoralesJoseAngel\src\main\java
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1482847481.index
+\CarritoCompras\src\main\java
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2728056657.index
+\ExploraPeru\src\main\java
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1296149258.index
+\sesion04\src\main\java
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2348299946.index
+\LPI_T3CL_EF_EspinozaMoralesJoseAngel\src\main\java
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2392944810.index
+\PracticaT2_Tabla\src\main\java
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2985021486.index
+\sesion04\src\main\java
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\759470413.index
+\ExploraPeru\src\main\java

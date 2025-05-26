@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+C:\Users\JOSE ANGEL\Pictures\LAPTOP\JAVA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+22757419.index
+4192570341.index
+1896375224.index
+802751852.index
+1358135703.index
+759470413.index
+2538646528.index
+3448726748.index

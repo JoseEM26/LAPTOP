@@ -1,0 +1,10 @@
+127.0.0.1 - - [16/Dec/2024:21:48:41 -0500] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [16/Dec/2024:21:48:42 -0500] "GET /sesion01/compra.jsp HTTP/1.1" 200 3859
+0:0:0:0:0:0:0:1 - - [16/Dec/2024:21:48:42 -0500] "GET /sesion01/compra.jsp HTTP/1.1" 200 3859
+0:0:0:0:0:0:0:1 - - [16/Dec/2024:21:48:43 -0500] "GET /sesion01/img/bannercib.jpg HTTP/1.1" 200 166874
+0:0:0:0:0:0:0:1 - - [16/Dec/2024:21:48:43 -0500] "GET /sesion01/css/estilos.css HTTP/1.1" 200 1435
+0:0:0:0:0:0:0:1 - - [16/Dec/2024:21:48:43 -0500] "GET /sesion01/img/productos/.png HTTP/1.1" 404 798
+0:0:0:0:0:0:0:1 - - [16/Dec/2024:21:48:43 -0500] "GET /sesion01/img/iconos/facebook_icon.png HTTP/1.1" 200 6095
+0:0:0:0:0:0:0:1 - - [16/Dec/2024:21:48:43 -0500] "GET /sesion01/img/productos/.png HTTP/1.1" 404 798
+0:0:0:0:0:0:0:1 - - [16/Dec/2024:21:48:44 -0500] "GET /favicon.ico HTTP/1.1" 404 770
+0:0:0:0:0:0:0:1 - - [16/Dec/2024:21:48:44 -0500] "GET /favicon.ico HTTP/1.1" 404 770

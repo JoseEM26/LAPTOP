@@ -281,6 +281,7 @@ namespace Infraestructura
 
 							Alumno alumno = new Alumno();
 							alumno.listaCurso = new List<CursoAlumno>();
+							List<Alumno> listaAlumno = new List<Alumno>();
 
 							using (SqlDataReader reader = cmd.ExecuteReader())
 							{
@@ -309,10 +310,10 @@ namespace Infraestructura
 									}
 								}
 							}
-
+							listaAlumno.Add(alumno);
 							resultado.IdRegistro = 0;
 							resultado.Mensaje = "ok";
-							resultado.Data = alumno;
+							resultado.DataList = listaAlumno;
 						}
 						catch (Exception ex)
 						{
