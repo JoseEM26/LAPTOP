@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\ExamenFINAL\\BackendEstudiante\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC93B44A-20F4-4478-A6B4-84D31741ED9C}|API\\API.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\examenfinal\\backendestudiante\\api\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC93B44A-20F4-4478-A6B4-84D31741ED9C}|API\\API.csproj|solutionrelative:api\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03451764-AE0E-4435-A840-1D2268ADF404}|Infraestructura\\Infraestructura.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\examenfinal\\backendestudiante\\infraestructura\\alumnorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03451764-AE0E-4435-A840-1D2268ADF404}|Infraestructura\\Infraestructura.csproj|solutionrelative:infraestructura\\alumnorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F377ED-6374-4047-A37A-1405907BDCA2}|Aplication\\Aplication.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\examenfinal\\backendestudiante\\aplication\\dtos\\alumnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F377ED-6374-4047-A37A-1405907BDCA2}|Aplication\\Aplication.csproj|solutionrelative:aplication\\dtos\\alumnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlumnoController.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\ExamenFINAL\\BackendEstudiante\\API\\Controllers\\AlumnoController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AlumnoController.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\ExamenFINAL\\BackendEstudiante\\API\\Controllers\\AlumnoController.cs",
+              "RelativeToolTip": "API\\Controllers\\AlumnoController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T05:32:11.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlumnoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\ExamenFINAL\\BackendEstudiante\\Infraestructura\\AlumnoRepository.cs",
+              "RelativeDocumentMoniker": "Infraestructura\\AlumnoRepository.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\ExamenFINAL\\BackendEstudiante\\Infraestructura\\AlumnoRepository.cs",
+              "RelativeToolTip": "Infraestructura\\AlumnoRepository.cs",
+              "ViewState": "AQIAACYBAAAAAAAAAAAwwDsBAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T05:22:45.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlumnoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\ExamenFINAL\\BackendEstudiante\\Aplication\\DTOs\\AlumnoDTO.cs",
+              "RelativeDocumentMoniker": "Aplication\\DTOs\\AlumnoDTO.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\ExamenFINAL\\BackendEstudiante\\Aplication\\DTOs\\AlumnoDTO.cs",
+              "RelativeToolTip": "Aplication\\DTOs\\AlumnoDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T05:22:35.641Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

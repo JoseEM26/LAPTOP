@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor2\\FrontEndBlazor2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FrontEndBlazor2.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FrontEndBlazor2.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor2\\FrontEndBlazor2\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor2\\FrontEndBlazor2\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor2\\FrontEndBlazor2\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\FrontEndBlazor2\\FrontEndBlazor2\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FrontEndBlazor2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FrontEndBlazor2.props",
+      "PackagePath": "build\\FrontEndBlazor2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FrontEndBlazor2.props",
+      "PackagePath": "buildMultiTargeting\\FrontEndBlazor2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FrontEndBlazor2.props",
+      "PackagePath": "buildTransitive\\FrontEndBlazor2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFB6F76-0DE0-48E1-BAE4-405EA59E32B0}|Infraestructura\\Infraestructura.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\backendventas\\infraestructura\\ventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFB6F76-0DE0-48E1-BAE4-405EA59E32B0}|Infraestructura\\Infraestructura.csproj|solutionrelative:infraestructura\\ventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE2B2CF4-F5FC-466D-8B22-FADFF92D0691}|Dominio\\Dominio.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\backendventas\\dominio\\interfaz\\iventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE2B2CF4-F5FC-466D-8B22-FADFF92D0691}|Dominio\\Dominio.csproj|solutionrelative:dominio\\interfaz\\iventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3F7BF3-2AC8-43ED-B033-5EEEBFC76C89}|API\\API.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\backendventas\\api\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3F7BF3-2AC8-43ED-B033-5EEEBFC76C89}|API\\API.csproj|solutionrelative:api\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C83663E6-9ED8-4FD9-B8C2-4BE0FE2EE17B}|Aplication\\Aplication.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\backendventas\\aplication\\services\\ventaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C83663E6-9ED8-4FD9-B8C2-4BE0FE2EE17B}|Aplication\\Aplication.csproj|solutionrelative:aplication\\services\\ventaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C83663E6-9ED8-4FD9-B8C2-4BE0FE2EE17B}|Aplication\\Aplication.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\backendventas\\aplication\\mappers\\ventamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C83663E6-9ED8-4FD9-B8C2-4BE0FE2EE17B}|Aplication\\Aplication.csproj|solutionrelative:aplication\\mappers\\ventamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C83663E6-9ED8-4FD9-B8C2-4BE0FE2EE17B}|Aplication\\Aplication.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api4\\backendventas\\aplication\\dtos\\ventadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C83663E6-9ED8-4FD9-B8C2-4BE0FE2EE17B}|Aplication\\Aplication.csproj|solutionrelative:aplication\\dtos\\ventadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VentaServices.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\Aplication\\Services\\VentaServices.cs",
+              "RelativeDocumentMoniker": "Aplication\\Services\\VentaServices.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\Aplication\\Services\\VentaServices.cs",
+              "RelativeToolTip": "Aplication\\Services\\VentaServices.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACsAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:59:16.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IVentaRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\Dominio\\Interfaz\\IVentaRepositorio.cs",
+              "RelativeDocumentMoniker": "Dominio\\Interfaz\\IVentaRepositorio.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\Dominio\\Interfaz\\IVentaRepositorio.cs",
+              "RelativeToolTip": "Dominio\\Interfaz\\IVentaRepositorio.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:55:09.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VentaMapper.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\Aplication\\MAPPERs\\VentaMapper.cs",
+              "RelativeDocumentMoniker": "Aplication\\MAPPERs\\VentaMapper.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\Aplication\\MAPPERs\\VentaMapper.cs",
+              "RelativeToolTip": "Aplication\\MAPPERs\\VentaMapper.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAADwvzYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T00:58:51.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VentaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\Aplication\\DTOs\\VentaDTO.cs",
+              "RelativeDocumentMoniker": "Aplication\\DTOs\\VentaDTO.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\Aplication\\DTOs\\VentaDTO.cs",
+              "RelativeToolTip": "Aplication\\DTOs\\VentaDTO.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAqwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T00:57:26.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VentaController.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\API\\Controllers\\VentaController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\VentaController.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\API\\Controllers\\VentaController.cs",
+              "RelativeToolTip": "API\\Controllers\\VentaController.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAA3wDgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T23:54:46.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VentaRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\Infraestructura\\VentaRepositorio.cs",
+              "RelativeDocumentMoniker": "Infraestructura\\VentaRepositorio.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api4\\BackendVentas\\Infraestructura\\VentaRepositorio.cs",
+              "RelativeToolTip": "Infraestructura\\VentaRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANIAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T22:56:37.451Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

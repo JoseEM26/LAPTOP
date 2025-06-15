@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POOI_T2_EspinozaMoralesJoseAngel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{21CD2EDB-724F-49AF-919A-296910C8843F}|POOI_T2_EspinozaMoralesJoseAngel\\POOI_T2_EspinozaMoralesJoseAngel.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\pooi_t2_espinozamoralesjoseangel\\pooi_t2_espinozamoralesjoseangel\\controllers\\agenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21CD2EDB-724F-49AF-919A-296910C8843F}|POOI_T2_EspinozaMoralesJoseAngel\\POOI_T2_EspinozaMoralesJoseAngel.csproj|solutionrelative:pooi_t2_espinozamoralesjoseangel\\controllers\\agenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AgenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POOI_T2_EspinozaMoralesJoseAngel\\POOI_T2_EspinozaMoralesJoseAngel\\Controllers\\AgenciaController.cs",
+              "RelativeDocumentMoniker": "POOI_T2_EspinozaMoralesJoseAngel\\Controllers\\AgenciaController.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\POOI_T2_EspinozaMoralesJoseAngel\\POOI_T2_EspinozaMoralesJoseAngel\\Controllers\\AgenciaController.cs",
+              "RelativeToolTip": "POOI_T2_EspinozaMoralesJoseAngel\\Controllers\\AgenciaController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T20:11:24.069Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

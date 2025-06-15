@@ -1,0 +1,29 @@
+<button class="btn btn-success"> <a href="add"></a></button>
+
+<div class="container">
+  <h2>Listado Customer</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Email</th>
+        <th scope="col">Methods</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of customers">
+        <th scope="row">{{x.id}}</th>
+        <td>{{x.firstName}}</td>
+        <td>{{x.lastName}}</td>
+        <td>{{x.email}}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteCustomer(x.id)">Eliminar</button>
+          <a routerLink="put"><button class="btn btn-primary">Actualizar</button></a>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

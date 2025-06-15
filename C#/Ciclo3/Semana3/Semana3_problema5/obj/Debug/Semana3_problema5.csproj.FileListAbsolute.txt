@@ -1,0 +1,7 @@
+D:\POO\ConsoleApp1\Semana3_problema5\bin\Debug\Semana3_problema5.exe.config
+D:\POO\ConsoleApp1\Semana3_problema5\bin\Debug\Semana3_problema5.exe
+D:\POO\ConsoleApp1\Semana3_problema5\bin\Debug\Semana3_problema5.pdb
+D:\POO\ConsoleApp1\Semana3_problema5\obj\Debug\Semana3_problema5.csproj.AssemblyReference.cache
+D:\POO\ConsoleApp1\Semana3_problema5\obj\Debug\Semana3_problema5.csproj.CoreCompileInputs.cache
+D:\POO\ConsoleApp1\Semana3_problema5\obj\Debug\Semana3_problema5.exe
+D:\POO\ConsoleApp1\Semana3_problema5\obj\Debug\Semana3_problema5.pdb

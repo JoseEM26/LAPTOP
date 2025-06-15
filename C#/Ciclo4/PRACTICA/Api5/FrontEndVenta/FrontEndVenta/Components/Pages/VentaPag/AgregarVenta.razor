@@ -1,0 +1,130 @@
+﻿<h3>AgregarVenta</h3>
+@page "/venta"
+@using FrontEndVenta.Model.Data
+@using FrontEndVenta.Model.Entity
+@rendermode InteractiveServer
+
+@code {
+
+	Venta venta;
+	VentaDet ventaDet;
+	protected override void OnInitialized()
+	{
+		venta = new Venta();
+		venta.fechaVenta = DateTime.Now;
+		venta.listaVentaDet = new List<VentaDet>();
+		ventaDet = new VentaDet();
+
+		base.OnInitialized();
+	}
+	async Task GuardarVentaDet()
+	{
+		ventaDet.subTotal = ventaDet.CalcularSubtotal();
+		ventaDet.igv = ventaDet.CalcularIGV();
+		ventaDet.total = ventaDet.CalculaTotal();
+		venta.listaVentaDet.Add(ventaDet);
+		venta.subTotal = venta.listaVentaDet.Sum(x => x.subTotal);
+		venta.igv = venta.listaVentaDet.Sum(x => x.igv);
+		venta.total = venta.listaVentaDet.Sum(x => x.total);
+		ventaDet = new VentaDet();
+	}
+	async Task GuardarVenta()
+	{
+		new VentaData().CreateVenta(venta);
+		venta = new Venta()
+			{
+				cliente = "",
+				fechaVenta = DateTime.Now,
+igv=0,
+listaVentaDet=new List<VentaDet>(),
+nroDocumento="",
+subTotal=0,
+total=0
+			};
+	}
+}
+<div class="row mt-2">
+	<div class="col-12 col-lg-3">
+		Cliente
+		<input type="text" class="form-control" @bind="@venta.cliente" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Nro Documento
+		<input type="text" class="form-control" @bind="@venta.nroDocumento" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Fecha Venta
+		<input type="date" class="form-control" readonly @bind="@venta.fechaVenta" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Sub Total
+		<input type="text" readonly class="form-control" @bind="@venta.subTotal" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Igv
+		<input type="text" readonly class="form-control" @bind="@venta.igv" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Total
+		<input type="text" readonly class="form-control" @bind="@venta.total" />
+	</div>
+	<div class="col-12 col-lg-3">
+		<button class="mt-3 btn btn-lg btn-success" @onclick="GuardarVenta" >Guardar</button>
+	</div>
+</div>
+
+	<div class="row mt-2">
+	<div class="col-12 col-lg-3">
+		Producto
+		<input type="text"  class="form-control" @bind="@ventaDet.producto" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Cantidad
+		<input type="text"  class="form-control" @bind="@ventaDet.cantidad" />
+	</div>
+	<div class="col-12 col-lg-3">
+		Precio
+		<input type="text"  class="form-control" @bind="@ventaDet.precio" />
+	</div>
+	<div class="col-12 col-lg-3">
+		<button class="btn btn-lg btn-primary" @onclick="GuardarVentaDet">Agregar</button>
+	</div>
+
+	<div class="col-12 mt-2">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Producto</th>
+					<th>Cantidad</th>
+					<th>Precio</th>
+					<th>Subtotal</th>
+					<th>IGV</th>
+					<th>Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				@if (venta.listaVentaDet.Count() > 0)
+				{
+					foreach (var item in venta.listaVentaDet)
+					{
+						<tr>
+							<td>@item.producto</td>
+							<td>@item.cantidad</td>
+							<td>@item.precio</td>
+							<td>@item.subTotal</td>
+							<td>@item.igv</td>
+							<td>@item.total</td>
+						</tr>
+					}
+				}
+				else
+				{
+					<tr>
+						<td colspan="6">Tabla Vacia</td>
+						
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+   </div>

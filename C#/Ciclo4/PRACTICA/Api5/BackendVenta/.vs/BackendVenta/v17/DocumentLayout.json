@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC93B44A-20F4-4478-A6B4-84D31741ED9C}|API\\API.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api5\\backendventa\\api\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC93B44A-20F4-4478-A6B4-84D31741ED9C}|API\\API.csproj|solutionrelative:api\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B3F8BA1-6366-4753-AD46-469A516A8C3D}|Dominio\\Dominio.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api5\\backendventa\\dominio\\identidad\\resultadotransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B3F8BA1-6366-4753-AD46-469A516A8C3D}|Dominio\\Dominio.csproj|solutionrelative:dominio\\identidad\\resultadotransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B3F8BA1-6366-4753-AD46-469A516A8C3D}|Dominio\\Dominio.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api5\\backendventa\\dominio\\identidad\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B3F8BA1-6366-4753-AD46-469A516A8C3D}|Dominio\\Dominio.csproj|solutionrelative:dominio\\identidad\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03451764-AE0E-4435-A840-1D2268ADF404}|Infraestructura\\Infraestructura.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api5\\backendventa\\infraestructura\\ventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03451764-AE0E-4435-A840-1D2268ADF404}|Infraestructura\\Infraestructura.csproj|solutionrelative:infraestructura\\ventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03451764-AE0E-4435-A840-1D2268ADF404}|Infraestructura\\Infraestructura.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api5\\backendventa\\infraestructura\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03451764-AE0E-4435-A840-1D2268ADF404}|Infraestructura\\Infraestructura.csproj|solutionrelative:infraestructura\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F377ED-6374-4047-A37A-1405907BDCA2}|Aplication\\Aplication.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api5\\backendventa\\aplication\\services\\ventaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F377ED-6374-4047-A37A-1405907BDCA2}|Aplication\\Aplication.csproj|solutionrelative:aplication\\services\\ventaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC93B44A-20F4-4478-A6B4-84D31741ED9C}|API\\API.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api5\\backendventa\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC93B44A-20F4-4478-A6B4-84D31741ED9C}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC93B44A-20F4-4478-A6B4-84D31741ED9C}|API\\API.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api5\\backendventa\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC93B44A-20F4-4478-A6B4-84D31741ED9C}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F377ED-6374-4047-A37A-1405907BDCA2}|Aplication\\Aplication.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api5\\backendventa\\aplication\\mappers\\ventamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F377ED-6374-4047-A37A-1405907BDCA2}|Aplication\\Aplication.csproj|solutionrelative:aplication\\mappers\\ventamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F377ED-6374-4047-A37A-1405907BDCA2}|Aplication\\Aplication.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api5\\backendventa\\aplication\\dtos\\ventadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F377ED-6374-4047-A37A-1405907BDCA2}|Aplication\\Aplication.csproj|solutionrelative:aplication\\dtos\\ventadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B3F8BA1-6366-4753-AD46-469A516A8C3D}|Dominio\\Dominio.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api5\\backendventa\\dominio\\interfaz\\iventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B3F8BA1-6366-4753-AD46-469A516A8C3D}|Dominio\\Dominio.csproj|solutionrelative:dominio\\interfaz\\iventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T23:14:29.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VentaController.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\API\\Controllers\\VentaController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\VentaController.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\API\\Controllers\\VentaController.cs",
+              "RelativeToolTip": "API\\Controllers\\VentaController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T23:08:05.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VentaServices.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Aplication\\Services\\VentaServices.cs",
+              "RelativeDocumentMoniker": "Aplication\\Services\\VentaServices.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Aplication\\Services\\VentaServices.cs",
+              "RelativeToolTip": "Aplication\\Services\\VentaServices.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAjwBAAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T23:03:57.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VentaMapper.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Aplication\\Mappers\\VentaMapper.cs",
+              "RelativeDocumentMoniker": "Aplication\\Mappers\\VentaMapper.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Aplication\\Mappers\\VentaMapper.cs",
+              "RelativeToolTip": "Aplication\\Mappers\\VentaMapper.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAmwCEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:57:37.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VentaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Aplication\\DTOs\\VentaDTO.cs",
+              "RelativeDocumentMoniker": "Aplication\\DTOs\\VentaDTO.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Aplication\\DTOs\\VentaDTO.cs",
+              "RelativeToolTip": "Aplication\\DTOs\\VentaDTO.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:56:21.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VentaRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Infraestructura\\VentaRepositorio.cs",
+              "RelativeDocumentMoniker": "Infraestructura\\VentaRepositorio.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Infraestructura\\VentaRepositorio.cs",
+              "RelativeToolTip": "Infraestructura\\VentaRepositorio.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAIA9wBcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:22:58.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Infraestructura\\Conexion.cs",
+              "RelativeDocumentMoniker": "Infraestructura\\Conexion.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Infraestructura\\Conexion.cs",
+              "RelativeToolTip": "Infraestructura\\Conexion.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:22:19.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Venta.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Dominio\\Identidad\\Venta.cs",
+              "RelativeDocumentMoniker": "Dominio\\Identidad\\Venta.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Dominio\\Identidad\\Venta.cs",
+              "RelativeToolTip": "Dominio\\Identidad\\Venta.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAADwvwgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:12:45.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResultadoTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Dominio\\Identidad\\ResultadoTransaction.cs",
+              "RelativeDocumentMoniker": "Dominio\\Identidad\\ResultadoTransaction.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Dominio\\Identidad\\ResultadoTransaction.cs",
+              "RelativeToolTip": "Dominio\\Identidad\\ResultadoTransaction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:13:04.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\appsettings.json",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\API\\appsettings.json",
+              "RelativeToolTip": "API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-26T23:14:33.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IVentaRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Dominio\\Interfaz\\IVentaRepositorio.cs",
+              "RelativeDocumentMoniker": "Dominio\\Interfaz\\IVentaRepositorio.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\Api5\\BackendVenta\\Dominio\\Interfaz\\IVentaRepositorio.cs",
+              "RelativeToolTip": "Dominio\\Interfaz\\IVentaRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T22:21:32.632Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

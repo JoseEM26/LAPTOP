@@ -1,0 +1,102 @@
+﻿@page "/listar"
+@using BlazorApp1.Model.Logica
+@using BlazorApp1.Model.Entity
+@rendermode InteractiveServer
+
+@code {
+    List<Alumno> ListadoAlumno = new List<Alumno>();
+    int id = 0;
+
+    protected override void OnInitialized()
+    {
+        ListaVenta();
+        base.OnInitialized();
+    }
+
+    void ListaVenta()
+    {
+        var resultado = new AlumnoLogica().ListadoAlumno();
+        if (resultado.IdRegistro == -1)
+        {
+            ListadoAlumno = new List<Alumno>();
+        }
+        else
+        {
+            List<Alumno> Newlista = new List<Alumno>();
+            Newlista.Add(resultado.Data);
+            ListadoAlumno = Newlista;
+        }
+    }
+
+    void FiltrarxID()
+    {
+        if (id <= 0)
+        {
+            Console.WriteLine("Por favor ingresa un ID válido.");
+            return;
+        }
+
+        var resultado = new AlumnoLogica().ListadoVenta_X_ID(id);
+        if (resultado.IdRegistro == -1)
+        {
+            Console.WriteLine("No se encontraron resultados.");
+        }
+        else
+        {
+            ListadoAlumno = resultado.DataList;
+        }
+    }
+}
+
+<div class="row mt-4">
+    <!-- Filtro de búsqueda -->
+    <div class="col-12 col-md-6 d-flex align-items-center">
+        <input type="number" class="form-control small me-2" placeholder="Filtrar por ID" @bind="id" />
+        <button class="btn btn-primary" @onclick="FiltrarxID">Filtrar</button>
+    </div>
+
+    <!-- Título y botón de registro -->
+    <div class="col-12 col-md-6 text-md-end mt-3 mt-md-0">
+        <a class="btn btn-success btn-lg" href="create">Registrar Alumno</a>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <!-- Título de la lista de alumnos -->
+    <div class="col-12 text-center">
+        <h4 class="text-black">Listado de Alumnos</h4>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Nro Documento</th>
+                <th>Fecha</th>
+                <th>Ciclo</th>
+                <th>Promedio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var alumno in ListadoAlumno)
+            {
+                <tr>
+                    <td>@alumno.idAlumno</td>
+                    <td>@alumno.nombre</td>
+                    <td>@alumno.nroDocumento</td>
+                    <td>@alumno.fecha.ToString("yyyy-MM-dd")</td>
+                    <td>@alumno.ciclo</td>
+                    <td>@alumno.promedio</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="actualizar/@alumno.idAlumno">Editar</a>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Semana4_practice1.Models.Pais>
+
+@{
+    ViewBag.Title = "MostrarTodo";
+}
+
+<h2>MostrarTodo</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.country_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.country_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.region_id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.country_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.country_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.region_id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Actualizar", new {  id=item.country_id  }) |
+            @Html.ActionLink("Details", "MostrarPais", new {  id=item.country_id  }) |
+            @Html.ActionLink("Delete", "Eliminar", new {  id=item.country_id  })
+        </td>
+    </tr>
+}
+
+</table>

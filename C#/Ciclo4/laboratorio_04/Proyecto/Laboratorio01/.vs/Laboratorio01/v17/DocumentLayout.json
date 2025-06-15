@@ -1,0 +1,114 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\laboratorio_04\\Proyecto\\Laboratorio01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A417BBC-AE22-4DF8-922E-23CE785A619D}|Infraestructura\\Infraestructura.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\laboratorio_04\\proyecto\\laboratorio01\\infraestructura\\ventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A417BBC-AE22-4DF8-922E-23CE785A619D}|Infraestructura\\Infraestructura.csproj|solutionrelative:infraestructura\\ventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A417BBC-AE22-4DF8-922E-23CE785A619D}|Infraestructura\\Infraestructura.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\laboratorio_04\\proyecto\\laboratorio01\\infraestructura\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A417BBC-AE22-4DF8-922E-23CE785A619D}|Infraestructura\\Infraestructura.csproj|solutionrelative:infraestructura\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE5D3F1-6C42-4DA3-BBD5-2BD45A752B0A}|Dominio\\Dominio.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\laboratorio_04\\proyecto\\laboratorio01\\dominio\\entidades\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAE5D3F1-6C42-4DA3-BBD5-2BD45A752B0A}|Dominio\\Dominio.csproj|solutionrelative:dominio\\entidades\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE5D3F1-6C42-4DA3-BBD5-2BD45A752B0A}|Dominio\\Dominio.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\laboratorio_04\\proyecto\\laboratorio01\\dominio\\entidades\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAE5D3F1-6C42-4DA3-BBD5-2BD45A752B0A}|Dominio\\Dominio.csproj|solutionrelative:dominio\\entidades\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE5D3F1-6C42-4DA3-BBD5-2BD45A752B0A}|Dominio\\Dominio.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\laboratorio_04\\proyecto\\laboratorio01\\dominio\\interfaces\\iventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAE5D3F1-6C42-4DA3-BBD5-2BD45A752B0A}|Dominio\\Dominio.csproj|solutionrelative:dominio\\interfaces\\iventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConexionBD.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\laboratorio_04\\Proyecto\\Laboratorio01\\Infraestructura\\ConexionBD.cs",
+              "RelativeDocumentMoniker": "Infraestructura\\ConexionBD.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\laboratorio_04\\Proyecto\\Laboratorio01\\Infraestructura\\ConexionBD.cs",
+              "RelativeToolTip": "Infraestructura\\ConexionBD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:48:30.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Alumno.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\laboratorio_04\\Proyecto\\Laboratorio01\\Dominio\\Entidades\\Alumno.cs",
+              "RelativeDocumentMoniker": "Dominio\\Entidades\\Alumno.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\laboratorio_04\\Proyecto\\Laboratorio01\\Dominio\\Entidades\\Alumno.cs",
+              "RelativeToolTip": "Dominio\\Entidades\\Alumno.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:44:53.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VentaRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\laboratorio_04\\Proyecto\\Laboratorio01\\Infraestructura\\VentaRepositorio.cs",
+              "RelativeDocumentMoniker": "Infraestructura\\VentaRepositorio.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\laboratorio_04\\Proyecto\\Laboratorio01\\Infraestructura\\VentaRepositorio.cs",
+              "RelativeToolTip": "Infraestructura\\VentaRepositorio.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAA3wDUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T02:47:51.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IVentaRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\laboratorio_04\\Proyecto\\Laboratorio01\\Dominio\\Interfaces\\IVentaRepositorio.cs",
+              "RelativeDocumentMoniker": "Dominio\\Interfaces\\IVentaRepositorio.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\laboratorio_04\\Proyecto\\Laboratorio01\\Dominio\\Interfaces\\IVentaRepositorio.cs",
+              "RelativeToolTip": "Dominio\\Interfaces\\IVentaRepositorio.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvw0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T02:44:27.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Venta.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\laboratorio_04\\Proyecto\\Laboratorio01\\Dominio\\Entidades\\Venta.cs",
+              "RelativeDocumentMoniker": "Dominio\\Entidades\\Venta.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\laboratorio_04\\Proyecto\\Laboratorio01\\Dominio\\Entidades\\Venta.cs",
+              "RelativeToolTip": "Dominio\\Entidades\\Venta.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T02:34:05.567Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 123,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

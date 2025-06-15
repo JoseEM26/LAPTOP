@@ -1,0 +1,16 @@
+2024-09-10 12:25:47,715 [1] INFO ejemplo_07.Program - iniciando aplicacion
+2024-09-10 12:26:28,583 [1] INFO ejemplo_07.Program - iniciando aplicacion
+2024-09-10 12:26:28,629 [1] ERROR ejemplo_07.Program - System.DivideByZeroException: Intento de dividir por cero.
+   en ejemplo_07.Program.Main(String[] args) en D:\POO\POO1_Semana01\ejemplo_07\Program.cs:línea 23
+2024-09-10 12:27:29,183 [1] INFO ejemplo_07.Program - iniciando aplicacion
+2024-09-10 12:27:29,194 [1] ERROR ejemplo_07.Program - System.DivideByZeroException: Intento de dividir por cero.
+   en ejemplo_07.Program.Main(String[] args) en D:\POO\POO1_Semana01\ejemplo_07\Program.cs:línea 23
+2024-09-10 12:27:29,207 [1] ERROR ejemplo_07.Program - Intento de dividir por cero.
+2024-09-10 12:27:33,639 [1] INFO ejemplo_07.Program - iniciando aplicacion
+2024-09-10 12:27:33,684 [1] ERROR ejemplo_07.Program - System.DivideByZeroException: Intento de dividir por cero.
+   en ejemplo_07.Program.Main(String[] args) en D:\POO\POO1_Semana01\ejemplo_07\Program.cs:línea 23
+2024-09-10 12:27:33,689 [1] ERROR ejemplo_07.Program - Intento de dividir por cero.
+2024-09-10 12:44:16,412 [1] INFO ejemplo_07.Program - iniciando aplicacion
+2024-09-10 12:44:16,418 [1] ERROR ejemplo_07.Program - ejemplo_07.numeroPersonalizadoException: error exception
+   en ejemplo_07.Program.Main(String[] args) en D:\POO\POO1_Semana01\ejemplo_07\Program.cs:línea 27
+2024-09-10 12:44:16,436 [1] ERROR ejemplo_07.Program - error exception

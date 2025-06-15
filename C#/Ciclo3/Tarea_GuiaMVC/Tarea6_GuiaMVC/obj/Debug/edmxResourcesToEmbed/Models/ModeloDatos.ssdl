@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NegociosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cargos">
+    <Key>
+      <PropertyRef Name="idcargo" />
+    </Key>
+    <Property Name="idcargo" Type="int" Nullable="false" />
+    <Property Name="desCargo" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Categorias">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="int" Nullable="false" />
+    <Property Name="NombreCategoria" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Descripcion" Type="text" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="NomCliente" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="DirCliente" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="idpais" Type="char" MaxLength="3" />
+    <Property Name="fonoCliente" Type="varchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Distritos">
+    <Key>
+      <PropertyRef Name="idDistrito" />
+    </Key>
+    <Property Name="idDistrito" Type="int" Nullable="false" />
+    <Property Name="nomDistrito" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Empleados">
+    <Key>
+      <PropertyRef Name="IdEmpleado" />
+    </Key>
+    <Property Name="IdEmpleado" Type="int" Nullable="false" />
+    <Property Name="ApeEmpleado" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NomEmpleado" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FecNac" Type="datetime" Nullable="false" />
+    <Property Name="DirEmpleado" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="idDistrito" Type="int" />
+    <Property Name="fonoEmpleado" Type="varchar" MaxLength="15" />
+    <Property Name="idCargo" Type="int" />
+    <Property Name="FecContrata" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="paises">
+    <Key>
+      <PropertyRef Name="Idpais" />
+    </Key>
+    <Property Name="Idpais" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="NombrePais" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <EntityType Name="pedidoscabe">
+    <Key>
+      <PropertyRef Name="IdPedido" />
+    </Key>
+    <Property Name="IdPedido" Type="int" Nullable="false" />
+    <Property Name="IdCliente" Type="varchar" MaxLength="5" />
+    <Property Name="IdEmpleado" Type="int" />
+    <Property Name="FechaPedido" Type="datetime" Nullable="false" />
+    <Property Name="FechaEntrega" Type="datetime" />
+    <Property Name="FechaEnvio" Type="datetime" />
+    <Property Name="EnvioPedido" Type="char" MaxLength="1" />
+    <Property Name="CantidaPedido" Type="int" />
+    <Property Name="Destinatario" Type="varchar" MaxLength="40" />
+    <Property Name="DirDestinatario" Type="varchar" MaxLength="60" />
+    <Property Name="CiuDestinatario" Type="varchar" MaxLength="60" />
+    <Property Name="RefDestnatario" Type="varchar" MaxLength="60" />
+    <Property Name="DepDestinatario" Type="varchar" MaxLength="60" />
+    <Property Name="PaiDestinatario" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'Negocios.dbo.pedidosdeta' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="pedidosdeta">
+    <Key>
+      <PropertyRef Name="PrecioUnidad" />
+      <PropertyRef Name="Cantidad" />
+      <PropertyRef Name="Descuento" />
+    </Key>
+    <Property Name="IdPedido" Type="int" />
+    <Property Name="IdProducto" Type="int" />
+    <Property Name="PrecioUnidad" Type="decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="Cantidad" Type="smallint" Nullable="false" />
+    <Property Name="Descuento" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="IdProducto" />
+    </Key>
+    <Property Name="IdProducto" Type="int" Nullable="false" />
+    <Property Name="NomProducto" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="IdProveedor" Type="int" />
+    <Property Name="IdCategoria" Type="int" />
+    <Property Name="CantxUnidad" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PrecioUnidad" Type="decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="UnidadesEnExistencia" Type="smallint" Nullable="false" />
+    <Property Name="UnidadesEnPedido" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Proveedores">
+    <Key>
+      <PropertyRef Name="IdProveedor" />
+    </Key>
+    <Property Name="IdProveedor" Type="int" Nullable="false" />
+    <Property Name="NomProveedor" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="DirProveedor" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="NomContacto" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="CargoContacto" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idpais" Type="char" MaxLength="3" />
+    <Property Name="fonoProveedor" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="FaxProveedor" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Clientes__idpais__3B75D760">
+    <End Role="paises" Type="Self.paises" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="paises">
+        <PropertyRef Name="Idpais" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="idpais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleados__idCar__49C3F6B7">
+    <End Role="Cargos" Type="Self.Cargos" Multiplicity="0..1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargos">
+        <PropertyRef Name="idcargo" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="idCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleados__idDis__48CFD27E">
+    <End Role="Distritos" Type="Self.Distritos" Multiplicity="0..1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Distritos">
+        <PropertyRef Name="idDistrito" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="idDistrito" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidosca__IdEmp__4CA06362">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="pedidoscabe" Type="Self.pedidoscabe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="IdEmpleado" />
+      </Principal>
+      <Dependent Role="pedidoscabe">
+        <PropertyRef Name="IdEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidosca__IdEmp__6383C8BA">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="pedidoscabe" Type="Self.pedidoscabe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="IdEmpleado" />
+      </Principal>
+      <Dependent Role="pedidoscabe">
+        <PropertyRef Name="IdEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidosca__IdEmp__76969D2E">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="pedidoscabe" Type="Self.pedidoscabe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="IdEmpleado" />
+      </Principal>
+      <Dependent Role="pedidoscabe">
+        <PropertyRef Name="IdEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidosde__IdPed__5070F446">
+    <End Role="pedidoscabe" Type="Self.pedidoscabe" Multiplicity="0..1" />
+    <End Role="pedidosdeta" Type="Self.pedidosdeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedidoscabe">
+        <PropertyRef Name="IdPedido" />
+      </Principal>
+      <Dependent Role="pedidosdeta">
+        <PropertyRef Name="IdPedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidosde__IdPed__656C112C">
+    <End Role="pedidoscabe" Type="Self.pedidoscabe" Multiplicity="0..1" />
+    <End Role="pedidosdeta" Type="Self.pedidosdeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedidoscabe">
+        <PropertyRef Name="IdPedido" />
+      </Principal>
+      <Dependent Role="pedidosdeta">
+        <PropertyRef Name="IdPedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidosde__IdPed__787EE5A0">
+    <End Role="pedidoscabe" Type="Self.pedidoscabe" Multiplicity="0..1" />
+    <End Role="pedidosdeta" Type="Self.pedidosdeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedidoscabe">
+        <PropertyRef Name="IdPedido" />
+      </Principal>
+      <Dependent Role="pedidosdeta">
+        <PropertyRef Name="IdPedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidosde__IdPro__5165187F">
+    <End Role="Productos" Type="Self.Productos" Multiplicity="0..1" />
+    <End Role="pedidosdeta" Type="Self.pedidosdeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="pedidosdeta">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidosde__IdPro__66603565">
+    <End Role="Productos" Type="Self.Productos" Multiplicity="0..1" />
+    <End Role="pedidosdeta" Type="Self.pedidosdeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="pedidosdeta">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidosde__IdPro__797309D9">
+    <End Role="Productos" Type="Self.Productos" Multiplicity="0..1" />
+    <End Role="pedidosdeta" Type="Self.pedidosdeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="pedidosdeta">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Productos__IdCat__4222D4EF">
+    <End Role="Categorias" Type="Self.Categorias" Multiplicity="0..1" />
+    <End Role="Productos" Type="Self.Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorias">
+        <PropertyRef Name="IdCategoria" />
+      </Principal>
+      <Dependent Role="Productos">
+        <PropertyRef Name="IdCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Productos__IdPro__412EB0B6">
+    <End Role="Proveedores" Type="Self.Proveedores" Multiplicity="0..1" />
+    <End Role="Productos" Type="Self.Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedores">
+        <PropertyRef Name="IdProveedor" />
+      </Principal>
+      <Dependent Role="Productos">
+        <PropertyRef Name="IdProveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Proveedor__idpai__3E52440B">
+    <End Role="paises" Type="Self.paises" Multiplicity="0..1" />
+    <End Role="Proveedores" Type="Self.Proveedores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="paises">
+        <PropertyRef Name="Idpais" />
+      </Principal>
+      <Dependent Role="Proveedores">
+        <PropertyRef Name="idpais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="USP_PRODUCTOlISTAR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="NegociosModelStoreContainer">
+    <EntitySet Name="Cargos" EntityType="Self.Cargos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categorias" EntityType="Self.Categorias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Distritos" EntityType="Self.Distritos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="paises" EntityType="Self.paises" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pedidoscabe" EntityType="Self.pedidoscabe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Productos" EntityType="Self.Productos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Proveedores" EntityType="Self.Proveedores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pedidosdeta" EntityType="Self.pedidosdeta" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [pedidosdeta].[IdPedido] AS [IdPedido], 
+    [pedidosdeta].[IdProducto] AS [IdProducto], 
+    [pedidosdeta].[PrecioUnidad] AS [PrecioUnidad], 
+    [pedidosdeta].[Cantidad] AS [Cantidad], 
+    [pedidosdeta].[Descuento] AS [Descuento]
+    FROM [dbo].[pedidosdeta] AS [pedidosdeta]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Clientes__idpais__3B75D760" Association="Self.FK__Clientes__idpais__3B75D760">
+      <End Role="paises" EntitySet="paises" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleados__idCar__49C3F6B7" Association="Self.FK__Empleados__idCar__49C3F6B7">
+      <End Role="Cargos" EntitySet="Cargos" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleados__idDis__48CFD27E" Association="Self.FK__Empleados__idDis__48CFD27E">
+      <End Role="Distritos" EntitySet="Distritos" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidosca__IdEmp__4CA06362" Association="Self.FK__pedidosca__IdEmp__4CA06362">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="pedidoscabe" EntitySet="pedidoscabe" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidosca__IdEmp__6383C8BA" Association="Self.FK__pedidosca__IdEmp__6383C8BA">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="pedidoscabe" EntitySet="pedidoscabe" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidosca__IdEmp__76969D2E" Association="Self.FK__pedidosca__IdEmp__76969D2E">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="pedidoscabe" EntitySet="pedidoscabe" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidosde__IdPed__5070F446" Association="Self.FK__pedidosde__IdPed__5070F446">
+      <End Role="pedidoscabe" EntitySet="pedidoscabe" />
+      <End Role="pedidosdeta" EntitySet="pedidosdeta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidosde__IdPed__656C112C" Association="Self.FK__pedidosde__IdPed__656C112C">
+      <End Role="pedidoscabe" EntitySet="pedidoscabe" />
+      <End Role="pedidosdeta" EntitySet="pedidosdeta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidosde__IdPed__787EE5A0" Association="Self.FK__pedidosde__IdPed__787EE5A0">
+      <End Role="pedidoscabe" EntitySet="pedidoscabe" />
+      <End Role="pedidosdeta" EntitySet="pedidosdeta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidosde__IdPro__5165187F" Association="Self.FK__pedidosde__IdPro__5165187F">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="pedidosdeta" EntitySet="pedidosdeta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidosde__IdPro__66603565" Association="Self.FK__pedidosde__IdPro__66603565">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="pedidosdeta" EntitySet="pedidosdeta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidosde__IdPro__797309D9" Association="Self.FK__pedidosde__IdPro__797309D9">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="pedidosdeta" EntitySet="pedidosdeta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Productos__IdCat__4222D4EF" Association="Self.FK__Productos__IdCat__4222D4EF">
+      <End Role="Categorias" EntitySet="Categorias" />
+      <End Role="Productos" EntitySet="Productos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Productos__IdPro__412EB0B6" Association="Self.FK__Productos__IdPro__412EB0B6">
+      <End Role="Proveedores" EntitySet="Proveedores" />
+      <End Role="Productos" EntitySet="Productos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Proveedor__idpai__3E52440B" Association="Self.FK__Proveedor__idpai__3E52440B">
+      <End Role="paises" EntitySet="paises" />
+      <End Role="Proveedores" EntitySet="Proveedores" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

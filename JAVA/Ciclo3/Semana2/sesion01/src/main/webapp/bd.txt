@@ -1,0 +1,154 @@
+-- borra la bd si existe
+DROP DATABASE IF EXISTS ciberfarmaweb;
+-- creamos la bd
+CREATE DATABASE ciberfarmaweb;
+-- activamos la bd
+USE ciberfarmaweb;
+
+create table tb_tipos(
+idtipo int not null primary key,
+descripcion varchar(15)
+);
+
+create table tb_estados(
+idestado    int not null primary key,
+descripcion varchar(15)
+);
+
+CREATE TABLE tb_usuarios(
+codigo  int auto_increment,
+nombre varchar(15),
+apellido varchar(25),
+usuario  char(45) NOT NULL,
+clave    char(5),
+fnacim  date  null,
+tipo    int DEFAULT 2,
+estado  int DEFAULT 1,
+primary key (codigo),
+foreign key (tipo) references tb_tipos(idtipo),
+foreign key (estado) references tb_estados(idestado)
+);
+        
+create table tb_categorias(
+idcategoria	int not null primary key,
+descripcion varchar(45)
+);
+
+create table tb_productos(
+idprod char(5) not null,
+descripcion varchar(45),
+stock int,
+precio decimal(8,2),
+idcategoria int,
+estado int,
+primary key (idprod), 
+foreign key (idcategoria) references tb_categorias(idcategoria)
+);
+
+create table tb_cab_boleta(
+num_bol      char(5) not null,
+fch_bol    date,
+cod_cliente  int not null,
+primary key (num_bol),
+foreign key (cod_cliente) references tb_usuarios(codigo)
+);
+
+create table tb_det_boleta(
+num_bol     char(5) not null,
+idprod      char(5) not null,
+cantidad    int,
+preciovta   decimal(8,2),
+primary key (num_bol,idprod),
+foreign key (num_bol) references tb_cab_boleta(num_bol),
+foreign key (idprod) references tb_productos(idprod)
+);
+
+-- inserts
+insert into tb_tipos values (1, 'administrativo');
+insert into tb_tipos values (2, 'cliente');
+
+insert into tb_estados values (1, 'activo');
+insert into tb_estados values (2, 'eliminado');
+insert into tb_estados values (3, 'suspendido');
+
+insert into tb_usuarios values (null,'Tito', 'Ciber','U001@gmail.com', '10001', curdate(),1,1);
+insert into tb_usuarios values (null,'Zoila', 'Baca','U002@gmail.com', '10002', curdate(),2,1);
+insert into tb_usuarios values (null,'Willy', 'Wonka','U003@gmail.com', '10003', curdate(),2,3);
+insert into tb_usuarios values (null,'Jose', 'Atuncar','U004@hotmail.com', '10004', curdate(),2,2);
+insert into tb_usuarios values (null,'administrador', 'sistema','admin@ciberfarma.com', 'admin', curdate(),1,2);
+
+
+insert into tb_categorias values (1, 'Pastillas');
+insert into tb_categorias values (2, 'Jarabe');
+insert into tb_categorias values (3, 'Cremas');
+insert into tb_categorias values (4, 'Tocador');
+insert into tb_categorias values (5, 'Cuidado');
+insert into tb_categorias values (6, 'Otros');
+
+insert into tb_productos values ('P0001','Panadol cj 10',20,1.85,1,1);
+insert into tb_productos values ('P0002','Curitas unidad',100,1.0,3,1);
+insert into tb_productos values ('P0003','Kita tos',80,15.0,2,1);
+insert into tb_productos values ('P0004','Achiz',120,1.0,1,1);
+insert into tb_productos values ('P0005','Jaboncillo cj',120,1.0,3,1);
+insert into tb_productos values ('P0006','Termometro',80,2.8,5,1);
+insert into tb_productos values ('P0007','Panadol jarabe pq',40,10.5,2,1);
+insert into tb_productos values ('P0008','Antalgina',55,1.8,1,1);
+insert into tb_productos values ('P0009','Ibuprofeno',60,15.0,4,1);
+insert into tb_productos values ('P0010','Mejoralito Ni os',10,1.5,1,1);
+insert into tb_productos values ('P0011','Panadol jarabe',10,1.5,2,1);
+insert into tb_productos values ('P0012','Jabon Neko',40,8.5,4,1);
+insert into tb_productos values ('P0013','Pa ales x 24u',10,1.5,5,1);
+insert into tb_productos values ('P0014','Mejoralito Forte',10,1.5,1,1);
+insert into tb_productos values ('P0015','Champu Amigo',50,0.99,5,1);
+insert into tb_productos values ('P0016','Mejoralito',10,1.5,4,1);
+insert into tb_productos values ('P0017','SinDolor',23,1.5,6,1);
+insert into tb_productos values ('P0018','Mejoralito Forte',10,1.5,2,1);
+insert into tb_productos values ('P0019','Mejoralito Forte',10,1.5,1,1);
+insert into tb_productos values ('P0020','Mejoralito Forte',10,1.5,3,1);
+insert into tb_productos values ('P0021','Mejoralito Forte',10,1.5,2,1);
+insert into tb_productos values ('P0022','Mejoralito Forte',10,1.5,1,3);
+insert into tb_productos values ('P0023','Mejoralito Forte',10,1.5,1,3);
+insert into tb_productos values ('P0028','Mejoralito Forte',10,1.5,4,2);
+insert into tb_productos values ('P0029','Mejoralito Forte',10,1.5,1,1);
+insert into tb_productos values ('P0030','Mascarilla KN95 cj 20',80,45.0,5,1);
+insert into tb_productos values ('P0031','Mascarilla KN95 cj 10',100,25.0,5,1);
+
+SELECT * FROM tb_productos;
+-- eliminar
+-- eliminación física
+delete from tb_productos where idprod = 'P0040';
+-- eliminación lógica
+update tb_productos set estado = 2, stock = 0 where idprod = 'P0019';
+
+-- actualizar
+update tb_productos set descripcion = '', stock = 0, precio = 0.0, 
+    idcategoria = 0, estado = 1 
+    where idprod = 'P0019';
+-- usando usp
+create procedure usp_actprod (pdescripcion varchar(45),
+	pstock int, pprecio decimal(8,2), pidcategoria int, pestado int, 
+	pidprod char(5))
+	update tb_productos set descripcion = pdescripcion, stock = pstock, 
+		precio = pprecio, idcategoria = pidcategoria,
+        estado = pestado where idprod = pidprod;
+--
+call usp_actprod ('nuevo',90,90.90, 1, 1, 'P0019');
+
+-- consultas
+SELECT * FROM tb_usuarios;
+SELECT * FROM tb_productos;
+select * from tb_categorias;
+select * from tb_tipos;
+select * from tb_estados;
+select * from tb_cab_boleta;
+select * from tb_det_boleta;
+
+-- ejemplo de procedimientos almancenados de consulta
+DELIMiTER $$
+create procedure usp_validaAcceso (usr char(45), pas char(5))
+begin
+select * from tb_usuarios where usuario = usr and clave = pas;
+end$$
+DELIMiTER ;
+
+call usp_validaAcceso('U001@gmail.com','10001');

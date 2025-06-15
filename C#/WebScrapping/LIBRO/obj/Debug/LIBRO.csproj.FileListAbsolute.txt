@@ -1,0 +1,11 @@
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\LIBRO\bin\Debug\LIBRO.exe.config
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\LIBRO\bin\Debug\LIBRO.exe
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\LIBRO\bin\Debug\LIBRO.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\LIBRO\bin\Debug\HtmlAgilityPack.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\LIBRO\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\LIBRO\bin\Debug\HtmlAgilityPack.xml
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\LIBRO\obj\Debug\LIBRO.csproj.AssemblyReference.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\LIBRO\obj\Debug\LIBRO.csproj.CoreCompileInputs.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\LIBRO\obj\Debug\LIBRO.csproj.Up2Date
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\LIBRO\obj\Debug\LIBRO.exe
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\LIBRO\obj\Debug\LIBRO.pdb

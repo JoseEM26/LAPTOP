@@ -1,0 +1,14 @@
+cliente,NomCliente,DirCliente,idPais,fonoCliente
+AMAK1,AmandaPortales,Arequipa,006,051-5156 
+AMAK2,AmandaPortales,Arequipa,007,051-5156 
+AMAK3,AmandaPortales,Arequipa,008,051-5156 
+AMAK4,AmandaPortales,Arequipa,009,051-5156 
+AMAK5,AmandaPortales,Arequipa,011,051-5156 
+AMAK6,AmandaPortales,Arequipa,012,051-5156 
+AMAK7,AmandaPortales,Arequipa,013,051-5156 
+AMAK8,AmandaPortales,Arequipa,014,051-5156 
+AMAK9,AmandaPortales,Arequipa,015,051-5156 
+AMAK0,AmandaPortales,Arequipa,016,051-5156 
+AMA11,AmandaPortales,Arequipa,017,051-5156 
+AMA12,AmandaPortales,Arequipa,019,051-5156 
+AMA13,AmandaPortales,Arequipa,020,051-5156 

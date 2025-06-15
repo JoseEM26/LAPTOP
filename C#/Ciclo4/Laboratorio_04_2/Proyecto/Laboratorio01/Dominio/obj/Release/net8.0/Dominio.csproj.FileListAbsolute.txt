@@ -1,0 +1,11 @@
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Dominio\bin\Release\net8.0\Dominio.deps.json
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Dominio\bin\Release\net8.0\Dominio.dll
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Dominio\bin\Release\net8.0\Dominio.pdb
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Dominio\obj\Release\net8.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Dominio\obj\Release\net8.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Dominio\obj\Release\net8.0\Dominio.AssemblyInfo.cs
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Dominio\obj\Release\net8.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Dominio\obj\Release\net8.0\Dominio.dll
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Dominio\obj\Release\net8.0\refint\Dominio.dll
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Dominio\obj\Release\net8.0\Dominio.pdb
+C:\Users\user\Documents\CIBERTEC\POO II\Proyecto\Laboratorio01\Dominio\obj\Release\net8.0\ref\Dominio.dll

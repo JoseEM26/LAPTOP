@@ -1,0 +1,15 @@
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\bin\Debug\net8.0\Aplicacion.deps.json
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\bin\Debug\net8.0\Aplicacion.dll
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\bin\Debug\net8.0\Aplicacion.pdb
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\bin\Debug\net8.0\Dominio.dll
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\bin\Debug\net8.0\Dominio.pdb
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.AssemblyReference.cache
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\obj\Debug\net8.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\obj\Debug\net8.0\Aplicacion.AssemblyInfoInputs.cache
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\obj\Debug\net8.0\Aplicacion.AssemblyInfo.cs
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.CoreCompileInputs.cache
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.Up2Date
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\obj\Debug\net8.0\Aplicacion.dll
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\obj\Debug\net8.0\refint\Aplicacion.dll
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\obj\Debug\net8.0\Aplicacion.pdb
+D:\Documentos\POOII\Proyecto\Laboratorio01\Aplicacion\obj\Debug\net8.0\ref\Aplicacion.dll

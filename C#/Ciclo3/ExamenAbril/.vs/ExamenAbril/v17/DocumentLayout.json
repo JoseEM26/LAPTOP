@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1F51C6-6305-43EB-A3B1-3646AA9D42B2}|ExamenAbril\\ExamenAbril.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\examenabril\\examenabril\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC1F51C6-6305-43EB-A3B1-3646AA9D42B2}|ExamenAbril\\ExamenAbril.csproj|solutionrelative:examenabril\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1F51C6-6305-43EB-A3B1-3646AA9D42B2}|ExamenAbril\\ExamenAbril.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\examenabril\\service\\alumnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1F51C6-6305-43EB-A3B1-3646AA9D42B2}|ExamenAbril\\ExamenAbril.csproj|solutionrelative:examenabril\\service\\alumnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1F51C6-6305-43EB-A3B1-3646AA9D42B2}|ExamenAbril\\ExamenAbril.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\examenabril\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1F51C6-6305-43EB-A3B1-3646AA9D42B2}|ExamenAbril\\ExamenAbril.csproj|solutionrelative:examenabril\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1F51C6-6305-43EB-A3B1-3646AA9D42B2}|ExamenAbril\\ExamenAbril.csproj|C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\examenabril\\models\\alumnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1F51C6-6305-43EB-A3B1-3646AA9D42B2}|ExamenAbril\\ExamenAbril.csproj|solutionrelative:examenabril\\models\\alumnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 71,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlumnoService.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\ExamenAbril\\Service\\AlumnoService.cs",
+              "RelativeDocumentMoniker": "ExamenAbril\\Service\\AlumnoService.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\ExamenAbril\\Service\\AlumnoService.cs",
+              "RelativeToolTip": "ExamenAbril\\Service\\AlumnoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T04:07:06.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\ExamenAbril\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ExamenAbril\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\ExamenAbril\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ExamenAbril\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T04:03:12.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\ExamenAbril\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "ExamenAbril\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\ExamenAbril\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "ExamenAbril\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T04:15:29.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Alumnos.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\ExamenAbril\\Models\\Alumnos.cs",
+              "RelativeDocumentMoniker": "ExamenAbril\\Models\\Alumnos.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\ExamenAbril\\ExamenAbril\\Models\\Alumnos.cs",
+              "RelativeToolTip": "ExamenAbril\\Models\\Alumnos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T02:51:53.241Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

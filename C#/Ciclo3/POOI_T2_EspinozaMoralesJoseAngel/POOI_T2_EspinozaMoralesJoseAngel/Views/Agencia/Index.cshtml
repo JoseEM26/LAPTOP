@@ -1,0 +1,76 @@
+﻿@model IEnumerable<POOI_T2_EspinozaMoralesJoseAngel.Models.Agencia>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Agregar")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AgenciaId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ares)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.distrito)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.provincia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.departamento)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgenciaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ares)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.distrito)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provincia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.departamento)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.AgenciaId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.AgenciaId }) |
+                @Html.ActionLink("Delete", "Eliminar", new { id = item.AgenciaId })
+            </td>
+        </tr>
+    }
+
+</table>
+<h3><strong>Mensaje: @TempData["mensaje"]</strong></h3>
+<hr />
+

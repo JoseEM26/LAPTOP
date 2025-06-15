@@ -1,0 +1,16 @@
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\bin\Debug\net8.0\Infraestructura.deps.json
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\bin\Debug\net8.0\Infraestructura.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\bin\Debug\net8.0\Infraestructura.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\bin\Debug\net8.0\Dominio.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\bin\Debug\net8.0\Dominio.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\obj\Debug\net8.0\Infraestructura.csproj.AssemblyReference.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\obj\Debug\net8.0\Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\obj\Debug\net8.0\Infraestructura.AssemblyInfoInputs.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\obj\Debug\net8.0\Infraestructura.AssemblyInfo.cs
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\obj\Debug\net8.0\Infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\obj\Debug\net8.0\Infraestructura.sourcelink.json
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\obj\Debug\net8.0\Infraest.8F2C356E.Up2Date
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\obj\Debug\net8.0\Infraestructura.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\obj\Debug\net8.0\refint\Infraestructura.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\obj\Debug\net8.0\Infraestructura.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\PRACTICA\Api4\BackendVentas\Infraestructura\obj\Debug\net8.0\ref\Infraestructura.dll

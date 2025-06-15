@@ -1,0 +1,52 @@
+<br />
+<br />
+<br />
+<div class="container">
+  <div class="col-6">
+    <h2>
+      @if (customer) {PUT}
+      @if (!customer) {POST}
+      Customer</h2>
+    <br />
+
+    <form [formGroup]="form">
+      <div class="mb-3" >
+        <label for="exampleInputEmail1" class="form-label">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          formControlName="nombre"
+        />
+       @if (form.get("nombre")?.hasError("required") && form.get("nombre")?.touched) {
+        <p class="invalid-feedback d-block">No se puede tener el campo vacio</p>
+       }
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">LastName</label>
+        <input type="text" class="form-control" id="exampleInputPassword1"  name="apellido" formControlName="apellido"/>
+      </div>
+      @if (form.get("apellido")?.hasError("required") && form.get("apellido")?.touched) {
+        <p class="invalid-feedback d-block">No se puede tener el campo vacio</p>
+       }
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputPassword1" name="email"
+        formControlName="email"
+        />
+      </div>
+      @if (form.get("email")?.hasError("required") && form.get("email")?.touched) {
+        <p class="invalid-feedback d-block">No se puede tener el campo vacio</p>
+       }
+      <button type="button" routerLink="/" class="btn btn-light">GoBack</button>
+      <button type="submit" class="btn btn-primary" (click)="create()" >
+        @if (!customer) {Agregar}
+        @if (customer) {Actualizar}
+      </button>
+    </form>
+  </div>
+</div>
+{{form.get("nombre")?.value}} <br/>
+{{form.get("apellido")?.value}} <br/>
+{{form.get("email")?.value}} <br/>

@@ -1,0 +1,44 @@
+{
+  "guerreros": [
+    {
+      "id": "3",
+      "nombre": "Hyoga",
+      "raza": "Cisne"
+    },
+    {
+      "id": "5",
+      "nombre": "Ikki",
+      "raza": "Fénix"
+    },
+    {
+      "id": "1724968134104",
+      "nombre": "jose",
+      "raza": "ange"
+    },
+    {
+      "id": "1724968299147",
+      "nombre": "jose ",
+      "raza": "Espinoza"
+    },
+    {
+      "id": "1724968311834",
+      "nombre": "nayde",
+      "raza": "espinoza"
+    },
+    {
+      "id": "1724968333214",
+      "nombre": "ivanaf",
+      "raza": "eliF"
+    },
+    {
+      "id": "1724968385941",
+      "nombre": "jose",
+      "raza": "Humano"
+    },
+    {
+      "id": "1724994179674",
+      "nombre": "Goku",
+      "raza": "Sayayin"
+    }
+  ]
+}

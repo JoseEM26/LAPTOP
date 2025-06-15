@@ -1,0 +1,32 @@
+D:\Aplicaciones\WebScraping\ConsultaDNI\bin\Debug\ConsultaDNI.exe.config
+D:\Aplicaciones\WebScraping\ConsultaDNI\bin\Debug\ConsultaDNI.exe
+D:\Aplicaciones\WebScraping\ConsultaDNI\bin\Debug\ConsultaDNI.pdb
+D:\Aplicaciones\WebScraping\ConsultaDNI\bin\Debug\Newtonsoft.Json.dll
+D:\Aplicaciones\WebScraping\ConsultaDNI\bin\Debug\System.Net.Http.Formatting.dll
+D:\Aplicaciones\WebScraping\ConsultaDNI\bin\Debug\Newtonsoft.Json.xml
+D:\Aplicaciones\WebScraping\ConsultaDNI\bin\Debug\System.Net.Http.Formatting.xml
+D:\Aplicaciones\WebScraping\ConsultaDNI\obj\Debug\ConsultaDNI.FrmConsultaDNI.resources
+D:\Aplicaciones\WebScraping\ConsultaDNI\obj\Debug\ConsultaDNI.Properties.Resources.resources
+D:\Aplicaciones\WebScraping\ConsultaDNI\obj\Debug\ConsultaDNI.csproj.GenerateResource.cache
+D:\Aplicaciones\WebScraping\ConsultaDNI\obj\Debug\ConsultaDNI.csproj.CoreCompileInputs.cache
+D:\Aplicaciones\WebScraping\ConsultaDNI\obj\Debug\ConsultaDNI.csproj.CopyComplete
+D:\Aplicaciones\WebScraping\ConsultaDNI\obj\Debug\ConsultaDNI.exe
+D:\Aplicaciones\WebScraping\ConsultaDNI\obj\Debug\ConsultaDNI.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\bin\Debug\ConsultaDNI.exe.config
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\bin\Debug\ConsultaDNI.exe
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\bin\Debug\ConsultaDNI.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\obj\Debug\ConsultaDNI.csproj.AssemblyReference.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\obj\Debug\ConsultaDNI.FrmConsultaDNI.resources
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\obj\Debug\ConsultaDNI.Properties.Resources.resources
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\obj\Debug\ConsultaDNI.csproj.GenerateResource.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\obj\Debug\ConsultaDNI.csproj.CoreCompileInputs.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\obj\Debug\Consulta.DDB47534.Up2Date
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\obj\Debug\ConsultaDNI.exe
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\obj\Debug\ConsultaDNI.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\bin\Debug\HtmlAgilityPack.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\WebScrapping\ConsultaDNI\bin\Debug\HtmlAgilityPack.xml

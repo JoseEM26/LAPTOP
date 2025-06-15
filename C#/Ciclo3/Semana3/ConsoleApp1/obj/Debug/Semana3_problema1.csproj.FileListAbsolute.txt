@@ -1,0 +1,7 @@
+D:\POO\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\POO\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\POO\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\POO\ConsoleApp1\ConsoleApp1\obj\Debug\Semana3_problema1.csproj.AssemblyReference.cache
+D:\POO\ConsoleApp1\ConsoleApp1\obj\Debug\Semana3_problema1.csproj.CoreCompileInputs.cache
+D:\POO\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\POO\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

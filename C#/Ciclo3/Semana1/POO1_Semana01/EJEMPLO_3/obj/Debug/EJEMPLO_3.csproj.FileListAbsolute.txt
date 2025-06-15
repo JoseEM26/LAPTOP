@@ -1,0 +1,7 @@
+D:\POO\POO1_Semana01\EJEMPLO_3\bin\Debug\EJEMPLO_3.exe.config
+D:\POO\POO1_Semana01\EJEMPLO_3\bin\Debug\EJEMPLO_3.exe
+D:\POO\POO1_Semana01\EJEMPLO_3\bin\Debug\EJEMPLO_3.pdb
+D:\POO\POO1_Semana01\EJEMPLO_3\obj\Debug\EJEMPLO_3.csproj.AssemblyReference.cache
+D:\POO\POO1_Semana01\EJEMPLO_3\obj\Debug\EJEMPLO_3.csproj.CoreCompileInputs.cache
+D:\POO\POO1_Semana01\EJEMPLO_3\obj\Debug\EJEMPLO_3.exe
+D:\POO\POO1_Semana01\EJEMPLO_3\obj\Debug\EJEMPLO_3.pdb

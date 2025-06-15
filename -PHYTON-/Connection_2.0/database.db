@@ -1,0 +1,15 @@
+create database Customer_database;
+use Customer_database;
+
+create table persona(
+  dni int not null primary key,
+  nombre varchar(30),
+  apellido varchar(30)
+  );
+
+insert into persona(dni,nombre,apellido)values
+("76179903",'Jose' , 'Espinoza'),
+("76179904",'Naydelin' , 'Morales'),
+("76179905",'Ivanan' , 'Celeste');
+select* from persona;
+

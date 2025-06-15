@@ -1,0 +1,14 @@
+body{
+    background-color: brown;
+}
+*{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    list-style: none;
+}
+.boton{
+    color: black;
+    background-color: white;
+    border: 0;
+}

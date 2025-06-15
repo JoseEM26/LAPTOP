@@ -1,0 +1,30 @@
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\semana2_aplicacion5.exe.config
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\semana2_aplicacion5.exe
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\semana2_aplicacion5.pdb
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\Newtonsoft.Json.dll
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\Newtonsoft.Json.xml
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.csproj.AssemblyReference.cache
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.csproj.CoreCompileInputs.cache
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_.483FA3FC.Up2Date
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.exe
+D:\Imágenes\POO\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\semana2_aplicacion5.exe.config
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\semana2_aplicacion5.exe
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\semana2_aplicacion5.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.csproj.AssemblyReference.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.csproj.CoreCompileInputs.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_.483FA3FC.Up2Date
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.exe
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\POO\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\semana2_aplicacion5.exe.config
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\semana2_aplicacion5.exe
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\semana2_aplicacion5.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\Semana2_aplicacion1\semana2_aplicacion5\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.csproj.AssemblyReference.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.csproj.CoreCompileInputs.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_.483FA3FC.Up2Date
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.exe
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Semana2\Semana2_aplicacion1\semana2_aplicacion5\obj\Debug\semana2_aplicacion5.pdb

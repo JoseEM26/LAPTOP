@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX-FETCH</title>
+</head>
+
+<body>
+    <section id="crud">
+        <article>
+            <h1 >CRUD API REST AJAX</h1>
+            
+            <h3 class="crud-titulo">Agregar Gerrero</h3>
+            <form class="crud-formulario">
+                <input type="text" placeholder="nombre" name="nombre" required><br>
+                <input type="text" placeholder="Raza"   name="raza" required>
+                <input type="hidden"                    name="id">
+                <input type="submit" value="enviar">
+
+            </form>
+        </article>
+
+        <article>
+            <h2>Ver Personajes</h2>
+        <table class="crud-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Raza</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        </article>
+
+        <template id="crud-template">
+             <tr>
+                <td class="nombre" >Nombre</td>
+                <td class="raza">Raza</td>
+                <td class="Botones"> 
+                    <button class="editar">EDITAR</button>
+                    <button class="eliminar">ELIMINAR</button>
+                </td>
+             </tr>
+        </template>
+
+    </section>
+
+
+</body>
+<script src="PracticaNumero2.js"></script>
+</html>
+<!-- npx json-server db.json -->

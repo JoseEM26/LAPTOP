@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio con AJAX</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+        }
+
+        .header {
+            padding: .5rem;
+            background-color: antiquewhite;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 3rem;
+            height: auto;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            font-size: 115%;
+        }
+
+        .menu a {
+            color: chocolate;
+            padding: 0 1vw;
+            transition: all .3s ease-in-out;
+        }
+
+        .menu a:hover {
+            opacity: .75;
+        }
+        *{
+            transition: all 2s ease ;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <section class="header-content container">
+            <article class="logo">
+                <img src="https://jonmircha.com/img/kEnAi.svg" alt="kEnAi">
+            </article>
+            <nav class="menu">
+                <a href="home.html">Home</a>
+                <a href="acerca.html">Acerca</a>
+                <a href="servicio.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </section>
+    </header>
+    <main class="container"></main>
+    <footer class="footer container">
+        <p>
+            <small>sitio diseñado por kEnAi</small>
+        </p>
+    </footer>
+    <script>
+        let d= document;
+        d.addEventListener("DOMContentLoaded",(e)=>{
+            let main=d.querySelector("main");
+
+            let PaginaPrincipal=async(url)=>{
+                try {
+                    let respuesta=await fetch(url),
+                        html=await respuesta.text();
+
+                        if(!respuesta.ok)throw {numero:respuesta.status,text:respuesta.statusText};
+
+                        main.innerHTML=html;
+
+                } catch (error) {
+                    main.innerHTML=`${error.numero}:${error.text}`;
+                }
+
+            };
+            PaginaPrincipal("home.html");
+
+            d.addEventListener("click",(e)=>{
+                if(e.target.matches(".menu a")){
+                    e.preventDefault();
+                    PaginaPrincipal(e.target.href);
+                }
+            });
+        });
+
+
+
+
+        // document.addEventListener("DOMContentLoaded", () => {
+        //     const main = document.querySelector("main");
+
+        //     const loadContent = async (url) => {
+        //         try {
+        //             const respuesta = await fetch(url);
+        //             const html = await respuesta.text();
+
+        //             if (!respuesta.ok) throw new Error(`Error ${respuesta.status}: Ocurrió un problema`);
+                    
+        //             main.innerHTML = html;
+        //             // console.log(html)
+        //         } catch (error) {
+        //             main.innerHTML = `<h1>${error.message}</h1>`;
+        //         }
+        //     };
+
+        //     loadContent("home.html");
+
+        //     document.addEventListener("click", event => {
+        //         if (event.target.matches(".menu a")) {
+        //             event.preventDefault();
+        //             loadContent(event.target.href);
+        //             // console.log(event.target.href)
+        //         }
+        //     });
+        // });
+    </script>
+</body>
+
+</html>

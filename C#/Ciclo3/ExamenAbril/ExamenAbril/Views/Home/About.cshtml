@@ -1,0 +1,49 @@
+﻿@model List<ExamenAbril.Models.Alumnos>
+@{
+    ViewBag.Title = "About";
+}
+<main aria-labelledby="title">
+    <h1>LISTADO DE EVALUACIONES</h1>
+    <form>
+        <label>Ingreso filtro (nombre alumno o curso)</label>
+        <input type="text"/>
+        <input type="button" class="alert-danger" value="buscar" />
+
+    </form>
+
+    <h5>Registrar Nuevo</h5>
+
+    <table class="table">
+        <tr>
+            <th>id Evaluacion</th>
+            <th>Codigo Alumno</th>
+            <th>Nombre Alumno</th>
+            <th>Nombre Curso</th>
+            <th>Evaluacion Continua1</th>
+            <th>Evaluacion Continua2</th>
+            <th>Evaluacion Parcial</th>
+            <th>Evaluacion Final</th>
+            <th>Promedio Final</th>
+            <th>Resultado</th>
+        </tr>
+        <tbody>
+            @foreach (var x in Model)
+            {
+                <tr>
+                    <td>@x.IdEvaluacion</td>
+                    <td>@x.codigoAlumno</td>
+                    <td>@x.nombreAlumno</td>
+                    <td>@x.nombreCurso</td>
+                    <td>@x.nota1</td>
+                    <td>@x.nota2</td>
+                    <td>@x.notaFinal</td>
+                    <td>@x.notaParcial</td>
+                    <td>@x.PromedioFinal()</td>
+                    <td>@x.EstadoNota()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3>Se estan registrando @Model.Count registros</h3>
+</main>

@@ -1,0 +1,38 @@
+﻿@using Web01.Models.Entidad
+
+@model IEnumerable<AlumnoE>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Nro Documento</td>
+                <td>Fecha Nacimiento</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Count() > 0)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.IdAlumno</td>
+                        <td>@item.Nombre</td>
+                        <td>@item.Apellidos</td>
+                        <td>@item.NroDocumento</td>
+                        <td>@item.FechNacimiento.ToString("dd/MM/yyyy")</td>
+                    </tr>
+                }   
+            }
+        </tbody>
+    </table>
+</div>

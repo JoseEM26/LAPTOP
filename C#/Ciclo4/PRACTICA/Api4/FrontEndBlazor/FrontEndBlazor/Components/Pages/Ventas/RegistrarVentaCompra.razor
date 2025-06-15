@@ -1,0 +1,135 @@
+﻿<h3>RegistrarVentaCompra</h3>
+@page "/RegistrarVentaCompra"
+@using FrontEndBlazor.Model.Data
+@using FrontEndBlazor.Model.Entity
+@using static FrontEndBlazor.Model.Entity.Venta
+@code {
+
+    Venta venta;
+    VentaDet ventaDet;
+
+    protected override void OnInitialized()
+    {
+        venta = new Venta();
+        venta.ListaDetalle = new List<VentaDet>();
+        venta.fechaVenta = DateTime.Now;
+        ventaDet = new VentaDet();
+
+        base.OnInitialized();
+    }
+
+    void GuardarProducto()
+    {
+        Console.Write("EStamos en el guardar producto");
+        ventaDet.subTotal = ventaDet.GetSubTotal();
+        ventaDet.igv = ventaDet.GetIGV();
+        ventaDet.total = ventaDet.GetTotal();
+
+        venta.ListaDetalle.Add(ventaDet);
+
+        venta.subTotal = venta.ListaDetalle.Sum(x => x.subTotal);
+        venta.igv = venta.ListaDetalle.Sum(x => x.igv);
+        venta.total = venta.ListaDetalle.Sum(x => x.total);
+
+        ventaDet = new VentaDet();
+    }
+    void GuardarVenta()
+    {
+        var resultado = new VentaData().GuardarVenta(venta);
+    }
+
+
+
+}
+
+<div class="row mt-2">
+    <div class="col-6">
+        <label for="exampleInputEmail1" class="form-label">Cliente</label>
+        <input type="text" class="form-control" @bind="venta.cliente" >
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Numero Documento</label>
+        <input type="text" class="form-control" @bind="venta.nroDocumento">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Fecha Venta</label>
+        <input type="datetime-local" class="form-control" @bind="venta.fechaVenta">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Sub Total</label>
+        <input type="number" class="form-control" readonly @bind="venta.subTotal">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">IGV</label>
+        <input type="number" class="form-control" readonly @bind="venta.igv">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Total</label>
+        <input type="number" class="form-control" readonly @bind="venta.total">
+    </div>
+    <div class="col-2 mt-3">
+        <button  class="btn btn-primary w-30" @onclick="GuardarVenta">Agregar</button>
+    </div>
+</div>
+
+
+
+
+<div class="row mt-2">
+    <div class="col-6">
+        <label for="exampleInputEmail1" class="form-label">Producto</label>
+        <input type="text" class="form-control" @bind="ventaDet.producto">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+        <input type="number" class="form-control" @bind="ventaDet.cantidad">
+    </div>
+    <div class="col-6">
+        <label for="exampleInputPassword1" class="form-label">Precio</label>
+        <input type="number" class="form-control" @bind="ventaDet.precio">
+    </div>
+    <div class="col-12 mt-2">
+        <button  class="btn btn-primary w-30" @onclick="GuardarProducto">Agregar</button>
+    </div>
+
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Subtotal</th>
+            <th>IGV</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            @if(venta.ListaDetalle.Count() > 0)
+            {
+            @foreach (var x in venta.ListaDetalle)
+            {
+                <tr>
+                    <th scope="row">@x.idVenta</th>
+                    <td>@x.producto</td>
+                    <td>@x.cantidad</td>
+                    <td>@x.precio</td>
+                    <td>@x.subTotal</td>
+                    <td>@x.igv</td>
+                    <td>@x.total</td>
+                </tr>
+            }
+            }else
+            {
+            <tr>
+                <td colspan="7" class="text-center text-danger">No hay productos registrados</td>
+            </tr>
+
+            }
+        
+    </tbody>
+</table>

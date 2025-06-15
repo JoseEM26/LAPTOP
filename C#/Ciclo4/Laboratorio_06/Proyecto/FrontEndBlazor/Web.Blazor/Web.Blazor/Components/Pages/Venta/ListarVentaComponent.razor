@@ -1,0 +1,76 @@
+﻿@page "/Lista_Venta"
+@using Web.Blazor.Models.Entidad
+@using Web.Blazor.Models.Logica
+@rendermode InteractiveServer
+
+@code {
+	List<EVenta> ListadoVenta = new List<EVenta>();
+	protected override void OnInitialized()
+	{
+		ListaVenta();
+		base.OnInitialized();
+	}
+
+	void ListaVenta()
+	{
+		var resultado = new VentaBus().ListadoVenta();
+		if (resultado.IdRegistro == -1)
+		{
+			ListadoVenta = new List<EVenta>();
+
+		}
+		else
+		{
+
+			ListadoVenta = resultado.DataList;
+		}
+
+	}
+}
+<div class="row mt-2">
+	<div class="col-6 col-lg-6">
+		<h4 class="text-center">Listado de ventas</h4>
+	</div>
+	<div class="col-6 col-lg-6 text-end">
+		<a class="btn btn-success btn-lg" href="Registrar_Venta">Registrar Venta</a>
+	</div>
+</div>
+
+<div class="row mt-3">
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Cod Venta</th>
+				<th>Cliente</th>
+				<th>Nro documento</th>
+				<th>Fecha venta</th>
+				<th>Subtotal</th>
+				<th>IGV</th>
+				<th>Total</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@if (ListadoVenta.Count() > 0)
+			{
+				foreach (var item in ListadoVenta)
+				{
+					<tr>
+						<td>@item.Idventa</td>
+						<td>@item.cliente</td>
+						<td>@item.nrodocumento</td>
+						<td>@item.fechaventa</td>
+						<td>@item.subtotal</td>
+						<td>@item.igv</td>
+						<td>@item.total</td>
+						<td>
+							<a class="btn btn-primary btn-sm" href="Actualizar_Venta/@item.Idventa">Editar</a>
+							<button class="btn btn-danger btn-sm">Eliminar</button>
+						</td>
+						 
+					</tr>	
+				}	
+			}
+		</tbody>
+	</table>
+</div>

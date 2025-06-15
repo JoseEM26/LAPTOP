@@ -1,0 +1,214 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\frontend2\\frontend2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|solutionrelative:frontend2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\frontend2\\frontend2\\views\\alumno\\listar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|solutionrelative:frontend2\\views\\alumno\\listar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\frontend2\\frontend2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|solutionrelative:frontend2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\frontend2\\frontend2\\models\\data\\alumnodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|solutionrelative:frontend2\\models\\data\\alumnodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\frontend2\\frontend2\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|solutionrelative:frontend2\\controllers\\alumnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\frontend2\\frontend2\\views\\alumno\\getdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|solutionrelative:frontend2\\views\\alumno\\getdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\frontend2\\frontend2\\views\\alumno\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|solutionrelative:frontend2\\views\\alumno\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\frontend2\\frontend2\\views\\alumno\\getupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|solutionrelative:frontend2\\views\\alumno\\getupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\frontend2\\frontend2\\models\\logica\\alumnologica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|solutionrelative:frontend2\\models\\logica\\alumnologica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\frontend2\\frontend2\\models\\entity\\resultadotransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|solutionrelative:frontend2\\models\\entity\\resultadotransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|c:\\users\\jose angel\\pictures\\laptop\\c#\\ciclo4\\practica\\api2\\frontend2\\frontend2\\views\\alumno\\listarxid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B9D9D47-E032-46A6-97AF-B4CCA2EC1F70}|FrontEnd2\\FrontEnd2.csproj|solutionrelative:frontend2\\views\\alumno\\listarxid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FrontEnd2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T03:51:30.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FrontEnd2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T23:55:41.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "getDelete.cshtml",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Alumno\\getDelete.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd2\\Views\\Alumno\\getDelete.cshtml",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Alumno\\getDelete.cshtml",
+              "RelativeToolTip": "FrontEnd2\\Views\\Alumno\\getDelete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T23:52:08.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Alumno\\Create.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd2\\Views\\Alumno\\Create.cshtml",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Alumno\\Create.cshtml",
+              "RelativeToolTip": "FrontEnd2\\Views\\Alumno\\Create.cshtml",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAACsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T23:17:49.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetUpdate.cshtml",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Alumno\\GetUpdate.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd2\\Views\\Alumno\\GetUpdate.cshtml",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Alumno\\GetUpdate.cshtml",
+              "RelativeToolTip": "FrontEnd2\\Views\\Alumno\\GetUpdate.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAAC8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T23:15:09.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlumnoController.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Controllers\\AlumnoController.cs",
+              "RelativeDocumentMoniker": "FrontEnd2\\Controllers\\AlumnoController.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Controllers\\AlumnoController.cs",
+              "RelativeToolTip": "FrontEnd2\\Controllers\\AlumnoController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwE8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T23:03:21.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Listar.cshtml",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Alumno\\Listar.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd2\\Views\\Alumno\\Listar.cshtml",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Alumno\\Listar.cshtml",
+              "RelativeToolTip": "FrontEnd2\\Views\\Alumno\\Listar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T22:31:14.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AlumnoLogica.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Models\\Logica\\AlumnoLogica.cs",
+              "RelativeDocumentMoniker": "FrontEnd2\\Models\\Logica\\AlumnoLogica.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Models\\Logica\\AlumnoLogica.cs",
+              "RelativeToolTip": "FrontEnd2\\Models\\Logica\\AlumnoLogica.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T21:53:38.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlumnoData.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Models\\Data\\AlumnoData.cs",
+              "RelativeDocumentMoniker": "FrontEnd2\\Models\\Data\\AlumnoData.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Models\\Data\\AlumnoData.cs",
+              "RelativeToolTip": "FrontEnd2\\Models\\Data\\AlumnoData.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwDsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T21:52:45.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ListarXID.cshtml",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Alumno\\ListarXID.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd2\\Views\\Alumno\\ListarXID.cshtml",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Views\\Alumno\\ListarXID.cshtml",
+              "RelativeToolTip": "FrontEnd2\\Views\\Alumno\\ListarXID.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T22:30:43.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResultadoTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Models\\Entity\\ResultadoTransaction.cs",
+              "RelativeDocumentMoniker": "FrontEnd2\\Models\\Entity\\ResultadoTransaction.cs",
+              "ToolTip": "C:\\Users\\JOSE ANGEL\\Pictures\\LAPTOP\\C#\\Ciclo4\\PRACTICA\\API2\\FrontEnd2\\FrontEnd2\\Models\\Entity\\ResultadoTransaction.cs",
+              "RelativeToolTip": "FrontEnd2\\Models\\Entity\\ResultadoTransaction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T21:52:47.122Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 123,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

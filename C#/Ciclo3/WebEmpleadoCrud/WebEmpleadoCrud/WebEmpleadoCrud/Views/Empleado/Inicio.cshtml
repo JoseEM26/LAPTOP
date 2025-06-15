@@ -1,0 +1,87 @@
+﻿@model IEnumerable<WebEmpleadoCrud.Models.Empleado>
+
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<h2>Inicio</h2>
+
+<p>
+    @Html.ActionLink("Nuevo Empleado", "Crear", "Empleado", new {@class="btn btn-primary"})
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.employee_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.first_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.last_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hire_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.job_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.manager_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.department_id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.employee_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.first_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.last_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phone_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hire_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.job_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.manager_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.department_id)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new {  id=item.employee_id }) |
+            @Html.ActionLink("Ver", "Detalle", new {  id=item.employee_id }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new {  id=item.employee_id })
+        </td>
+    </tr>
+}
+
+</table>

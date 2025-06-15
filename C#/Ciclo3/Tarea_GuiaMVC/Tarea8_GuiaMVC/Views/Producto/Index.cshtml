@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Tarea8_GuiaMVC.Entity.Producto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Mostrar Todos Los Productos</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdProducto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomProducto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCategoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdProveedor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CantxUnidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrecioUnidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnidadesEnExistencia)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdProducto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomProducto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCategoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdProveedor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CantxUnidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrecioUnidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnidadesEnExistencia)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.IdProducto }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.IdProducto }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.IdProducto })
+        </td>
+    </tr>
+}
+
+</table>

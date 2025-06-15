@@ -1,0 +1,22 @@
+﻿
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <label>Nombre :</label> @ViewBag.Nombre
+    <br />
+    <label>apellido :</label> @ViewBag.apellido
+   
+
+    <address>
+        @ViewBag.instituto<br />
+        Redmond, WA 98052-6399<br />
+        <abbr title="Phone">P:</abbr>
+        @ViewBag.celulat
+    </address>
+
+    <address>
+        <strong>Support:</strong>   <a href="mailto:Support@example.com">@ViewBag.correo</a><br />
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">@ViewBag.correo</a>
+    </address>
+</main>

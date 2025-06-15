@@ -1,0 +1,397 @@
+﻿    @inject IJSRuntime JS
+    @page "/mostrar"
+    @rendermode InteractiveServer
+    @using FrontEndBlazor2.Model.ENtity
+    @using FrontEndBlazor2.Model.Logica
+
+@code {
+    List<Venta> Listaventa ;
+    List<VentaDet> ListaventaDet;
+    VentaLogica _logica = new VentaLogica();
+    Venta ventaUpdate = null;
+    VentaDet VentaDetUpdate =null;
+
+
+
+    protected override void OnInitialized()
+    {
+        ListaventaDet = new List<VentaDet>();
+        Listaventa = new List<Venta>();
+        var resultadoVenta = _logica.ListarVenta();
+        Listaventa = resultadoVenta.DataList;
+
+        // var resultadoVentaDetalle = ListarVentaDetalleXIdVenta();
+        // ListaventaDet = resultadoVentaDetalle.DataList;
+
+        base.OnInitialized();
+    }
+
+    async Task ListarVentaDetalleXIdVenta(int id)
+    {
+
+        try
+        {
+            ListaventaDet = _logica.ListarVentaDetalleXidVEnta(id).DataList;
+        }catch(Exception e)
+        {
+            Console.WriteLine(e.
+            Message);
+        }
+
+    }
+
+    async Task ActualizarVenta()
+    {
+        var resultado = _logica.ActualizarVenta(ventaUpdate);
+
+        if (resultado.IdRegistro == 0)
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "Correct!",
+                text = "Se actualizó correctamente!",
+                icon = "success"
+            });
+
+            await JS.InvokeVoidAsync("bootstrapModal.hide", "#staticBackdrop");
+
+            var resultadoVenta = _logica.ListarVenta();
+            Listaventa = resultadoVenta.DataList;
+
+            StateHasChanged();
+        }
+        else
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "Error",
+                text = resultado.Mensaje ?? "No se pudo actualizar",
+                icon = "error"
+            });
+        }
+    }
+    async Task ActualizarVentaDetalle()
+    {
+        var resultado = _logica.ActualizarVentaDetalle(VentaDetUpdate);
+
+        if (resultado.IdRegistro == 0)
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "Correct!",
+                text = "Detalle actualizado correctamente!",
+                icon = "success"
+            });
+
+            await JS.InvokeVoidAsync("bootstrapModal.hide", "#staticBackdrop");
+
+            var resultadoVentaDetalle = _logica.ListarVentaDetalle();
+            ListaventaDet = resultadoVentaDetalle.DataList;
+
+            StateHasChanged();
+        }
+        else
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "Error",
+                text = resultado.Mensaje ?? "No se pudo actualizar el detalle",
+                icon = "error"
+            });
+        }
+    }
+
+    async Task AbrirModalActualizar(Venta ventaSeleccionada,VentaDet VentaDetSelecionada)
+    {
+        await CleanFormVenta(); // limpiar por si acaso
+        if (ventaSeleccionada!=null)
+        {
+            ventaUpdate = new Venta
+                {
+                    idVenta = ventaSeleccionada.idVenta,
+                    cliente = ventaSeleccionada.cliente,
+                    nroDocumento = ventaSeleccionada.nroDocumento,
+                    fechaVenta = ventaSeleccionada.fechaVenta,
+                    subTotal = ventaSeleccionada.subTotal,
+                    igv = ventaSeleccionada.igv,
+                    total = ventaSeleccionada.total
+                };
+        }
+        else
+        {
+            VentaDetUpdate = new VentaDet();
+            VentaDetUpdate = VentaDetSelecionada;
+        }
+        await JS.InvokeVoidAsync("bootstrapModal.show", "#staticBackdrop");
+
+    }
+    async Task AbrirModalActualizarDetalle(VentaDet ventaSeleccionada)
+    {
+        
+
+    }
+
+    async Task CleanFormVenta()
+    {
+
+        ventaUpdate = new Venta();
+    }
+
+    async Task EliminarVenta(int idVenta)
+    {
+        var resultado =  _logica.EliminarVenta(idVenta);
+
+        if (resultado.IdRegistro == 0)
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "Correct!",
+                text = "Venta eliminada correctamente!",
+                icon = "success"
+            });
+
+            var resultadoVenta = _logica.ListarVenta();
+            Listaventa = resultadoVenta.DataList;
+            ListaventaDet = new List<VentaDet>();
+            StateHasChanged();
+        }
+        else
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "Error",
+                text = resultado.Mensaje ?? "No se pudo eliminar la venta",
+                icon = "error"
+            });
+        }
+    }
+
+    async Task EliminarVentaDetalle(int idVenta,int idVentaDet)
+    {
+        var resultado = _logica.EliminarVentaDetalle(idVenta,idVentaDet);
+
+        if (resultado.IdRegistro == 0)
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "Correct!",
+                text = "Producto eliminada correctamente!",
+                icon = "success"
+            });
+
+            var resultadoVentaDetalle = _logica.ListarVentaDetalle();
+            ListaventaDet = resultadoVentaDetalle.DataList;
+            var resultadoVenta = _logica.ListarVenta();
+            Listaventa = resultadoVenta.DataList ;
+            StateHasChanged();
+        }
+        else
+        {
+            await JS.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "Error",
+                text = resultado.Mensaje ?? "No se pudo eliminar el Producto",
+                icon = "error"
+            });
+        }
+    }
+
+    
+}
+
+    <div class="container">
+
+        <h1>Table Venta Cabezera</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">NroDocumento</th>
+                    <th scope="col">FechaVenta</th>
+                    <th scope="col">SubTotal</th>
+                    <th scope="col">igv</th>
+                    <th scope="col">total</th>
+                    <th scope="col">Metodos</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var x in Listaventa)
+                {
+                    <tr>
+                        <th scope="row">@x.idVenta</th>
+                        <th scope="row">@x.cliente</th>
+                        <th scope="row">@x.nroDocumento</th>
+                        <th scope="row">@x.fechaVenta.ToString("dd/mm/yyyy")</th>
+                        <th scope="row">@x.subTotal</th>
+                        <th scope="row">@x.igv</th>
+                        <th scope="row">@x.total</th>
+                        <th scope="row">
+                            <button class="btn btn-primary" @onclick="()=>ListarVentaDetalleXIdVenta(x.idVenta)">Producto</button>
+                        <button class="btn btn-danger" @onclick="()=>EliminarVenta(x.idVenta)">Eliminar</button>
+                        <button type="button" class="btn btn-primary" @onclick="()=>AbrirModalActualizar(x,null)">
+                                Actualizar
+                            </button>
+                        </th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+    <br />
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    @if (VentaDetUpdate != null)
+                    {
+                        <p>Modo: Actualizando Producto</p>
+                    }
+                    @if (ventaUpdate != null)
+                    {
+                        <p>Modo: Actualizando Venta</p>
+                    }
+
+                </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick="CleanFormVenta"></button>
+                </div>
+            @if (ventaUpdate != null)
+            {
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Id Venta</label>
+                        <input type="text" class="form-control" readonly @bind="ventaUpdate.idVenta">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre Cliente</label>
+                        <input type="text" class="form-control" @bind="ventaUpdate.cliente">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Número Documento</label>
+                        <input type="text" class="form-control" @bind="ventaUpdate.nroDocumento">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fecha Venta</label>
+                        <input type="datetime" class="form-control" readonly @bind="ventaUpdate.fechaVenta">
+                    </div>
+                </form>
+            }
+            else if (VentaDetUpdate != null)
+            {
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Producto</label>
+                        <input type="text" class="form-control" @bind="VentaDetUpdate.producto">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" @bind="VentaDetUpdate.cantidad">
+                    </div>
+                    <!-- Añade más campos de detalle si lo deseas -->
+                </form>
+            }
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="CleanFormVenta">Close</button>
+                    <button type="button" class="btn btn-primary" @onclick="ActualizarVenta" >Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br  />
+<h2>Table Venta Detalle</h2>
+
+    @if(ListaventaDet.Count>0){
+
+    <div class="container">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">IdVentaDet</th>
+                    <th scope="col">IdVenta</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">SubTotal</th>
+                    <th scope="col">igv</th>
+                    <th scope="col">total</th>
+                    <th scope="col">Metodos</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var x in ListaventaDet)
+                {
+                    <tr>
+                        <th scope="row">@x.idVenta</th>
+                        <th scope="row">@x.idVentaDet</th>
+                        <th scope="row">@x.producto</th>
+                        <th scope="row">@x.cantidad</th>
+                        <th scope="row">@x.precio</th>
+                        <th scope="row">@x.subtotal</th>
+                        <th scope="row">@x.igv</th>
+                        <th scope="row">@x.total</th>
+                        <button class="btn btn-danger">Eliminar</button>
+                        <button type="button" class="btn btn-primary" @onclick="()=>AbrirModalActualizar(null,x)">  Actualizar </button>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+    }
+    else if(Listaventa.Count==0){
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">IdVentaDet</th>
+                <th scope="col">IdVenta</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Precio</th>
+                <th scope="col">SubTotal</th>
+                <th scope="col">igv</th>
+                <th scope="col">total</th>
+                <th scope="col">Metodos</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="9" style="background-color: lightgray; color: black; text-align: center;">No hay ningun producto comprado</td>
+            </tr>
+        </tbody>
+    </table>
+
+    }else{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">IdVentaDet</th>
+                <th scope="col">IdVenta</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Precio</th>
+                <th scope="col">SubTotal</th>
+                <th scope="col">igv</th>
+                <th scope="col">total</th>
+                <th scope="col">Metodos</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="9" style="background-color: lightgray; color: black; text-align: center;">No ha Selecionado ni una venta</td>
+            </tr>
+        </tbody>
+    </table>
+    }

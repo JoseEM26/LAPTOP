@@ -1,0 +1,8 @@
+create database formulario;
+use formulario;
+show tables from formulario;
+select * from roles;
+select * from user_roles;
+select * from users;
+
+

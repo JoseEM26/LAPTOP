@@ -1,0 +1,13 @@
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\bin\Debug\net8.0\Dominio.deps.json
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\bin\Debug\net8.0\Dominio.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\bin\Debug\net8.0\Dominio.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\obj\Debug\net8.0\Dominio.csproj.AssemblyReference.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\obj\Debug\net8.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\obj\Debug\net8.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\obj\Debug\net8.0\Dominio.AssemblyInfo.cs
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\obj\Debug\net8.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\obj\Debug\net8.0\Dominio.sourcelink.json
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\obj\Debug\net8.0\Dominio.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\obj\Debug\net8.0\refint\Dominio.dll
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\obj\Debug\net8.0\Dominio.pdb
+C:\Users\JOSE ANGEL\Pictures\LAPTOP\C#\Ciclo4\ExamenFINAL\BackendEstudiante\Dominio\obj\Debug\net8.0\ref\Dominio.dll

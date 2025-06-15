@@ -1,0 +1,58 @@
+<div>
+  <h2>
+    @if (contact) {Update}
+    @if (!contact) {Create}
+    Customer</h2>
+</div>
+
+<form [formGroup]="form">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">First Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="nombre"
+    />
+    @if (form.get("nombre")?.hasError("required")&& form.get("nombre")?.touched) {
+    <p class="invalid-feedback d-block">No se puede dejar este campo vacio</p>
+
+    }
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Last Name</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="apellido"
+    />
+    @if (form.get("apellido")?.hasError("required")&& form.get("apellido")?.touched) {
+        <p class="invalid-feedback d-block">No se puede dejar este campo vacio</p>
+    }
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInputPassword1"
+      formControlName="email"
+    />
+    @if (form.get("email")?.hasError("required") && form.get("email")?.touched) {
+        <p class="invalid-feedback d-block">No se puede dejar este campo vacio</p>
+    }
+    @if (form.get("email")?.hasError("email")&& form.get("email")?.touched) {
+        <p class="invalid-feedback d-block">Debe ser de tipo Email</p>
+    }
+    </div>
+
+    <button class="btn btn-light" routerLink="/">return</button>
+  <button type="button" class="btn btn-primary" (click)="create()">
+    @if (contact) {Update}
+    @if (!contact) {Create}
+  </button>
+</form>
+<p>Nombre: {{ form.get("nombre")?.value }}</p>
+<p>Apellido: {{ form.get("apellido")?.value }}</p>
+<p>Email: {{ form.get("email")?.value }}</p>

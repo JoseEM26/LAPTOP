@@ -1,0 +1,45 @@
+--{{filtro.get("nombreFiltro")?.value}}
+
+<div class="text-end">
+  <a routerLink="form">
+    <button class="btn btn-primary">Create New customer</button>
+  </a>
+</div>
+<div class="col-2 text-end">
+  <form [formGroup]="filtro">
+    <input type="number" class="form-control" placeholder="ingrese nombre" formControlName="nombreFiltro"/>
+  <button class="btn btn-primary" (click)="fetchBYID()">Filtrar</button>
+  </form>
+</div>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">FirstName</th>
+      <th scope="col">LastName</th>
+      <th scope="col">Email</th>
+      <th scope="col">CreatedAt</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (x of customers; track x.id) {
+    <tr>
+      <th scope="row">{{ x.id }}</th>
+      <td>{{ x.nombre }}</td>
+      <td>{{ x.apellido }}</td>
+      <td>{{ x.email }}</td>
+      <td>{{ x.fechaCreacion | date : "dd/MM/YY HH/MM/SS a" }}</td>
+      <td>
+        <div class="btn-group">
+          <button class="btn btn-danger" (click)="delete(x.id)">Delete</button>
+          <button class="btn btn-primary" [routerLink]="['form', x.id]">
+            Update
+          </button>
+        </div>
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>

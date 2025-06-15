@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NegociosModelStoreContainer" CdmEntityContainer="NegociosEntities">
+    <FunctionImportMapping FunctionImportName="USP_PRODUCTOLISTARE" FunctionName="NegociosModel.Store.USP_PRODUCTOLISTARE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NegociosModel.USP_PRODUCTOLISTARE_Result">
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="NomProducto" ColumnName="NomProducto" />
+          <ScalarProperty Name="PrecioUnidad" ColumnName="PrecioUnidad" />
+          <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
+          <ScalarProperty Name="NomProveedor" ColumnName="NomProveedor" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
