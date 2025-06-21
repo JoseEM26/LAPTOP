@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Ejemplos Prof. Ernesto Arbulú</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="..." crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+	<div class="container mt-4">
+		<div class="card shadow-lg">
+			<div class="card-body">
+				<h1 class="text-center">Producto Nuevo</h1>
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-6">
+						<form th:action="@{/productos/registrar}" method="post" th:object="${producto}">
+							<div class="mb-3">
+								<label for="inputCod">Código</label>
+								<input type="text" class="form-control" id="inputCod" placeholder="Código" required
+									th:field="*{codProducto}">
+							</div>
+							<div class="mb-3">
+								<label for="inputNom">Descripción</label>
+								<input type="text" class="form-control" id="inputNom" placeholder="Nombre" required
+									th:field="*{descripcion}">
+							</div>
+							<div class="row">
+								<div class="mb-3 col-md-6">
+									<label for="inputStk">Stock</label>
+									<input type="number" class="form-control" id="inputStk" placeholder="0" required
+										th:field="*{stock}">
+								</div>
+								<div class="mb-3 col-md-6">
+									<label for="inputPrec">Precio</label>
+									<input type="number" class="form-control" id="inputPrec" placeholder="0.00" required
+										th:field="*{precio}">
+								</div>
+							</div>
+							<div class="row">
+								<div class="mb-3 col-md-6">
+									<label for="inputCat">Categoría</label>
+									<select id="inputCat" class="form-select" required th:field="*{categoria}">
+										<option value="-1">--Seleccione--</option>
+										<option th:each="item : ${categorias}" th:value="${item.idCategoria}"
+											th:text="${item.descripcion}">
+										</option>
+									</select>
+								</div>
+								<div class="mb-3 col-md-6">
+									<label for="inputProv">Proveedor</label>
+									<select id="inputProv" class="form-select" required th:field="*{proveedor}">
+										<option value="-1">--Seleccione--</option>
+										<option th:each="item : ${proveedores}" th:value="${item.idProveedor}"
+											th:text="${item.razonSocial}">
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="mb-3 col-md-6">
+								<label for="inputEstado">Estado</label>
+								<select id="inputEstado" class="form-select" required th:field="*{idEstado}">
+									<option value="-1">--Seleccione--</option>
+									<option value="1">Activo</option>
+									<option value="0">Inactivo</option>
+								</select>
+							</div>
+							<button type="reset" class="btn btn-outline-secondary">
+								Limpiar
+								<i class="fa-solid fa-eraser"></i>
+							</button>
+							<button type="submit" class="btn btn-primary">
+								Registrar
+								<i class="fa-solid fa-floppy-disk"></i>
+							</button>
+							<a th:href="@{/productos/listado}" class="btn btn-dark">
+								Regresar
+								<i class="fa-solid fa-circle-left"></i>
+							</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<div th:if="${alert}">
+		<div th:utext="${alert}"></div>
+	</div>
+</body>
+
+</html>

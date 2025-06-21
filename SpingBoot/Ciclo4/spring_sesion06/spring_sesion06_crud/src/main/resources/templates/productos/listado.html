@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Ejemplos Prof. Ernesto Arbulú</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="..." crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Listado de productos</h1>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row mb-3">
+					<div class="col-md-3">
+						<a th:href="@{/productos/nuevo}" class="btn btn-success w-100">
+							<i class="fa-solid fa-plus"></i>
+							Nuevo
+						</a>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-md-12">
+						<table class="table table-hover table-striped table-borderless align-middle">
+							<thead class="table-dark text-center">
+								<tr>
+									<th>Nro.</th>
+									<th>Código</th>
+									<th>Descripción</th>
+									<th>Stock</th>
+									<th>Precio</th>
+									<th>Categoria</th>
+									<th>Proveedor</th>
+									<th>Estado</th>
+									<th>Acciones</th>
+								</tr>
+							</thead>
+							<tbody class="table-secondary">
+								<tr th:each="item, stat: ${lstProducto}">
+									<td th:text="${stat.count}" class="text-center"></td>
+									<td th:text="${item.codProducto}" class="text-center"></td>
+									<td th:text="${item.descripcion}"></td>
+									<td th:text="${item.stock}" class="text-end"></td>
+									<td th:text="|S/. ${#numbers.formatDecimal(item.precio,1,2,'POINT')}|"
+										class="text-end"></td>
+									<td th:text="${item.categoria.descripcion}"></td>
+									<td th:text="${item.proveedor.razonSocial}"></td>
+									<td th:text="${item.idEstado == 1 ? 'Activo' : 'Inactivo'}" class="text-center">
+									</td>
+									<td class="d-flex justify-content-around">
+										<a th:href="@{/productos/edicion/{id}(id=${item.codProducto})}"
+											class="btn btn-outline-secondary" title="Editar" role="button">
+											<i class="fa-regular fa-pen-to-square"></i>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:if="${alert}">
+		<div th:utext="${alert}"></div>
+	</div>
+</body>
+
+</html>
