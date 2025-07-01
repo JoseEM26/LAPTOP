@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="graficos" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ecc17282-638a-48d8-9629-e91a1fe72bac">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MySQL"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<subDataset name="DatasetPie" uuid="f0dc8543-74fe-457c-b3c3-da7093ceb892">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MySQL"/>
+		<queryString language="SQL">
+			<![CDATA[select * from v_stock_categoria ]]>
+		</queryString>
+		<field name="categoria" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="categoria"/>
+			<property name="com.jaspersoft.studio.field.label" value="categoria"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tb_categorias"/>
+		</field>
+		<field name="stock_total" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="stock_total"/>
+			<property name="com.jaspersoft.studio.field.label" value="stock_total"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="v_stock_categoria"/>
+		</field>
+	</subDataset>
+	<subDataset name="DatasetBarras" uuid="03ee7450-c3c0-4b19-a0cd-3a5634535a83">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MySQL"/>
+		<queryString language="SQL">
+			<![CDATA[ select * from v_stock_categoria_proveedor ]]>
+		</queryString>
+		<field name="idproveedor" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="idproveedor"/>
+			<property name="com.jaspersoft.studio.field.label" value="idproveedor"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tb_productos"/>
+		</field>
+		<field name="proveedor" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="proveedor"/>
+			<property name="com.jaspersoft.studio.field.label" value="proveedor"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tb_proveedor"/>
+		</field>
+		<field name="categoria" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="categoria"/>
+			<property name="com.jaspersoft.studio.field.label" value="categoria"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tb_categorias"/>
+		</field>
+		<field name="stock_total" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="stock_total"/>
+			<property name="com.jaspersoft.studio.field.label" value="stock_total"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="v_stock_categoria_proveedor"/>
+		</field>
+	</subDataset>
+	<queryString>
+		<![CDATA[ select * from ciberfarmaweb.v_header_boleta ]]>
+	</queryString>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement x="280" y="10" width="275" height="60" uuid="8068951c-496b-4eee-a676-c77d59625728"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE STOCK 
+DE CATEGORÍAS Y PROVEEDORES]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement mode="Transparent" x="0" y="10" width="260" height="60" uuid="7abddc8b-b793-482b-b619-52614e900de2"/>
+				<imageExpression><![CDATA["https://i.postimg.cc/652ZhGb7/ciberfarma.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="655" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<pieChart>
+				<chart isShowLegend="true" evaluationTime="Report">
+					<reportElement x="0" y="-10" width="555" height="300" uuid="83a7ae84-6ea1-45e9-b394-e74fd18e440e"/>
+					<chartTitle>
+						<font size="22" isBold="true"/>
+						<titleExpression><![CDATA["Reporte de stock total por categoría"]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle/>
+					<chartLegend position="Bottom">
+						<font size="16"/>
+					</chartLegend>
+				</chart>
+				<pieDataset>
+					<dataset>
+						<datasetRun subDataset="DatasetPie" uuid="95216185-3a51-4d54-a1fc-e08b925379d5">
+							<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+						</datasetRun>
+					</dataset>
+					<keyExpression><![CDATA[$F{categoria}]]></keyExpression>
+					<valueExpression><![CDATA[$F{stock_total}]]></valueExpression>
+					<labelExpression><![CDATA[$F{stock_total}+""]]></labelExpression>
+				</pieDataset>
+				<piePlot>
+					<plot/>
+					<itemLabel/>
+				</piePlot>
+			</pieChart>
+			<bar3DChart>
+				<chart isShowLegend="true" evaluationTime="Report" theme="default">
+					<reportElement x="0" y="340" width="555" height="300" uuid="9d8cc46d-112c-41b9-af8b-9ba799434a03"/>
+					<chartTitle>
+						<font size="22" isBold="true"/>
+						<titleExpression><![CDATA["Reporte de stock de cada categoría por proveedor"]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle/>
+					<chartLegend>
+						<font size="16" isBold="false" isItalic="false"/>
+					</chartLegend>
+				</chart>
+				<categoryDataset>
+					<dataset>
+						<datasetRun subDataset="DatasetBarras" uuid="191c33a7-4ce6-400e-9890-a161cd1d9468">
+							<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+						</datasetRun>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{categoria}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{proveedor}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{stock_total}]]></valueExpression>
+						<labelExpression><![CDATA[$F{proveedor}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot isShowLabels="true">
+					<plot/>
+					<itemLabel color="#050505" backgroundColor="rgba(5, 5, 5, 0.0)">
+						<font fontName="Arial" size="14" isBold="false"/>
+					</itemLabel>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" verticalTickLabels="true" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" tickLabelMask="" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+		</band>
+	</detail>
+</jasperReport>

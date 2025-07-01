@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: layoutBase(~{::contenido})">
+
+<div th:fragment="contenido">
+	<div class="card shadow-lg">
+		<div class="card-body">
+			<h1 class="text-center" th:utext="|Producto - Edición<br>Código ${producto.codProducto}|"></h1>
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-6">
+					<form novalidate th:action="@{/productos/guardar}" method="post" th:object="${producto}"
+						class="needs-validation">
+						<div class="mb-3 form-field-material">
+							<label for="codProducto">Código</label>
+							<input type="text" class="form-control" placeholder="Ejem. P0001" required
+								th:field="*{codProducto}"
+								th:classappend="${#fields.hasErrors('codProducto')} ? 'is-invalid' : ''">
+							<div class="invalid-feedback" th:errors="*{codProducto}"></div>
+						</div>
+						<div class="mb-3">
+							<label for="descripcion">Descripción</label>
+							<input type="text" class="form-control" placeholder="Nombre" required
+								th:field="*{descripcion}"
+								th:classappend="${#fields.hasErrors('descripcion')} ? 'is-invalid' : ''">
+							<div class="invalid-feedback" th:errors="*{descripcion}"></div>
+						</div>
+						<div class="row">
+							<div class="mb-3 col-md-6">
+								<label for="stock">Stock</label>
+								<input type="number" class="form-control" placeholder="0" required th:field="*{stock}"
+									th:classappend="${#fields.hasErrors('stock')} ? 'is-invalid' : ''">
+								<div class="invalid-feedback" th:errors="*{stock}"></div>
+							</div>
+							<div class="mb-3 col-md-6">
+								<label for="precio">Precio</label>
+								<input type="number" class="form-control" placeholder="0.00" required
+									th:field="*{precio}"
+									th:classappend="${#fields.hasErrors('precio')} ? 'is-invalid' : ''">
+								<div class="invalid-feedback" th:errors="*{precio}"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="mb-3 col-md-6">
+								<label for="categoria">Categoría</label>
+								<select class="form-select" required th:field="*{categoria}"
+									th:classappend="${#fields.hasErrors('categoria')} ? 'is-invalid' : ''">
+									<option value="">--Seleccione--</option>
+									<option th:each="item : ${categorias}" th:value="${item.idCategoria}"
+										th:text="${item.descripcion}">
+									</option>
+								</select>
+								<div class="invalid-feedback" th:errors="*{categoria}"></div>
+							</div>
+							<div class="mb-3 col-md-6">
+								<label for="proveedor">Proveedor</label>
+								<select class="form-select" required th:field="*{proveedor}"
+									th:classappend="${#fields.hasErrors('proveedor')} ? 'is-invalid' : ''">
+									<option value="">--Seleccione--</option>
+									<option th:each="item : ${proveedores}" th:value="${item.idProveedor}"
+										th:text="${item.razonSocial}">
+									</option>
+								</select>
+								<div class="invalid-feedback" th:errors="*{proveedor}"></div>
+							</div>
+							<input type="hidden" th:field="${producto.idEstado}">
+						</div>
+						<button type="reset" class="btn btn-outline-secondary">
+							Limpiar
+							<i class="fa-solid fa-eraser"></i>
+						</button>
+						<button type="submit" class="btn btn-primary">
+							Guardar
+							<i class="fa-solid fa-floppy-disk"></i>
+						</button>
+						<a th:href="@{/productos/filtrado}" class="btn btn-dark">
+							Regresar
+							<i class="fa-solid fa-circle-left"></i>
+						</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<th:block th:utext="${alert}"></th:block>
+</div>
+
+</html>

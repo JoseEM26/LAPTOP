@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: layoutBase(~{::contenido})">
+
+<div th:fragment="contenido">
+	<div class="row mb-3 align-items-center">
+		<div class="col-md-10">
+			<h1 class="m-0">Listado de productos con filtros</h1>
+		</div>
+
+		<div class="col-md-2">
+			<a th:href="@{/productos/nuevo}" class="btn btn-success w-100">
+				<i class="fa-solid fa-plus"></i>
+				Nuevo
+			</a>
+		</div>
+	</div>
+
+	<!-- Formulario de filtro -->
+	<form method="get" th:action="@{/productos/filtrado}" th:object="${filtro}">
+		<div class="row mb-3">
+			<div class="col-md-2">
+				<label for="categoria">Categoría</label>
+				<select class="form-select" th:field="*{idCategoria}" onchange="this.form.submit()">
+					<option value="">-- Todas --</option>
+					<option th:each="item : ${categorias}" th:value="${item.idCategoria}" th:text="${item.descripcion}">
+					</option>
+				</select>
+			</div>
+
+			<div class="col-md-2">
+				<label for="proveedor">Proveedor</label>
+				<select class="form-select" th:field="*{idProveedor}" onchange="this.form.submit()">
+					<option value="">-- Todos --</option>
+					<option th:each="item : ${proveedores}" th:value="${item.idProveedor}"
+						th:text="${item.razonSocial}">
+					</option>
+				</select>
+			</div>
+
+			<div class="col-md-2 d-flex align-items-end">
+				<a th:href="@{/productos/filtrado}" class="btn btn-outline-secondary w-100">
+					<i class="fa-solid fa-arrows-rotate"></i>
+					Limpiar
+				</a>
+			</div>
+		</div>
+	</form>
+
+	<div class="row mb-3">
+		<div class="col-md-2">
+			<a th:href="@{/reportes/productoGraficos}" class="btn btn-primary">
+				<i class="fa-solid fa-chart-line"></i>
+				Ver gráficos
+			</a>
+		</div>
+		<div class="col-md-12">
+			<table id="tblProductos" class="table table-hover table-striped table-borderless align-middle">
+				<thead class="table-dark text-center">
+					<tr>
+						<th>Nro.</th>
+						<th>Código</th>
+						<th>Descripción</th>
+						<th>Stock</th>
+						<th>Precio</th>
+						<th>Categoria</th>
+						<th>Proveedor</th>
+						<th>Estado</th>
+						<th>Acciones</th>
+					</tr>
+				</thead>
+				<tbody class="table-secondary">
+					<tr th:each="item, stat: ${lstProducto}">
+						<td th:text="${stat.count}" class="text-center"></td>
+						<td th:text="${item.codProducto}" class="text-center"></td>
+						<td th:text="${item.descripcion}"></td>
+						<td th:text="${item.stock}" class="text-end"></td>
+						<td th:text="|S/. ${#numbers.formatDecimal(item.precio,1,2,'POINT')}|" class="text-end">
+						</td>
+						<td th:text="${item.categoria.descripcion}"></td>
+						<td th:text="${item.proveedor.razonSocial}"></td>
+						<td th:text="${item.idEstado ? 'Activo' : 'Inactivo'}" class="text-center">
+						</td>
+						<td class="d-flex justify-content-around align-items-center">
+							<a th:href="@{/productos/edicion/{id}(id=${item.codProducto})}"
+								class="btn btn-outline-secondary" title="Editar" role="button">
+								<i class="fa-regular fa-pen-to-square"></i>
+							</a>
+							<form method="post" th:action="@{/productos/cambiar-estado/{id}(id=${item.codProducto})}">
+								<div class="form-switch">
+									<input class="form-check-input" type="checkbox" th:checked="${item.idEstado}"
+										onchange="this.form.submit()">
+								</div>
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<th:block th:utext="${toast}"></th:block>
+	<script>
+		$(document).ready(function () {
+			$('#tblProductos').DataTable({
+				language: {
+					url: 'https://cdn.datatables.net/plug-ins/2.0.3/i18n/es-ES.json',
+					search: "Filtro general :",
+				}
+			});
+		});
+	</script>
+</div>
+
+</html>

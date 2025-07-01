@@ -1,0 +1,25 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+	background-image: url('/imagenes/pharmacy.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	min-height: 100vh;
+}
+
+.box-login {
+	width: 600px;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,38 @@
+<!-- para el datatable -->
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+	<script src="https://cdn.datatables.net/2.3.2/js/dataTables.bootstrap5.js"></script>
+	
+	
+	
+//javascript
+<script>
+	$(document).ready(function () {
+		$('#tblProductos').DataTable({
+			language: {
+				url: 'https://cdn.datatables.net/plug-ins/2.0.3/i18n/es-ES.json'
+			}
+		});
+	});
+</script>
+
+//Configuración personalizada
+language: {
+    decimal: ",",
+    thousands: ".",
+    search: "Buscar:",
+    lengthMenu: "Mostrar _MENU_ registros",
+    info: "Mostrando _START_ a _END_ de _TOTAL_ registros",
+    infoEmpty: "Mostrando 0 registros",
+    infoFiltered: "(filtrado de _MAX_ registros totales)",
+    loadingRecords: "Cargando...",
+    zeroRecords: "No se encontraron resultados",
+    emptyTable: "No hay datos disponibles",
+    paginate: {
+        first: "Primero",
+        previous: "Anterior",
+        next: "Siguiente",
+        last: "Último"
+    }
+}
