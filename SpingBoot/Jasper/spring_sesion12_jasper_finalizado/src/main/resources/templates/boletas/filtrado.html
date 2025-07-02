@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: layoutBase(~{::contenido})">
+
+<div th:fragment="contenido">
+	<div class="row mb-3 align-items-center">
+		<div class="col-md-10">
+			<h1 class="m-0">Listado de boletas con filtros</h1>
+		</div>
+
+		<div class="col-md-2">
+			<a th:href="@{/boletas/nuevo}" class="btn btn-success w-100">
+				<i class="fa-solid fa-plus"></i>
+				Nueva
+			</a>
+		</div>
+	</div>
+
+	<!-- Formulario de filtro -->
+	<!--	<form method="get" th:action="@{/productos/filtrado}" th:object="${filtro}">
+		<div class="row mb-3">
+			<div class="col-md-2">
+				<label for="categoria">Categoría</label>
+				<select class="form-select" th:field="*{idCategoria}" onchange="this.form.submit()">
+					<option value="">-- Todas --</option>
+					<option th:each="item : ${categorias}" th:value="${item.idCategoria}" th:text="${item.descripcion}">
+					</option>
+				</select>
+			</div>
+			<div class="col-md-2 d-flex align-items-end">
+				<a th:href="@{/productos/filtrado}" class="btn btn-outline-secondary w-100">
+					<i class="fa-solid fa-arrows-rotate"></i>
+					Limpiar
+				</a>
+			</div>
+		</div>
+	</form>-->
+
+	<div class="row mb-3">
+		<div class="col-md-12">
+			<table id="tblBoletas" class="table table-hover table-striped table-borderless align-middle">
+				<thead class="table-dark text-center">
+					<tr>
+						<th>Número</th>
+						<th>Fecha de registro</th>
+						<th>Usuario</th>
+						<th>Rol</th>
+						<th>Total</th>
+						<th>Ver PDF</th>
+					</tr>
+				</thead>
+				<tbody class="table-secondary">
+					<tr th:each="item : ${lstBoletas}">
+						<td th:text="${item.numBoleta}" class="text-center"></td>
+						<td th:text="${item.fecha}" class="text-center"></td>
+						<td th:text="${item.usuario.fullUsuario}"></td>
+						<td th:text="${item.usuario.tipo.descripcion}"></td>
+						<td th:text="|S/. ${#numbers.formatDecimal(item.total,1,2,'POINT')}|" class="text-end">
+						</td>
+						<td class="text-center">
+							<a th:href="@{/reportes/boleta(numBol=${item.numBoleta})}"
+								target="_blank" class="text-danger">
+								<i class="fa-solid fa-file-pdf fa-lg"></i>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<th:block th:utext="${toast}"></th:block>
+	<script>
+		$(document).ready(function () {
+			$('#tblBoletas').DataTable({
+				language: {
+					url: 'https://cdn.datatables.net/plug-ins/2.0.3/i18n/es-ES.json',
+					search: "Filtro general :",
+				}
+			});
+		});
+	</script>
+</div>
+
+</html>

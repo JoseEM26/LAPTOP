@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="boleta" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ecc17282-638a-48d8-9629-e91a1fe72bac">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MySQL"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FA6464">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="DatasetDetalleBoleta" uuid="1f79f7f4-210a-43ca-bb46-8e2b554c8ec5">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MySQL"/>
+		<parameter name="pNumBol" class="java.lang.Integer"/>
+		<queryString language="SQL">
+			<![CDATA[select *
+from v_detail_boleta
+where num_bol = $P{pNumBol}]]>
+		</queryString>
+		<field name="id_prod" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="id_prod"/>
+			<property name="com.jaspersoft.studio.field.label" value="id_prod"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="v_detail_boleta"/>
+		</field>
+		<field name="des_prod" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="des_prod"/>
+			<property name="com.jaspersoft.studio.field.label" value="des_prod"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="v_detail_boleta"/>
+		</field>
+		<field name="cantidad" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="cantidad"/>
+			<property name="com.jaspersoft.studio.field.label" value="cantidad"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="v_detail_boleta"/>
+		</field>
+		<field name="preciovta" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="preciovta"/>
+			<property name="com.jaspersoft.studio.field.label" value="preciovta"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="v_detail_boleta"/>
+		</field>
+		<field name="subtotal" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="subtotal"/>
+			<property name="com.jaspersoft.studio.field.label" value="subtotal"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="v_detail_boleta"/>
+		</field>
+		<variable name="ventaTotal" class="java.lang.Double" calculation="Sum">
+			<variableExpression><![CDATA[$F{subtotal}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<parameter name="pNumBol" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[select *
+from v_header_boleta
+where num_bol = $P{pNumBol}]]>
+	</queryString>
+	<field name="num_bol" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="num_bol"/>
+		<property name="com.jaspersoft.studio.field.label" value="num_bol"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_header_boleta"/>
+	</field>
+	<field name="numBolText" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="numBolText"/>
+		<property name="com.jaspersoft.studio.field.label" value="numBolText"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_header_boleta"/>
+	</field>
+	<field name="nombreCompletoUsuario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombreCompletoUsuario"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombreCompletoUsuario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_header_boleta"/>
+	</field>
+	<field name="fechaText" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fechaText"/>
+		<property name="com.jaspersoft.studio.field.label" value="fechaText"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_header_boleta"/>
+	</field>
+	<background>
+		<band height="694" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="380" width="555" height="314" uuid="2cb50886-751a-46b3-9d9c-3ef6bc386a0d"/>
+				<imageExpression><![CDATA["https://i.postimg.cc/bNnMsPSK/ciberfarma-background.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement x="280" y="10" width="275" height="20" uuid="8068951c-496b-4eee-a676-c77d59625728"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RUC: 20606148039]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="30" width="275" height="20" backcolor="#FA6464" uuid="1e688977-14d2-4512-95e6-0b9bc7d75d3d"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BOLETA ELECTRÓNICA DE VENTA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="50" width="275" height="20" uuid="8ab86277-7676-47c3-bdba-9d4e9410b71d"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numBolText}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="FillFrame">
+				<reportElement mode="Transparent" x="0" y="10" width="260" height="60" uuid="7abddc8b-b793-482b-b619-52614e900de2"/>
+				<imageExpression><![CDATA["https://i.postimg.cc/652ZhGb7/ciberfarma.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="99" height="20" uuid="0099fc8d-0848-45ea-854c-a46753e5e464"/>
+				<textElement textAlignment="Left" verticalAlignment="Justified">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[A nombre de: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="0" width="260" height="20" uuid="e31909d1-70e9-44e8-8769-210b90a54c7d"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left" verticalAlignment="Justified">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreCompletoUsuario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="190" height="19" uuid="f4e45470-3277-4715-9ac7-5f6f02dbb59f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaText}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="100" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<componentElement>
+				<reportElement mode="Transparent" x="0" y="0" width="555" height="90" uuid="ac802c71-6a70-456e-a25e-095f410a33ae">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="DatasetDetalleBoleta" uuid="f3428ef1-de98-499e-9103-bfbd625e6cc5">
+						<datasetParameter name="pNumBol">
+							<datasetParameterExpression><![CDATA[$P{pNumBol}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="70" uuid="162f0472-fc1c-4186-9f48-23ca48f8fd43">
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="30" uuid="8a0e79f1-575f-4293-a366-e17555ab506c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Código]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="70" height="30" uuid="498eea07-b348-4196-82ec-3b94ccec0ef3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{id_prod}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="245" uuid="66665460-ef73-4451-8eca-7727cd9b10a8">
+						<jr:tableFooter style="Table_TH" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</jr:tableFooter>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="245" height="30" uuid="a5b127f2-bbf0-4e87-b7ec-a76e8cea6de1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Descripción]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="245" height="30" uuid="36bb7d4b-18ec-4475-b10c-68d87a9f0e06"/>
+								<box padding="3"/>
+								<textElement verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{des_prod}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="107e2909-6113-40f1-8a36-083d44af69c5">
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="223d80fa-e006-494b-a706-fb52fca2cd7d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Cantidad]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="84298f12-6191-4f98-b94a-c8e8fe4a02ca"/>
+								<box padding="3"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{cantidad}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="fa5c342b-320f-4839-9753-2a0b41606092">
+						<jr:tableFooter style="Table_TH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="5912a83f-fc57-48a3-bb65-feb45befca86"/>
+								<box rightPadding="3"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Total:]]></text>
+							</staticText>
+						</jr:tableFooter>
+						<jr:columnHeader style="Table_CH" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="bbb45124-cb31-413c-b837-c59bee3bead1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Precio de 
+venta]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField pattern="¤ #,##0.00">
+								<reportElement x="0" y="0" width="80" height="30" uuid="0dddba3d-ff2c-45f2-b9ee-71e52b0a7780"/>
+								<box padding="3"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{preciovta}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="95860293-fcac-4d08-b526-cb2b7505593a">
+						<jr:tableFooter style="Table_TH" height="30">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+							<textField pattern="¤ #,##0.00">
+								<reportElement style="Table_TH" x="0" y="0" width="80" height="30" uuid="d94ec873-8cc4-4c8f-9068-1faecbe2c3dd"/>
+								<box padding="3">
+									<pen lineWidth="0.0"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font size="14" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{ventaTotal}]]></textFieldExpression>
+							</textField>
+						</jr:tableFooter>
+						<jr:columnHeader style="Table_CH" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="1b62c0f1-b913-4d28-b364-c9d739bf2c9e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Subtotal]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="447d85b8-c7ae-4c61-ab4e-8f37b7e34512"/>
+								<box padding="3"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{subtotal}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="62" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="60" uuid="8f67678b-fd27-4915-83fa-c5570fa1126a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box padding="3">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="html">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Esta es una representación impresa de la Boleta de Venta Electrónica, generada en el sistema de emisión electrónica desarrollado por el contribuyente. Puede ser consultada en SUNAT Virtual: <a href='https://www.sunat.gob.pe' style='color:#0000FF; text-decoration:underline;'>www.sunat.gob.pe</a> → Consulta CPE. Todos los derechos reservados © CIBERFARMA. Queda prohibida su reproducción total o parcial sin la autorización correspondiente."]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

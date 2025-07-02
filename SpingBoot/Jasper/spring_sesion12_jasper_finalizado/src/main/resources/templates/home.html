@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: layoutBase(~{::contenido})">
+
+<div th:fragment="contenido">
+	<div class="row mb-3">
+		<h2>Bienvenido a CIBERFARMA</h2>
+	</div>
+	<th:block th:utext="${alert}"></th:block>
+</div>
+
+</html>

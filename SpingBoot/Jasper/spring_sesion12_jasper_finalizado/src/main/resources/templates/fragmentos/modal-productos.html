@@ -1,0 +1,58 @@
+<div th:fragment="modal-productos(productos, idModal)">
+	<div class="modal fade" th:id="${idModal}" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Seleccionar Producto</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+
+				<div class="modal-body">
+					<div class="table-responsive">
+						<table id="tblSelectorProductos" class="table table-hover">
+							<thead class="table-secondary">
+								<tr>
+									<th>Código</th>
+									<th>Nombre</th>
+									<th>Precio</th>
+									<th>Acción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr th:each="prod : ${productos}">
+									<td th:text="${prod.codProducto}"></td>
+									<td th:text="${prod.descripcion}"></td>
+									<td th:text="${prod.precio}"></td>
+									<td>
+										<button type="button" class="btn btn-primary btnSeleccionar"
+											th:data-codigo="${prod.codProducto}"
+											th:data-descripcion="${prod.descripcion}" th:data-precio="${prod.precio}">
+											Seleccionar
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Script de inicialización -->
+<	<script>
+		$(document).ready(function () {
+			const idTabla = '#tblSelectorProductos';
+			if ($.fn.DataTable.isDataTable(idTabla)) {
+				$(idTabla).DataTable().destroy();
+			}
+			$('#tblSelectorProductos').DataTable({
+				lengthMenu: [5, 10],
+				pageLength: 5,
+				language: {
+					url: 'https://cdn.datatables.net/plug-ins/2.0.3/i18n/es-ES.json',
+					search: "Filtro general :"
+				}
+			});
+		});
+	</script>
+</div>
