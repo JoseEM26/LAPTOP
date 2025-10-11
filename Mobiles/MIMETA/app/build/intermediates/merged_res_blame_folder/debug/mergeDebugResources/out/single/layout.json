@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.cibertec.mimeta.app-mergeDebugResources-32:/layout/activity_resultado.xml",
+        "source": "com.cibertec.mimeta.app-main-35:/layout/activity_resultado.xml"
+    },
+    {
+        "merged": "/Users/elprofeti/.gradle/daemon/8.13/com.cibertec.mimeta.app-mergeDebugResources-32:/layout/activity_main.xml",
+        "source": "/Users/elprofeti/.gradle/daemon/8.13/com.cibertec.mimeta.app-main-35:/layout/activity_main.xml"
+    }
+]

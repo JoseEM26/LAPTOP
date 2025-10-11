@@ -1,0 +1,6 @@
+com.cibertec.minitienda.test.app-core-1.6.0-0 /Users/elprofeti/.gradle/caches/8.10.2/transforms/69d4db2c8c87fc8f0350e6fd725d28c2/transformed/core-1.6.0/res
+com.cibertec.minitienda.test.app-annotation-experimental-1.4.1-1 /Users/elprofeti/.gradle/caches/8.10.2/transforms/76c813e9a3d47413e7330af9436f5183/transformed/annotation-experimental-1.4.1/res
+com.cibertec.minitienda.test.app-androidTest-2 /Users/elprofeti/Documents/CLASES-2025/DAMI/MiniTienda2/app/build/generated/res/resValues/androidTest/debug
+com.cibertec.minitienda.test.app-mergeDebugAndroidTestResources-3 /Users/elprofeti/Documents/CLASES-2025/DAMI/MiniTienda2/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.cibertec.minitienda.test.app-mergeDebugAndroidTestResources-4 /Users/elprofeti/Documents/CLASES-2025/DAMI/MiniTienda2/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.cibertec.minitienda.test.app-debugAndroidTest-5 /Users/elprofeti/Documents/CLASES-2025/DAMI/MiniTienda2/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

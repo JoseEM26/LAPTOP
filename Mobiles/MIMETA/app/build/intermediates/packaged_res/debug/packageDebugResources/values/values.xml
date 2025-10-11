@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">MiMeta</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="fab_reiniciar">Reiniciar</string>
+    <string name="fmt_total">Total ahorrado: S/ %1$.2f</string>
+    <string name="hint_meses">Meses</string>
+    <string name="hint_monto_mensual">Monto mensual</string>
+    <string name="key_meses">key_meses</string>
+    <string name="key_monto">key_monto</string>
+    <string name="msg_campo_requerido">Campo requerido</string>
+    <string name="msg_motivacion">¡Excelente! Mantén el hábito.</string>
+    <string name="title_resultado">Resultado</string>
+    <style name="Base.Theme.MiMeta" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MiMeta" parent="Base.Theme.MiMeta"/>
+</resources>

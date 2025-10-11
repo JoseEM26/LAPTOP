@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categorias_items">
+        <item>Abarrotes</item>
+        <item>Lácteos</item>
+        <item>Bebidas</item>
+        <item>Limpieza</item>
+        <item>Hogar</item>
+    </string-array>
+    <string-array name="estado_items">
+        <item>Nuevo</item>
+        <item>Usado</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="btn_min_height">48dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_6">6dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="thumb_size">56dp</dimen>
+    <string name="app_name">MiniTienda</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="dialog_titulo_form">Nuevo producto</string>
+    <string name="error_cantidad_max">Máximo permitido: 100</string>
+    <string name="error_cantidad_requerida">Ingresa una cantidad mayor a 0</string>
+    <string name="error_nombre_requerido">Ingresa un nombre</string>
+    <string name="error_precio_requerido">Ingresa un precio válido</string>
+    <string name="fmt_detalle">%1$s  •  %2$s</string>
+    <string name="fmt_precio">Precio: %1$s %2$s</string>
+    <string name="hint_cantidad">Cantidad</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_precio">Precio</string>
+    <string name="lbl_categoria">Categoría</string>
+    <string name="lbl_disponible">Disponible</string>
+    <string name="lbl_estado">Estado</string>
+    <string name="lbl_igv">IGV (18%%): %1$s %2$s</string>
+    <string name="lbl_subtotal">Subtotal: %1$s %2$s</string>
+    <string name="lbl_total">Total: %1$s %2$s</string>
+    <string name="menu_editar_cantidad">Editar cantidad</string>
+    <string name="menu_eliminar">Eliminar</string>
+    <string name="moneda_prefijo">S/</string>
+    <string name="resumen_titulo">Resumen</string>
+    <string name="resumen_vacio">No has agregado productos.</string>
+    <string name="titulo_main">MiniTienda</string>
+    <style name="Base.Theme.MiniTienda" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MiniTienda" parent="Base.Theme.MiniTienda"/>
+</resources>

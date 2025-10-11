@@ -1,0 +1,37 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_calculate
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnCalcular
+id cardResultado
+id etMeses
+id etMonto
+id fabReiniciar
+id main
+id tilMeses
+id tilMonto
+id toolbar
+id tvMotiva
+id tvTotal
+layout activity_main
+layout activity_resultado
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string btn_calcular
+string fab_reiniciar
+string fmt_total
+string hint_meses
+string hint_monto_mensual
+string key_meses
+string key_monto
+string msg_campo_requerido
+string msg_motivacion
+string title_resultado
+style Base.Theme.MiMeta
+style Theme.MiMeta
+xml backup_rules
+xml data_extraction_rules
