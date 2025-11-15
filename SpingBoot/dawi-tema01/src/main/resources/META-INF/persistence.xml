@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="HikariCPDemo">
+       
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ciberfarmadawi?createDatabaseIfNotExist=true"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="mysql"/>
+            
+            
+            <!-- Manejador Hibernate -->
+			<property name="hibernate.hbm2ddl.auto"  value="update" />
+			<property name="hibernate.show_sql"  value="true" /> 
+            
+            
+            <!-- Configuración de HikariCP -->
+            <!-- <property name="hibernate.hikari.minimumIdle" value="5"/>
+            <property name="hibernate.hikari.maximumPoolSize" value="10"/>
+            <property name="hibernate.hikari.idleTimeout" value="30000"/> -->
+        </properties>
+    </persistence-unit>
+</persistence>

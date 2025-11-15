@@ -1,0 +1,23 @@
+    type Query{
+       listarCuentas : [CuentaBancaria]
+        cuentaBancariaPorId(id:String): CuentaBancaria
+
+    }
+    type Mutation{
+        agregarCuenta(cuentaBancaria:CuentaBancariaDTO): CuentaBancaria,
+        actualizarCuenta(id:String, cuentaBancaria:CuentaBancariaDTO): CuentaBancaria,
+        eliminarCuenta(id:String):String
+    }
+
+    type CuentaBancaria{
+        id:String,
+        fechaCreacion:Float,
+        balance:Float,
+        divisa:String,
+        tipoCuenta:String
+    }
+    input CuentaBancariaDTO{
+        balance:Float,
+        divisa: String,
+        tipoCuenta: String
+    }
