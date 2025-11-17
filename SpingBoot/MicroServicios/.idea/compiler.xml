@@ -8,8 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="usuario-service" />
+        <module name="config-service" />
       </profile>
-      <profile name="Annotation profile for moto-service" enabled="true">
+      <profile name="Annotation profile for carro-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -24,6 +25,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="carro-service" options="-parameters" />
+      <module name="config-service" options="-parameters" />
       <module name="moto-service" options="-parameters" />
       <module name="usuario-service" options="-parameters" />
     </option>
