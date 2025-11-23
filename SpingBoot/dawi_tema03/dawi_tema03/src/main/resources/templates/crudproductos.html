@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciberfarma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-5">
+            <h2 class="mb-3">Mantenimiento de Productos</h2>
+
+            <form th:action="@{create}" th:object="${producto}" method="post" class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputCod">Código</label>
+                    <input type="text" th:field="*{id_prod}" class="form-control" id="inputCod" placeholder="P0000"/>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputNom">Nombre</label>
+                    <input type="text" th:field="*{des_prod}" class="form-control" id="inputNom" placeholder="Nombre"/>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputStk">Stock</label>
+                    <input type="number" th:field="*{stk_prod}" class="form-control" id="inputStk" placeholder="0"/>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPrec">Precio</label>
+                    <input type="number" step="0.01" th:field="*{pre_prod}" class="form-control" id="inputPrec" placeholder="0.00"/>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputCat">Categoría</label>
+                    <select id="inputCat" class="form-control" th:field="*{idcategoria}">
+                        <option value="">Seleccione...</option>
+                        <option th:each="cat : ${cboCategoria}"
+                                th:value="${cat.idcategoria}"
+                                th:text="${cat.descripcion}"></option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputProv">Proveedor</label>
+                    <select id="inputProv" class="form-control" th:field="*{idproveedor}">
+                        <option value="">Seleccione...</option>
+                        <option th:each="prov : ${cboProveedor}"
+                                th:value="${prov.idproveedor}"
+                                th:text="${prov.nombre_rs}"></option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputEstado">Estado</label>
+                    <select id="inputEstado" class="form-control" th:field="*{est_prod}">
+                        <option value="">Seleccione...</option>
+                        <option value="1">Activo</option>
+                        <option value="0">Eliminado</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Registrar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-12 col-md-7">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>Id</th><th>des_prod</th><th>stk_prod</th><th>pre_prod</th>
+                        <th>idcategoria</th><th>est_prod</th><th>Metodos</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="prod : ${listaProductos}">
+                        <td th:text="${prod.id_prod}"></td>
+                        <td th:text="${prod.des_prod}"></td>
+                        <td th:text="${prod.stk_prod}"></td>
+                        <td th:text="${prod.pre_prod}"></td>
+                        <td th:text="${prod.idcategoria}"></td>
+                        <td th:text="${prod.est_prod}"></td>
+                        <td>
+                            <a th:href="@{/productos/editar/{id}(id=${prod.id_prod})}"
+                               class="btn btn-sm btn-warning">Editar</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script th:inline="javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        const msg = /*[[${mensaje}]]*/ null;
+        const tipo = /*[[${tipoMensaje}]]*/ 'success';
+
+        if (msg) {
+            Swal.fire({
+                icon: tipo,
+                title: tipo === 'success' ? 'Éxito' : 'Error',
+                text: msg,
+                timer: tipo === 'success' ? 3000 : 5000,
+                timerProgressBar: true,
+                showConfirmButton: tipo !== 'success'
+            });
+        }
+    });
+</script>
+</body>
+</html>

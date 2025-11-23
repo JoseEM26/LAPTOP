@@ -1,0 +1,113 @@
+Use Infracciones
+go
+
+Create or alter procedure usp_ListarPropietario
+as
+SELECT P.Cod_Propietario
+      ,P.Nom_Propietario
+      ,P.Ape_Propietario
+      ,P.Dir_Propietario
+      ,P.DNI_Propietario
+	  ,D.Nom_Distrito
+FROM Tb_Propietario P inner join Tb_Distrito D on P.Cod_Distrito =D.Cod_distrito 
+go
+
+Create or alter procedure usp_ListarDistrito
+as
+Select Cod_distrito,Nom_distrito 
+from Tb_Distrito
+go
+
+Create or Alter Procedure usp_EliminarPropietario
+@Cod_Propietario varchar(5)
+as
+Delete from Tb_Propietario where Cod_Propietario  = @Cod_Propietario
+go
+
+Create or alter procedure usp_ConsultarPropietario
+@Cod_Propietario char(5)
+as
+SELECT Cod_Propietario
+      ,Nom_Propietario
+      ,Ape_Propietario
+      ,Dir_Propietario
+      ,DNI_Propietario
+	  ,Cod_Distrito
+FROM Tb_Propietario
+Where Cod_Propietario =@Cod_Propietario
+go
+
+--Este SP se emplea para actualizar el conductor o insertarlo
+-- segun este exista o no en la tabla
+CREATE OR ALTER PROCEDURE usp_MergePropietario
+    @Cod_Propietario VARCHAR(5),
+    @Nom_Propietario VARCHAR(50),
+    @Ape_Propietario VARCHAR(50),
+    @Dir_Propietario VARCHAR(50),
+    @DNI_Propietario CHAR(8),
+    @Cod_Distrito    CHAR(3)
+AS
+BEGIN -- Se recomienda usar BEGIN/END para el cuerpo del SP
+    MERGE Tb_Propietario AS Target
+    USING (
+        SELECT 
+            @Cod_Propietario AS Cod, 
+            @Nom_Propietario AS Nombre, 
+            @Ape_Propietario AS Apellido,
+            @Dir_Propietario AS Direccion, 
+            @DNI_Propietario AS DNI, 
+            @Cod_Distrito AS Cod_Distrito
+    ) AS Src 
+    ON (Target.Cod_Propietario = Src.Cod)
+    -- Cuando Coincide: Actualiza
+    WHEN MATCHED THEN
+        UPDATE SET 
+            Target.Nom_Propietario = Src.Nombre, 
+            Target.Ape_Propietario = Src.Apellido,
+            Target.Dir_Propietario = Src.Direccion,
+            Target.DNI_Propietario = Src.DNI,    
+            Target.Cod_Distrito    = Src.Cod_Distrito
+    -- Cuando NO Coincide: Inserta
+    WHEN NOT MATCHED THEN
+        INSERT (Cod_Propietario, Nom_Propietario, Ape_Propietario, Dir_Propietario, DNI_Propietario, Cod_Distrito)
+        VALUES (Src.Cod, Src.Nombre, Src.Apellido, Src.Direccion, Src.DNI, Src.Cod_Distrito);
+
+END
+GO
+
+
+
+-- Si se le complica el MERGE puede hacer los 2 SP por separado
+--Pero tendria que crear 2 metodos en su Controlador, uno que llame a cada SP
+Create or Alter procedure usp_InsertarPropietario
+   @Cod_Propietario VARCHAR(5),
+    @Nom_Propietario VARCHAR(50),
+    @Ape_Propietario VARCHAR(50),
+    @Dir_Propietario VARCHAR(50),
+    @DNI_Propietario CHAR(8),
+    @Cod_Distrito    CHAR(3)
+as
+Insert into Tb_Propietario 
+values (@Cod_Propietario, @Nom_Propietario,@Ape_Propietario,@Dir_Propietario,@DNI_Propietario,@Cod_Distrito)
+go
+
+
+
+
+
+
+
+
+
+Create or Alter procedure usp_ActualizarPropietario
+@Cod_Propietario VARCHAR(5),
+    @Nom_Propietario VARCHAR(50),
+    @Ape_Propietario VARCHAR(50),
+    @Dir_Propietario VARCHAR(50),
+    @DNI_Propietario CHAR(8),
+    @Cod_Distrito    CHAR(3)
+as
+Update Tb_Propietario set Nom_Propietario =@Nom_Propietario,Ape_Propietario =@Ape_Propietario ,
+						 Dir_Propietario  =@Dir_Propietario, DNI_Propietario =@DNI_Propietario ,Cod_Distrito =@Cod_Distrito 
+where Cod_Propietario =@Cod_Propietario 
+go

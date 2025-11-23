@@ -1,10 +1,13 @@
 server:
   port: 8081
+
 spring:
   application:
     name: config-service
+  profiles:
+    active: native
   cloud:
     config:
       server:
         native:
-          search-paths: classpath:/
+          search-locations: classpath:/

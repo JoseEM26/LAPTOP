@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ejerCore_T2_02.props" />
+</Project>
