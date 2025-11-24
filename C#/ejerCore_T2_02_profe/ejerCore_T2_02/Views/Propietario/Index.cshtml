@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ejerCore_T2_02.Models.Propietario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cod_Propietario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom_Propietario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ape_Propietario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dir_Propietario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DNI_Propietario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cod_Distrito)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cod_Propietario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom_Propietario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ape_Propietario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dir_Propietario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DNI_Propietario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cod_Distrito)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
