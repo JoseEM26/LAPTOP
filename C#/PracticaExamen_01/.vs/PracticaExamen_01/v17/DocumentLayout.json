@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GITHUB\\LAPTOP\\C#\\PracticaExamen_01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{221959BF-E1CF-4457-859A-9882C247043C}|PracticaExamen_01\\PracticaExamen_01.csproj|c:\\github\\laptop\\c#\\practicaexamen_01\\practicaexamen_01\\procedure.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{221959BF-E1CF-4457-859A-9882C247043C}|PracticaExamen_01\\PracticaExamen_01.csproj|solutionrelative:practicaexamen_01\\procedure.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "procedure.txt",
+              "DocumentMoniker": "C:\\GITHUB\\LAPTOP\\C#\\PracticaExamen_01\\PracticaExamen_01\\procedure.txt",
+              "RelativeDocumentMoniker": "PracticaExamen_01\\procedure.txt",
+              "ToolTip": "C:\\GITHUB\\LAPTOP\\C#\\PracticaExamen_01\\PracticaExamen_01\\procedure.txt",
+              "RelativeToolTip": "PracticaExamen_01\\procedure.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-24T05:20:55.448Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

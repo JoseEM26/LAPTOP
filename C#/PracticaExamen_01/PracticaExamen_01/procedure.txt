@@ -1,0 +1,71 @@
+﻿USE Negocios;
+GO
+CREATE OR ALTER PROCEDURE USP_CRUD_EMPLEADO
+    @Accion VARCHAR(20),
+    @IdEmpleado INT = NULL,
+    @ApeEmpleado VARCHAR(50) = NULL,
+    @NomEmpleado VARCHAR(50) = NULL,
+    @FecNac DATE = NULL,
+    @DirEmpleado VARCHAR(100) = NULL,
+    @idDistrito INT = NULL,
+    @fonoEmpleado VARCHAR(20) = NULL,
+    @idCargo INT = NULL,
+    @FecContrata DATE = NULL
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- LISTAR
+    IF @Accion = 'Listar'
+    BEGIN
+        SELECT IdEmpleado, ApeEmpleado, NomEmpleado, FecNac, DirEmpleado,
+               idDistrito, fonoEmpleado, idCargo, FecContrata
+        FROM Empleados 
+        ORDER BY ApeEmpleado, NomEmpleado;
+    END
+
+    -- BUSCAR POR ID
+    ELSE IF @Accion = 'Buscar' AND @IdEmpleado IS NOT NULL
+    BEGIN
+        SELECT IdEmpleado, ApeEmpleado, NomEmpleado, FecNac, DirEmpleado,
+               idDistrito, fonoEmpleado, idCargo, FecContrata
+        FROM Empleados 
+        WHERE IdEmpleado = @IdEmpleado;
+    END
+
+    -- CREAR (INSERT)
+    ELSE IF @Accion = 'Crear' AND @IdEmpleado IS NOT NULL
+    BEGIN
+        INSERT INTO Empleados (IdEmpleado, ApeEmpleado, NomEmpleado, FecNac, DirEmpleado,
+                               idDistrito, fonoEmpleado, idCargo, FecContrata)
+        VALUES (@IdEmpleado, @ApeEmpleado, @NomEmpleado, @FecNac, @DirEmpleado,
+                @idDistrito, @fonoEmpleado, @idCargo, @FecContrata);
+
+        -- Devolver true si se insertó
+        SELECT CAST(CASE WHEN @@ROWCOUNT > 0 THEN 1 ELSE 0 END AS BIT) AS Resultado;
+    END
+
+    -- ACTUALIZAR
+    ELSE IF @Accion = 'Actualizar' AND @IdEmpleado IS NOT NULL
+    BEGIN
+        UPDATE Empleados SET
+            ApeEmpleado = @ApeEmpleado,
+            NomEmpleado = @NomEmpleado,
+            FecNac = @FecNac,
+            DirEmpleado = @DirEmpleado,
+            idDistrito = @idDistrito,
+            fonoEmpleado = @fonoEmpleado,
+            idCargo = @idCargo,
+            FecContrata = @FecContrata
+        WHERE IdEmpleado = @IdEmpleado;
+
+        SELECT CAST(CASE WHEN @@ROWCOUNT > 0 THEN 1 ELSE 0 END AS BIT) AS Resultado;
+    END
+
+    -- ELIMINAR
+    ELSE IF @Accion = 'Eliminar' AND @IdEmpleado IS NOT NULL
+    BEGIN
+        DELETE FROM Empleados WHERE IdEmpleado = @IdEmpleado;
+        SELECT CAST(CASE WHEN @@ROWCOUNT > 0 THEN 1 ELSE 0 END AS BIT) AS Resultado;
+    END
+END

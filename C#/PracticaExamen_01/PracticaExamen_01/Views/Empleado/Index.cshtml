@@ -1,0 +1,83 @@
+﻿@model IEnumerable<PracticaExamen_01.Models.Empleado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEmpleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApeEmpleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomEmpleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FecNac)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DirEmpleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idDistrito)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fonoEmpleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idCargo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FecContrata)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEmpleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApeEmpleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomEmpleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FecNac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DirEmpleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idDistrito)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fonoEmpleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idCargo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FecContrata)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.IdEmpleado }) |
+                    @Html.ActionLink("Details", "Details", new {  id=item.IdEmpleado  }) |
+                    @Html.ActionLink("Delete", "Delete", new {  id=item.IdEmpleado  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
