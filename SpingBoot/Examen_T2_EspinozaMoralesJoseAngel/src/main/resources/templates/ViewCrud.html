@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciberfarma - Mantenimiento de Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container mt-4">
+    <div class="row">
+        <!-- Formulario -->
+        <div class="col-12 col-md-5">
+            <h2 class="mb-4 text-primary">Mantenimiento de Productos</h2>
+
+            <form th:action="@{/api/v1/productos}" th:object="${producto}" method="post" class="row g-3">
+
+                <input type="hidden" th:field="*{id_prod}" th:if="${producto?.id_prod != null}"/>
+
+                <div class="col-md-6">
+                    <label class="form-label">Código</label>
+                    <input type="text" th:field="*{id_prod}" class="form-control" placeholder="P0001"
+                           th:disabled="${producto?.id_prod != null}" required>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" th:field="*{des_prod}" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Stock</label>
+                    <input type="number" th:field="*{stk_prod}" class="form-control" min="0" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Precio</label>
+                    <input type="number" step="0.01" th:field="*{pre_prod}" class="form-control" min="0" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Categoría</label>
+                    <select class="form-select" th:field="*{categoria.idcategoria}" required>
+                        <option value="">Seleccione...</option>
+                        <option th:each="cat : ${categoria}"
+                                th:value="${cat.idcategoria}"
+                                th:text="${cat.descripcion}"></option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Proveedor</label>
+                    <select class="form-select" th:field="*{proveedor.idproveedor}" required>
+                        <option value="">Seleccione...</option>
+                        <option th:each="prov : ${proveedor}"
+                                th:value="${prov.idproveedor}"
+                                th:text="${prov.nombre_rs}"></option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Estado</label>
+                    <select class="form-select" th:field="*{est_prod}" required>
+                        <option value="">Seleccione...</option>
+                        <option value="1">Activo</option>
+                        <option value="0">Eliminado</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success w-100">
+                        <span th:text="${producto?.id_prod != null} ? 'Actualizar Producto' : 'Registrar Producto'">Registrar</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Tabla -->
+        <div class="col-12 col-md-7 mt-4 mt-md-0">
+            <h3 class="text-primary">Lista de Productos</h3>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+                    <thead class="table-dark">
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Stock</th>
+                        <th>Precio</th>
+                        <th>Categoría</th>
+                        <th>Proveedor</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="prod : ${lista}">
+                        <td th:text="${prod.id_prod}"></td>
+                        <td th:text="${prod.des_prod}"></td>
+                        <td th:text="${prod.stk_prod}"></td>
+                        <td th:text="'S/ ' + ${#numbers.formatDecimal(prod.pre_prod, 1, 2)}"></td>
+                        <td th:text="${prod.categoria?.descripcion} ?: 'Sin categoría'"></td>
+                        <td th:text="${prod.proveedor?.nombre_rs} ?: 'Sin proveedor'"></td>
+                        <td>
+                            <span class="badge"
+                                  th:class="${prod.est_prod == 1} ? 'bg-success' : 'bg-danger'"
+                                  th:text="${prod.est_prod == 1} ? 'Activo' : 'Eliminado'"></span>
+                        </td>
+                        <td>
+                            <a th:href="@{/api/v1/productos/editar/{id}(id=${prod.id_prod})}"
+                               class="btn btn-sm btn-warning">Editar</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<div th:if="${alerta != null}" th:utext="${alerta}"></div>
+</body>
+</html>

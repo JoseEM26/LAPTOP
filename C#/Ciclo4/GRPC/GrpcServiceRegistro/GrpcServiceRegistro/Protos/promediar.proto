@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServicePromediar";
+
+package promediar;
+
+// El servicio
+service PromediarNotas {
+  rpc CalcularPromedio (NotasRequest) returns (NotasResponse);
+}
+
+// Mensajes
+message NotasRequest {
+  int32 nota1 = 1;
+  int32 nota2 = 2;
+  int32 nota3 = 3;
+}
+
+message NotasResponse {
+  float promedio = 1;
+}

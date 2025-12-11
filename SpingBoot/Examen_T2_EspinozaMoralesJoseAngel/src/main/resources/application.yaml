@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Examen_T2_EspinozaMoralesJoseAngel
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/formulario
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect     # ESTA ES LA LÍNEA CLAVE
+    hibernate:
+      ddl-auto: update           # perfecto para el examen
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        # YA NO SE USA "dialect" aquí → Hibernate 6/7 lo ignora y da el error que viste
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type.descriptor.sql: trace
+    org.springframework.web: debug

@@ -1,0 +1,131 @@
+﻿@model app_Core04.Models.Cliente
+@{
+    ViewData["Title"] = "Nuevo Cliente";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-7">
+
+            <!-- Título bonito -->
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold text-primary">
+                    <i class="bi bi-building-add me-3"></i> Registrar Nuevo Cliente
+                </h1>
+                <p class="lead text-muted">Complete todos los campos para agregar una nueva empresa</p>
+            </div>
+
+            <!-- Card principal con sombra y borde sutil -->
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="card-header bg-gradient text-white py-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <h4 class="mb-0 text-center">
+                        <i class="bi bi-person-plus-fill me-2"></i> Formulario de Registro
+                    </h4>
+                </div>
+
+                <div class="card-body p-5">
+                    <form asp-action="Create" method="post">
+                        @Html.AntiForgeryToken()
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger rounded-3"></div>
+
+                        <div class="row g-4">
+                            <!-- Código del cliente -->
+                            <div class="col-md-6">
+                                <label asp-for="idcliente" class="form-label fw-bold">
+                                    <i class="bi bi-hash text-primary me-2"></i> Código Cliente
+                                </label>
+                                <input asp-for="idcliente" class="form-control form-control-lg" placeholder="Ej: CLI001" />
+                                <span asp-validation-for="idcliente" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Nombre de la empresa -->
+                            <div class="col-md-6">
+                                <label asp-for="nombrecia" class="form-label fw-bold">
+                                    <i class="bi bi-building text-success me-2"></i> Razón Social
+                                </label>
+                                <input asp-for="nombrecia" class="form-control form-control-lg" placeholder="Nombre de la empresa" />
+                                <span asp-validation-for="nombrecia" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Dirección -->
+                            <div class="col-12">
+                                <label asp-for="direccion" class="form-label fw-bold">
+                                    <i class="bi bi-geo-alt-fill text-info me-2"></i> Dirección Completa
+                                </label>
+                                <input asp-for="direccion" class="form-control form-control-lg" placeholder="Av. Ejemplo 123, Lima" />
+                                <span asp-validation-for="direccion" class="text-danger small"></span>
+                            </div>
+
+                            <!-- País con ícono de bandera -->
+                            <div class="col-md-6">
+                                <label asp-for="idpais" class="form-label fw-bold">
+                                    <i class="bi bi-flag-fill text-danger me-2"></i> País
+                                </label>
+                                <select asp-for="idpais" class="form-select form-select-lg shadow-sm"
+                                        asp-items="ViewBag.ListaPaises">
+                                    <option value="" disabled selected>Seleccione un país</option>
+                                </select>
+                                <span asp-validation-for="idpais" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Teléfono -->
+                            <div class="col-md-6">
+                                <label asp-for="fono" class="form-label fw-bold">
+                                    <i class="bi bi-telephone-fill text-warning me-2"></i> Teléfono
+                                </label>
+                                <input asp-for="fono" class="form-control form-control-lg" placeholder="+51 999 888 777" />
+                                <span asp-validation-for="fono" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="d-grid d-md-flex justify-content-md-end gap-3 mt-5">
+                            <a asp-action="Index" class="btn btn-outline-secondary btn-lg px-5">
+                                <i class="bi bi-arrow-left-circle me-2"></i> Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-primary btn-lg px-5 shadow-sm">
+                                <i class="bi bi-check2-circle me-2"></i> Guardar Cliente
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer decorativo -->
+            <div class="text-center mt-4">
+                <small class="text-muted">
+                    <i class="bi bi-shield-lock"></i> Todos los datos están protegidos
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts de validación -->
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<!-- Estilo extra para que quede aún más pro -->
+<style>
+    .card {
+        border-radius: 1.5rem;
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border: none;
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+</style>

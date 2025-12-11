@@ -1,0 +1,146 @@
+﻿@model IEnumerable<app_Core04.Models.Cliente>
+@{
+    ViewData["Title"] = "Clientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid py-5">
+    <!-- Título + Botón Nuevo -->
+    <div class="d-flex justify-content-between align-items-center mb-5">
+        <div>
+            <h2 class="fw-bold text-primary mb-1">
+                <i class="bi bi-building-fill me-3"></i>Mis Clientes
+            </h2>
+            <p class="text-muted mb-0">Total: <strong>@Model.Count()</strong> empresas registradas</p>
+        </div>
+        <a asp-action="Create" class="btn btn-success btn-lg shadow-lg rounded-pill px-4">
+            <i class="bi bi-plus-circle-fill me-2"></i> Nuevo Cliente
+        </a>
+    </div>
+
+    <!-- Filtro rápido (opcional pero queda lindo) -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="input-group input-group-lg shadow-sm">
+                <span class="input-group-text bg-white border-end-0">
+                    <i class="bi bi-search text-primary"></i>
+                </span>
+                <input type="text" id="filtro" class="form-control border-start-0" placeholder="Buscar cliente por nombre o código..." />
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid de Cards Modernas -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="clientesContainer">
+        @foreach (var item in Model)
+        {
+            <div class="col cliente-card">
+                <div class="card h-100 border-0 shadow-sm hover-shadow-lg transition-all rounded-4 overflow-hidden">
+                    <!-- Header con color según país (opcional) -->
+                    <div class="card-header bg-gradient text-white py-3 border-0"
+                         style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-lg bg-white bg-opacity-20 rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-building fs-3"></i>
+                                </div>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-bold">@item.nombrecia</h5>
+                                <small class="opacity-90">
+                                    <i class="bi bi-tag-fill me-1"></i>@item.idcliente
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="card-body pt-4">
+                        <ul class="list-unstyled text-muted small">
+                            <li class="mb-3">
+                                <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                                <strong>Dirección:</strong><br />
+                                <span class="text-dark">@item.direccion</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-flag-fill text-success me-2"></i>
+                                <strong>País:</strong>
+                                <span class="badge bg-success bg-opacity-20 text-success ms-2 px-3 py-2 rounded-pill">
+                                    @item.idpais
+                                </span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-telephone-fill text-info me-2"></i>
+                                <strong>Teléfono:</strong>
+                                <span class="text-dark">@item.fono</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer con acciones -->
+                    <div class="card-footer bg-light border-0 pt-3">
+                        <div class="btn-group w-100" role="group">
+                            <a asp-action="Details" asp-route-id="@item.idcliente"
+                               class="btn btn-outline-primary btn-sm rounded-start-pill">
+                                <i class="bi bi-eye"></i> Ver
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.idcliente"
+                               class="btn btn-outline-warning btn-sm">
+                                <i class="bi bi-pencil-square"></i> Editar
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.idcliente"
+                               class="btn btn-outline-danger btn-sm rounded-end-pill"
+                               onclick="return confirm('¿Eliminar permanentemente a @item.nombrecia?')">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Mensaje cuando no hay datos -->
+    @if (!Model.Any())
+    {
+        <div class="text-center py-5 my-5">
+            <i class="bi bi-inbox display-1 text-muted opacity-25"></i>
+            <h4 class="text-muted mt-4">Aún no tienes clientes registrados</h4>
+            <a asp-action="Create" class="btn btn-primary btn-lg mt-3">
+                <i class="bi bi-plus-circle"></i> Crear el primero
+            </a>
+        </div>
+    }
+</div>
+
+<!-- Búsqueda en vivo -->
+@section Scripts {
+    <script>
+        document.getElementById("filtro").addEventListener("keyup", function () {
+            let texto = this.value.toLowerCase();
+            document.querySelectorAll(".cliente-card").forEach(card => {
+                let contenido = card.textContent.toLowerCase();
+                card.style.display = contenido.includes(texto) ? "" : "none";
+            });
+        });
+    </script>
+}
+
+<!-- Estilos extra para efectos bonitos -->
+<style>
+    .transition-all { transition: all 0.3s ease; }
+    .hover-shadow-lg:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+    }
+    .avatar-lg {
+        width: 60px;
+        height: 60px;
+    }
+    .card-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+</style>
+
+<!-- Bootstrap Icons (si no lo tienes en _Layout) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">

@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Prueba de gRPC";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Asegúrate de tener un _Layout con Bootstrap 5
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+
+            <!-- Card con sombra y bordes redondeados -->
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header bg-gradient text-white text-center py-4 rounded-top-4"
+                     style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <h2 class="mb-0 fw-bold">
+                        <i class="bi bi-cpu me-2"></i> Prueba de gRPC
+                    </h2>
+                </div>
+
+                <div class="card-body p-5">
+
+                    @if (!string.IsNullOrEmpty(ViewBag.mensaje))
+                    {
+                        <div class="alert @(ViewBag.mensaje.Contains("éxito") || ViewBag.mensaje.Contains("correctamente") ?
+                            "alert-success" : "alert-danger") alert-dismissible fade show mb-4" role="alert">
+                            <strong>@ViewBag.mensaje</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    <form method="post" asp-action="Index">
+                        <div class="mb-4">
+                            <label for="codigo" class="form-label fw-semibold text-dark">
+                                <i class="bi bi-hash"></i> Código
+                            </label>
+                            <input type="text"
+                                   id="codigo"
+                                   name="codigo"
+                                   value="@ViewBag.codigo"
+                                   class="form-control form-control-lg rounded-pill shadow-sm"
+                                   placeholder="Ej. 001234"
+                                   required />
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="nombre" class="form-label fw-semibold text-dark">
+                                <i class="bi bi-person"></i> Nombre
+                            </label>
+                            <input type="text"
+                                   id="nombre"
+                                   name="nombre"
+                                   value="@ViewBag.nombre"
+                                   class="form-control form-control-lg rounded-pill shadow-sm"
+                                   placeholder="Ingrese el nombre"
+                                   required />
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="apellido" class="form-label fw-semibold text-dark">
+                                <i class="bi bi-person-badge"></i> Apellido
+                            </label>
+                            <input type="text"
+                                   id="apellido"
+                                   name="apellido"
+                                   value="@ViewBag.apellido"
+                                   class="form-control form-control-lg rounded-pill shadow-sm"
+                                   placeholder="Ingrese el apellido"
+                                   required />
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit"
+                                    class="btn btn-primary btn-lg rounded-pill fw-bold text-uppercase shadow">
+                                <i class="bi bi-send-fill me-2"></i> Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="card-footer text-center text-muted py-4">
+                    <small>Prueba de comunicación gRPC con ASP.NET Core</small>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- Bootstrap Icons (opcional, si no lo tienes en el Layout) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+}

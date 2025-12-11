@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DEMO MANTENIMIENTO CON API WEB</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: #f7f9fc;
+            font-family: "Segoe UI", Roboto, sans-serif;
+        }
+
+        .navbar {
+            background: #0d6efd;
+        }
+
+            .navbar a.nav-link, .navbar .navbar-brand {
+                color: white !important;
+                font-weight: 500;
+            }
+
+                .navbar a.nav-link:hover {
+                    color: #dce6ff !important;
+                }
+
+        footer {
+            background: #0d6efd;
+            color: #ffffffb9;
+            padding: 12px 0;
+        }
+
+            footer a {
+                color: #fff;
+            }
+
+                footer a:hover {
+                    color: #dce6ff;
+                }
+
+        main {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-boxes"></i> app_Core04
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Negocio" asp-action="Index">Listado Clientes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-4">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="text-center mt-auto">
+        <div class="container">
+            &copy; 2025 - Elaborado por XXXX - para CIBERTEC |
+            <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

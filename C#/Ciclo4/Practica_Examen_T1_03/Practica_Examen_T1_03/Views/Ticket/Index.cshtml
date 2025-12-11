@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Practica_Examen_T1_03.Models.Ticket>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgenciaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaCreacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaCierre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceDesk)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Resumen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgenciaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCreacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCierre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServiceDesk)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Resumen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstadoId)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {id=item.TicketId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.TicketId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.TicketId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
