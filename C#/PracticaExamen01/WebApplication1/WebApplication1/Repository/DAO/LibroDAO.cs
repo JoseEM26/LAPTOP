@@ -32,6 +32,11 @@ namespace WebApplication1.Repository.DAO
                 Autor = reader.GetString(2).Trim(),
                 Genero = reader.IsDBNull(3) ? null : reader.GetString(3).Trim(),
                 CodigoEditorial = reader.GetString(4).Trim(),
+                Editorial = new Editorial()
+                {
+                    CodigoEditorial = reader.GetString(4).Trim(),
+                    NombreEditorial = reader.GetString(5).Trim(),
+                }
             };
         }
 

@@ -1,4 +1,5 @@
-﻿using WebApplication1.Models;
+﻿using System.Text.Json.Serialization;
+using WebApplication1.Models;
 
 namespace WebApplication1.Models
 {
@@ -9,7 +10,6 @@ namespace WebApplication1.Models
         public string? Direccion { get; set; }
         public string? Email { get; set; }
         public string CodigoPais { get; set; } = null!;
-
-        public Pais Pais { get; set; } = null!;
+        public Pais? Pais { get; set; } = null;
     }
 }

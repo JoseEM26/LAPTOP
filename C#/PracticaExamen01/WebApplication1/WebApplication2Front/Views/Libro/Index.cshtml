@@ -1,0 +1,91 @@
+﻿@model IEnumerable<WebApplication1.Models.Libro>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<!-- FILTRO EN VIVO (estilo clásico) -->
+<div class="form-group mb-3">
+    <input type="text"
+           id="filtro"
+           class="form-control"
+           placeholder="Buscar por código, título, autor, género o editorial..." />
+</div>
+
+<table class="table" id="tablaLibros">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigoLibro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TituloLibro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Autor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Editorial.NombreEditorial)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodigoLibro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TituloLibro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Autor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Genero)
+                </td>
+                <td>
+                    @(item.Editorial?.NombreEditorial ?? "-")
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CodigoLibro }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.CodigoLibro }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CodigoLibro })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (!Model.Any())
+{
+    <p><em>No hay libros registrados.</em></p>
+}
+
+@section Scripts {
+    <script>
+        // Filtro en tiempo real - solo frontend
+        const inputFiltro = document.getElementById("filtro");
+        const filas = document.querySelectorAll("#tablaLibros tbody tr");
+
+        inputFiltro.addEventListener("input", function () {
+            const texto = this.value.toLowerCase().trim();
+
+            filas.forEach(fila => {
+                const contenido = fila.textContent.toLowerCase();
+                fila.style.display = contenido.includes(texto) ? "" : "none";
+            });
+        });
+    </script>
+}

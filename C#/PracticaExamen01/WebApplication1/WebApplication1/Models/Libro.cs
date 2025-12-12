@@ -1,4 +1,6 @@
-﻿namespace WebApplication1.Models
+﻿using System.Text.Json.Serialization;
+
+namespace WebApplication1.Models
 {
     public class Libro
     {
@@ -7,5 +9,7 @@
         public string Autor { get; set; } = null!;
         public string? Genero { get; set; }
         public string CodigoEditorial { get; set; } = null!;
+
+        public Editorial? Editorial { get; set; } = null;
     }
 }

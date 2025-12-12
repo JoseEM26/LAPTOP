@@ -1,0 +1,71 @@
+﻿@model IEnumerable<WebApplication1.Models.Editorial>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div class="form-group mb-3">
+    <input type="text"
+           id="filtro"
+           class="form-control"
+           placeholder="Buscar en código, nombre o país..." />
+</div>
+
+<table class="table" id="tablaEditoriales">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.CodigoEditorial)</th>
+            <th>@Html.DisplayNameFor(model => model.NombreEditorial)</th>
+            <th>@Html.DisplayNameFor(model => model.Direccion)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+            <th>@Html.DisplayNameFor(model => model.Pais.NombrePais)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(m => item.CodigoEditorial)</td>
+                <td>@Html.DisplayFor(m => item.NombreEditorial)</td>
+                <td>@Html.DisplayFor(m => item.Direccion)</td>
+                <td>@Html.DisplayFor(m => item.Email)</td>
+                <td>@(item.Pais?.NombrePais ?? "-")</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CodigoEditorial }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.CodigoEditorial }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CodigoEditorial })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Mensaje cuando no hay datos -->
+@if (!Model.Any())
+{
+    <p><em>No hay editoriales registradas.</em></p>
+}
+
+@section Scripts {
+    <script>
+        // Filtro instantáneo sin tocar el backend
+        const input = document.getElementById("filtro");
+        const filas = document.querySelectorAll("#tablaEditoriales tbody tr");
+
+        input.addEventListener("input", function () {
+            const busqueda = this.value.toLowerCase().trim();
+
+            filas.forEach(fila => {
+                const texto = fila.textContent.toLowerCase();
+                fila.style.display = texto.includes(busqueda) ? "" : "none";
+            });
+        });
+    </script>
+}

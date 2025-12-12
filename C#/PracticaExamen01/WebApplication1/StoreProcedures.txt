@@ -1,0 +1,139 @@
+CREATE OR ALTER PROCEDURE USP_LISTAR_PAISES_COMBO
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT CodigoPais, NombrePais
+    FROM Pais
+    ORDER BY NombrePais;
+END
+GO
+
+CREATE OR ALTER PROCEDURE USP_CRUD_EDITORIAL
+    @Accion VARCHAR(20),
+    @CodigoEditorial CHAR(5) = NULL,
+    @NombreEditorial VARCHAR(100) = NULL,
+    @Direccion VARCHAR(255) = NULL,
+    @Email VARCHAR(100) = NULL,
+    @CodigoPais CHAR(3) = NULL
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- LISTAR TODOS
+    IF @Accion = 'Listar'
+    BEGIN
+        SELECT e.CodigoEditorial, e.NombreEditorial, e.Direccion, e.Email, 
+               e.CodigoPais, p.NombrePais
+        FROM Editorial e
+        INNER JOIN Pais p ON e.CodigoPais = p.CodigoPais
+        ORDER BY e.CodigoEditorial;
+    END
+
+    -- BUSCAR POR ID
+    ELSE IF @Accion = 'Buscar' AND @CodigoEditorial IS NOT NULL
+    BEGIN
+        SELECT e.CodigoEditorial, e.NombreEditorial, e.Direccion, e.Email, 
+               e.CodigoPais, p.NombrePais
+        FROM Editorial e
+		INNER JOIN Pais p ON e.CodigoPais = p.CodigoPais
+        WHERE CodigoEditorial = @CodigoEditorial
+		ORDER BY e.CodigoEditorial;
+
+    END
+
+    -- INSERTAR
+    ELSE IF @Accion = 'Crear' AND @CodigoEditorial IS NOT NULL
+    BEGIN
+        INSERT INTO Editorial (CodigoEditorial, NombreEditorial, Direccion, Email, CodigoPais)
+        VALUES (@CodigoEditorial, @NombreEditorial, @Direccion, @Email, @CodigoPais);
+
+        SELECT CAST(CASE WHEN @@ROWCOUNT > 0 THEN 1 ELSE 0 END AS BIT) AS Resultado;
+    END
+
+    -- ACTUALIZAR
+    ELSE IF @Accion = 'Actualizar' AND @CodigoEditorial IS NOT NULL
+    BEGIN
+        UPDATE Editorial SET
+            NombreEditorial = @NombreEditorial,
+            Direccion = @Direccion,
+            Email = @Email,
+            CodigoPais = @CodigoPais
+        WHERE CodigoEditorial = @CodigoEditorial;
+
+        SELECT CAST(CASE WHEN @@ROWCOUNT > 0 THEN 1 ELSE 0 END AS BIT) AS Resultado;
+    END
+
+    -- ELIMINAR
+    ELSE IF @Accion = 'Eliminar' AND @CodigoEditorial IS NOT NULL
+    BEGIN
+        DELETE FROM Editorial WHERE CodigoEditorial = @CodigoEditorial;
+        SELECT CAST(CASE WHEN @@ROWCOUNT > 0 THEN 1 ELSE 0 END AS BIT) AS Resultado;
+    END
+END
+GO
+
+
+CREATE OR ALTER PROCEDURE USP_CRUD_LIBRO
+    @Accion VARCHAR(20),
+    @CodigoLibro CHAR(4) = NULL,
+    @TituloLibro VARCHAR(200) = NULL,
+    @Autor VARCHAR(150) = NULL,
+    @Genero VARCHAR(50) = NULL,
+    @CodigoEditorial CHAR(5) = NULL
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- LISTAR TODOS
+    IF @Accion = 'Listar'
+    BEGIN
+        SELECT l.CodigoLibro, l.TituloLibro, l.Autor, l.Genero,
+               l.CodigoEditorial, e.NombreEditorial
+        FROM Libro l
+        INNER JOIN Editorial e ON l.CodigoEditorial = e.CodigoEditorial
+        ORDER BY l.CodigoLibro;
+    END
+
+    -- BUSCAR POR ID
+    ELSE IF @Accion = 'Buscar' AND @CodigoLibro IS NOT NULL
+    BEGIN
+        SELECT l.CodigoLibro, l.TituloLibro, l.Autor, l.Genero,
+               l.CodigoEditorial, e.NombreEditorial
+        FROM Libro l
+        INNER JOIN Editorial e ON l.CodigoEditorial = e.CodigoEditorial
+        WHERE CodigoLibro = @CodigoLibro
+		ORDER BY l.CodigoLibro;
+
+    END
+
+    -- INSERTAR
+    ELSE IF @Accion = 'Crear' AND @CodigoLibro IS NOT NULL
+    BEGIN
+        INSERT INTO Libro (CodigoLibro, TituloLibro, Autor, Genero, CodigoEditorial)
+        VALUES (@CodigoLibro, @TituloLibro, @Autor, @Genero, @CodigoEditorial);
+
+        SELECT CAST(CASE WHEN @@ROWCOUNT > 0 THEN 1 ELSE 0 END AS BIT) AS Resultado;
+    END
+
+    -- ACTUALIZAR
+    ELSE IF @Accion = 'Actualizar' AND @CodigoLibro IS NOT NULL
+    BEGIN
+        UPDATE Libro SET
+            TituloLibro = @TituloLibro,
+            Autor = @Autor,
+            Genero = @Genero,
+            CodigoEditorial = @CodigoEditorial
+        WHERE CodigoLibro = @CodigoLibro;
+
+        SELECT CAST(CASE WHEN @@ROWCOUNT > 0 THEN 1 ELSE 0 END AS BIT) AS Resultado;
+    END
+
+    -- ELIMINAR
+    ELSE IF @Accion = 'Eliminar' AND @CodigoLibro IS NOT NULL
+    BEGIN
+        DELETE FROM Libro WHERE CodigoLibro = @CodigoLibro;
+        SELECT CAST(CASE WHEN @@ROWCOUNT > 0 THEN 1 ELSE 0 END AS BIT) AS Resultado;
+    END
+END
+GO
